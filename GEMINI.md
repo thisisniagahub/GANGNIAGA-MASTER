@@ -17,8 +17,8 @@ GangNiaga Executive OS — Enterprise AI Operating System documentation and gove
 | D: Link Repair | `[x]` Complete | Links repaired, DOCUMENT_MAP.md updated ✅ |
 | E: MASTER.md Modularization | `[x]` Complete | E1, E2, E3 completed ✅ |
 | F: Housekeeping & QA | `[x]` Complete | F1, F2, F3 completed ✅ |
-| G: Git & Release | `[ ]` Active | Ready to execute G1 |
-| H: GitHub Ops & CI | `[ ]` Blocked | Menunggu Fasa H |
+| G: Git & Release | `[x]` Complete | v2.0.0 released and pushed ✅ |
+| H: GitHub Ops & CI | `[ ]` Active | Ready to execute H1 |
 | I: Stability & Monitoring | `[ ]` Blocked | Menunggu Fasa I |
 
 ## Transformation Progress
@@ -35,6 +35,7 @@ GangNiaga Executive OS — Enterprise AI Operating System documentation and gove
 - F1: GLOSSARY.md renamed ✅
 - F2: Validation passed ✅
 - F3: Onboarding tour created ✅
+- G1: v2.0.0 released and pushed ✅
 
 ## Key Documents Created
 - `G0_DECISION_PACK.md` — Governance gate evidence and basis (DRAFT)

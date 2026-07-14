@@ -684,7 +684,7 @@ Kemaskini GEMINI.md → F3: Onboarding tour created ✅
 
 ## FASA G: Git & Release
 
-### `[ ]` G1 — Git Push + Tag Release
+### `[x]` G1 — Git Push + Tag Release
 
 **Skills:** `git-release`
 **Complexity:** Ringan
