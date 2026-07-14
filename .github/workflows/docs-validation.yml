@@ -1,0 +1,42 @@
+name: Docs Validation
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Run markdownlint
+      uses: davidanson/markdownlint-cli2-action@v16
+      with:
+        globs: '**/*.md'
+
+    - name: Check for stale chat*.md references
+      run: |
+        echo "Scanning for stale chat*.md references..."
+        # Search for references to chat1.md to chat5.md in markdown files, excluding known playbook, gemini context, and validation report
+        stale_refs=$(grep -rni "chat[1-5]\.md" --include="*.md" . | grep -v -E "TRANSFORMATION_PLAYBOOK.md|GEMINI.md|VALIDATION_REPORT.md|setup_github_backlog.ps1" || true)
+        if [ ! -z "$stale_refs" ]; then
+          echo "ERROR: Found stale chat*.md references:"
+          echo "$stale_refs"
+          exit 1
+        fi
+        echo "No stale chat*.md references found."
+
+    - name: Check case-sensitive GLOSSARY filename
+      run: |
+        echo "Checking for legacy GLOSSORY filename typo..."
+        # Ensure no files named GLOSSORY.md (case-insensitive search for GLOSSORY) exist
+        if find . -iname "GLOSSORY.md" | grep -q .; then
+          echo "ERROR: Found file named GLOSSORY.md instead of GLOSSARY.md!"
+          exit 1
+        fi
+        echo "Filename check passed."
