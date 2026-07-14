@@ -48,18 +48,15 @@ When documents conflict, contributors must not resolve the conflict informally. 
 
 ---
 
-# 3. Locked Repository Blueprint
+# 3. Repository Blueprint and Controlled-Change Model
 
-The approved repository blueprint is locked.
+Repository structural changes are governed by the controlled-change model defined in ADR-0006:
 
-Contributors must not, without an approved governance decision:
-
-- rename files,
-- add folders,
-- remove folders,
-- move documents,
-- change the roadmap structure,
-- replace the approved repository structure.
+- **CC-0 (Editorial only)**: Spelling, formatting, broken internal links.
+- **CC-1 (Content within existing structure)**: Clarification, evidence update, non-material correction.
+- **CC-2 (New artifact in approved extensibility zone)**: New knowledge document, standard instance, template.
+- **CC-3 (Material structural change)**: New folder, moved document class, Blueprint version update.
+- **CC-4 (Constitutional or authority change)**: Constitutional clause, authority hierarchy, roadmap direction.
 
 Content may be completed or corrected within existing files when the change remains consistent with the blueprint and higher-authority documents.
 

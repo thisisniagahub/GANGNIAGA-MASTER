@@ -6,7 +6,7 @@
 >
 > **Operating Single Source of Truth (SSOT)**
 >
-> Version: 1.1.0
+> Version: 2.0.0
 >
 > Status: Official Foundation Operating Reference
 >
@@ -73,7 +73,7 @@ The repository is currently in Phase 0. Its objective is to build a **Company Kn
 
 At this stage, the repository contains foundation documentation. Descriptions of layers, engines, routers, agents, registries, workflows, memory systems, and execution systems define a target operating and architecture model unless implementation and validation evidence explicitly marks them as operational.
 
-The locked Repository Blueprint v1.0 is a governed target structure. A path listed in that blueprint must not be treated as present merely because it is documented. `DOCUMENT_MAP.md` records the current repository state.
+Repository Blueprint v2.0 (governed by ADR-0006) is a governed target structure. Blueprint v1.0 was the original baseline. A path listed in that blueprint must not be treated as present merely because it is documented. `DOCUMENT_MAP.md` records the current repository state.
 
 ---
 
@@ -134,7 +134,7 @@ Appendices A–L
 PART VIII — Foundation Status and Governed Roadmap
 Purpose
 Current Foundation Baseline
-Locked Target State
+Governed Target State
 Future Implementation Gates
 Governed Roadmap Interpretation
 Remaining Governed Decisions
@@ -5004,7 +5004,7 @@ The repository is not simply a storage location for source code.
 
 It is intended to become the operational knowledge environment of GangNiaga Executive OS.
 
-> **Status:** The structures described in this section are the locked Repository Blueprint v1.0 target. They are not a statement that every listed path currently exists. Consult `DOCUMENT_MAP.md` for the current repository inventory. Structural changes require an approved governance decision.
+> **Status:** The structures described in this section are the Repository Blueprint v2.0 (governed by ADR-0006) target. They are not a statement that every listed path currently exists. Consult `DOCUMENT_MAP.md` for the current repository inventory. Structural changes are governed by the controlled-change classification in ADR-0006. Blueprint v1.0 was the original baseline.
 
 Its structure should optimize:
 
@@ -7175,7 +7175,7 @@ Never inside temporary chat sessions.
 
 # Repository Glossary
 
-The locked Repository Blueprint v1.0 defines the following target domains. Their inclusion here does not claim that the paths currently exist; `DOCUMENT_MAP.md` is the current-state inventory.
+Repository Blueprint v2.0 (governed by ADR-0006) defines the following target domains. Their inclusion here does not claim that the paths currently exist; `DOCUMENT_MAP.md` is the current-state inventory. Blueprint v1.0 was the original baseline.
 
 ---
 
@@ -7650,7 +7650,7 @@ Every future research document should reference original sources whenever practi
 
 ## Purpose
 
-This part closes the operating reference by distinguishing the repository's verified current state from its locked target state and future implementation intent.
+This part closes the operating reference by distinguishing the repository's verified current state from its governed target state and future implementation intent.
 
 It does not replace or amend the locked roadmap. It defines the interpretation and governance gates that must be satisfied while that roadmap is executed.
 
@@ -7671,9 +7671,9 @@ Current-state claims must be supported by repository evidence. When evidence is 
 
 ---
 
-## Locked Target State
+## Governed Target State
 
-Repository Blueprint v1.0 remains the structural baseline.
+Repository Blueprint v2.0 (governed by ADR-0006) is the structural baseline. Blueprint v1.0 was the original baseline.
 
 This MASTER explains the intended operating relationships among:
 
@@ -7736,7 +7736,7 @@ The following items remain outside the authority of this cleanup and require the
 
 - whether and when to correct `GLOSSORY.md` to the canonical `GLOSSARY.md` filename,
 - selection of a repository license and creation of `LICENSE`,
-- creation or activation of locked target folders and documents,
+- creation or activation of target folders and documents,
 - approval of detailed implementation architecture,
 - technology, model, framework, and execution-engine selections,
 - security and data-governance controls for operational agents and integrations.
@@ -7755,7 +7755,7 @@ It is not the Constitution and is not the repository's highest authority. Any lo
 
 # End of MASTER.md
 
-**Version:** 1.1.0 (Foundation Operating Reference)
+**Version:** 2.0.0 (Foundation Operating Reference)
 
 **Status:** Official Foundation Operating Reference
 

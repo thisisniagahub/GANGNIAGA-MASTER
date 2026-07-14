@@ -179,7 +179,7 @@ All contributors and AI Agents must follow applicable repository standards and a
 
 Every modification must preserve constitutional compliance and architectural integrity.
 
-The locked Repository Blueprint v1.0 remains the structural baseline until a formally approved decision authorizes a change. Current work must not rename files, add or remove folders, or alter the roadmap structure.
+Repository Blueprint v1.0 is the structural baseline. Structural evolution is permitted only through the controlled-change governance model defined in the approved ADR for repository evolution. Each structural change must be classified by impact, approved by the authority designated for its change class, supported by proportionate evidence, and recorded with migration and rollback provisions. Constitutional clauses, authority hierarchy, and locked roadmap direction may only be changed through the constitutional amendment process. The Repository Governance Owner maintains the current Blueprint version, path inventory, and change log.
 
 ---
 

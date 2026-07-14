@@ -107,6 +107,7 @@ GANGNIAGA-MASTER/
 ├── SOURCES.md
 ├── CONTRIBUTING.md
 ├── LICENSE
+├── strategy/
 ├── knowledge/
 │   ├── README.md
 │   ├── research/
@@ -121,7 +122,7 @@ GANGNIAGA-MASTER/
 └── implementation/
 ```
 
-This structure is the locked Repository Blueprint v1.0. Structural changes require an approved Architecture Decision Record. Until every listed path exists, `DOCUMENT_MAP.md` distinguishes the current repository state from the locked target structure.
+This structure is the Repository Blueprint v2.0. Structural changes require an approved Architecture Decision Record. Until every listed path exists, `DOCUMENT_MAP.md` distinguishes the current repository state from the locked target structure.
 
 ---
 

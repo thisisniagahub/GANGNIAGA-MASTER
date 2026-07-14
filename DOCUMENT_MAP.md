@@ -2,7 +2,7 @@
 
 > **GangNiaga Executive OS Documentation Map**
 >
-> Version: 1.1.0
+> Version: 2.0.0
 >
 > Status: Active
 >
@@ -74,20 +74,24 @@ PRINCIPLES.md
 GLOSSORY.md
 SOURCES.md
 CONTRIBUTING.md
+G0_DECISION_PACK.md
+ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md
 ```
 
 Known current-state exceptions:
 
 - `GLOSSORY.md` exists with a filename typo; the locked canonical name is `GLOSSARY.md`.
 - `LICENSE` does not yet exist and no license has been approved.
-- Some locked folders and documents may not yet exist.
+- Some folders and documents may not yet exist.
 - `MASTER.md` contains later extensions beyond its original table of contents and requires a dedicated consistency review.
+- Structural lock has been replaced by controlled-change model (ADR-0006).
+- `chat1.md`, `chat2.md`, `chat3.md`, `chat4.md`, `chat5.md` — Pending migration (see TRANSFORMATION_PLAYBOOK.md).
 
-These exceptions are tracked as foundation consistency work. They do not change the locked blueprint.
+These exceptions are tracked as foundation consistency work. They do not change the blueprint.
 
 ---
 
-## Locked Repository Blueprint v1.0
+## Repository Blueprint v2.0
 
 ```text
 GANGNIAGA-MASTER/
@@ -104,6 +108,11 @@ GANGNIAGA-MASTER/
 ├── SOURCES.md
 ├── CONTRIBUTING.md
 ├── LICENSE
+├── strategy/
+│   ├── README.md
+│   ├── PROGRAMME_BACKLOG.md
+│   ├── ENTERPRISE_DIRECTION.md
+│   └── GATED_TRANSFORMATION_PLAN.md
 ├── knowledge/
 │   ├── README.md
 │   ├── research/
@@ -112,13 +121,19 @@ GANGNIAGA-MASTER/
 │   └── benchmarks/
 ├── architecture/
 ├── adr/
+│   ├── README.md
+│   ├── TEMPLATE.md
+│   └── ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md
 ├── standards/
 ├── templates/
 ├── roadmap/
 └── implementation/
 ```
 
-Structural changes require an approved ADR. Content completion does not require changing this structure.
+Repository structural changes are governed by the controlled-change model defined in ADR-0006.
+
+### Historical Reference: Blueprint v1.0
+Blueprint v1.0 was the original locked structural baseline. It did not define strategy/ or adr/ folders.
 
 ---
 
@@ -139,6 +154,8 @@ Structural changes require an approved ADR. Content completion does not require 
 | `SOURCES.md` | Research methodology and source policy | Exists | Target research paths are not yet implied to exist |
 | `CONTRIBUTING.md` | Contribution workflow | Exists | Includes blueprint and validation constraints |
 | `LICENSE` | Legal usage terms | Planned | License selection and file creation require an explicit approved decision |
+| `G0_DECISION_PACK.md` | Governance gate G0 pack | Approved | Business Need & Governance basis |
+| `ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md` | Constitutional Change ADR | Approved | Replaces structural lock |
 
 ---
 
