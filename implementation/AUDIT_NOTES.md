@@ -1,3 +1,5 @@
+> Migrated from chat4.md on 2026-07-15. Original preserved in git history.
+
 Read-only audit complete and delivered to the parent agent.
 
 Key blocker identified: creating root `TODO.md` would violate the locked Blueprint. The compliant location for the requested comprehensive checklist is `implementation/CHECKLIST.md`.

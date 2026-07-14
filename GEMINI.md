@@ -13,8 +13,8 @@ GangNiaga Executive OS — Enterprise AI Operating System documentation and gove
 |------|--------|-------|
 | A: Governance Approval | `[x]` Approved | Approved by Megat on 2026-07-15 |
 | B: Governance Reset | `[x]` Complete | Committed (SHA: bd5a4c658eaa2b8b85e47e6f22ddb7a42ec2a452) |
-| C: Structural Migration | `[ ]` Active | C1 completed, next is C2 |
-| D: Link Repair | `[ ]` Blocked | Menunggu Fasa C |
+| C: Structural Migration | `[x]` Complete | C1 & C2 completed ✅ |
+| D: Link Repair | `[ ]` Active | Ready to execute D1 |
 | E: MASTER.md Modularization | `[ ]` Blocked | Menunggu Fasa D |
 | F: Housekeeping & QA | `[ ]` Blocked | Menunggu Fasa E |
 | G: Git & Release | `[ ]` Blocked | Menunggu Fasa G |
@@ -27,6 +27,7 @@ GangNiaga Executive OS — Enterprise AI Operating System documentation and gove
 - B3: MASTER.md references aligned to v2.0 ✅
 - B4: Governance Reset committed ✅ (SHA: bd5a4c658eaa2b8b85e47e6f22ddb7a42ec2a452)
 - C1: Folders scaffolded, chat1,3,5 migrated ✅
+- C2: chat2,4 cleared, ADR-0006 moved ✅
 
 ## Key Documents Created
 - `G0_DECISION_PACK.md` — Governance gate evidence and basis (DRAFT)

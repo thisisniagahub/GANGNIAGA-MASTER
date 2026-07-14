@@ -323,7 +323,7 @@ Kemaskini GEMINI.md → C1: Folders scaffolded, chat1,3,5 migrated ✅
 
 ---
 
-### `[ ]` C2 — Migrate chat2,4 + Move ADR-0006 (Batch)
+### `[x]` C2 — Migrate chat2,4 + Move ADR-0006 (Batch)
 
 **Skills:** —
 **Complexity:** Ringan — 3 operasi kecil
