@@ -110,7 +110,26 @@ strategy/README.md
 strategy/ENTERPRISE_DIRECTION.md
 strategy/GATED_TRANSFORMATION_PLAN.md
 strategy/PROGRAMME_BACKLOG.md
+strategy/PHASE1_BRAINSTORM.md
 templates/README.md
+conductor/README.md
+conductor/product.md
+conductor/product-guidelines.md
+conductor/tech-stack.md
+conductor/workflow.md
+conductor/index.md
+conductor/tracks.md
+conductor/tracks/governance_reset/index.md
+conductor/tracks/governance_reset/spec.md
+conductor/tracks/governance_reset/plan.md
+conductor/tracks/governance_reset/metadata.json
+conductor/tracks/master_modularization/index.md
+conductor/tracks/master_modularization/spec.md
+conductor/tracks/master_modularization/plan.md
+conductor/tracks/master_modularization/metadata.json
+implementation/PONYTAIL_AUDIT_REPORT.md
+implementation/SECURITY_FINDINGS.md
+scripts/health-check-report.ps1
 ```
 
 Known current-state exceptions:

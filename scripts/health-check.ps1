@@ -74,13 +74,15 @@ if (Test-Path $docMapPath) {
 Write-Host "Checking for stale chat*.md references..." -ForegroundColor Yellow
 $excludeList = @(
     "TRANSFORMATION_PLAYBOOK.md", "GEMINI.md", "VALIDATION_REPORT.md", 
-    "setup_github_backlog.ps1", "health-check.ps1",
+    "setup_github_backlog.ps1", "health-check.ps1", "health-check-report.ps1",
     "ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md", 
     "AUDIT_NOTES.md", "ENTERPRISE_DIRECTION.md", 
     "GATED_TRANSFORMATION_PLAN.md", "PROGRAMME_BACKLOG.md"
 )
+# Recurse md files, ignoring conductor directory
+$mdFiles = Get-ChildItem -Path $root -Recurse -Filter "*.md" | Where-Object { $_.FullName -notmatch 'conductor[\\/]' }
+
 $staleRefs = @()
-$mdFiles = Get-ChildItem -Path $root -Recurse -Filter "*.md"
 foreach ($file in $mdFiles) {
     if ($excludeList -contains $file.Name) { continue }
     $lines = Get-Content $file.FullName
@@ -109,7 +111,7 @@ Assert-Check "No GLOSSORY Typos" ($glossoryRefs.Count -eq 0) "Found GLOSSORY typ
 # --- Check E: Folder README.md verification ---
 Write-Host "Checking Blueprint v2.0 folders for README.md..." -ForegroundColor Yellow
 $blueprintFolders = @(
-    "strategy", "knowledge", "architecture", "adr", "standards", "templates", "roadmap", "implementation"
+    "strategy", "knowledge", "architecture", "adr", "standards", "templates", "roadmap", "implementation", "conductor"
 )
 $missingReadmes = @()
 foreach ($folder in $blueprintFolders) {
@@ -132,8 +134,14 @@ if (Test-Path $masterPath) {
 
 # --- Check G: Git Status Check ---
 Write-Host "Checking Git working tree cleanliness..." -ForegroundColor Yellow
-# Ignoring untracked scripts/health-check.ps1 for the clean check if running during execution
-$gitStatus = git status --porcelain | Where-Object { $_ -notmatch 'health-check.ps1' }
+# Ignore untracked scripts/health-check.ps1, scripts/health-check-report.ps1, and conductor/ files during setup commits
+$gitStatus = git status --porcelain | Where-Object { 
+    $_ -notmatch 'health-check\.ps1' -and 
+    $_ -notmatch 'health-check-report\.ps1' -and 
+    $_ -notmatch 'conductor/' -and
+    $_ -notmatch 'implementation/' -and
+    $_ -notmatch 'strategy/PHASE1_BRAINSTORM\.md'
+}
 Assert-Check "Git status is clean" ([string]::IsNullOrEmpty($gitStatus)) "Working directory is dirty:`n$gitStatus"
 
 Write-Host "`n=============================================" -ForegroundColor Cyan

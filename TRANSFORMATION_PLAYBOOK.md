@@ -876,7 +876,7 @@ git add -A && git commit -m "docs: update GEMINI.md as living context hub"
 
 ## FASA J: Advanced Stability & Architecture (Post-Release)
 
-### `[ ]` J1 — Security Scan Agent Configuration
+### `[x]` J1 — Security Scan Agent Configuration
 
 **Skills:** `security-scan`
 **Complexity:** Ringan
@@ -908,7 +908,7 @@ Kemaskini GEMINI.md → J1: Security scan complete ✅ [X findings]
 
 ---
 
-### `[ ]` J2 — Ponytail Full Audit (Over-Engineering Check)
+### `[x]` J2 — Ponytail Full Audit (Over-Engineering Check)
 
 **Skills:** `ponytail-audit`
 **Complexity:** Sederhana
@@ -941,7 +941,7 @@ Kemaskini GEMINI.md → J2: Ponytail audit complete ✅
 
 ---
 
-### `[ ]` J3 — Brainstorm Architecture Next Phase
+### `[x]` J3 — Brainstorm Architecture Next Phase
 
 **Skills:** `brainstorm` (gemini-kit)
 **Complexity:** Sederhana — analysis sahaja
@@ -977,7 +977,7 @@ Kemaskini GEMINI.md → J3: Phase 1 brainstorm complete ✅
 
 ---
 
-### `[ ]` J4 — Setup Conductor for Track Management
+### `[x]` J4 — Setup Conductor for Track Management
 
 **Skills:** `conductor` (plugin — setup, newTrack)
 **Complexity:** Sederhana
@@ -1010,7 +1010,7 @@ Kemaskini GEMINI.md → J4: Conductor setup complete ✅
 
 ---
 
-### `[ ]` J5 — Setup Scheduled Health Monitoring
+### `[x]` J5 — Setup Scheduled Health Monitoring
 
 **Skills:** —
 **Complexity:** Ringan
