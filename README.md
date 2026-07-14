@@ -6,425 +6,194 @@
 
 ---
 
-# Vision
+## Overview
 
-GangNiaga Executive OS is an AI-native Executive Operating System designed to transform ideas into complete, executable, and continuously evolving operating systems.
+GangNiaga Executive OS is an AI-native executive layer designed to coordinate knowledge, research, architecture, decisions, planning, orchestration, execution, governance, and continuous learning.
 
-Unlike traditional project management tools or AI coding assistants, GangNiaga is built around **Executive Intelligence**.
+It is not positioned as another AI framework, chatbot, IDE, workflow builder, or model wrapper. It is the permanent executive layer above replaceable AI models, agent frameworks, tools, and execution engines.
 
-Its purpose is not simply to generate code.
-
-Its purpose is to think, research, decide, orchestrate, learn and continuously improve.
-
-GangNiaga sits **above AI frameworks**, **above AI models**, and **above execution engines**, acting as the executive layer that coordinates everything.
+The project is currently in its foundation and documentation phase. Architecture, capabilities, and implementation modules described in this repository may be planned, proposed, or under development unless explicitly marked as implemented.
 
 ---
 
-# Philosophy
+## Core Philosophy
 
-Most AI platforms focus on execution.
-
-GangNiaga focuses on executive thinking.
-
-Instead of asking:
-
-> "How do we build software?"
-
-GangNiaga asks:
-
-> "How should an AI company think before writing the first line of code?"
-
----
-
-# Mission
-
-Create the world's first Executive AI Operating System capable of:
-
-- Thinking before coding
-- Research before implementation
-- Architecture before development
-- Decisions before execution
-- Knowledge before features
-
----
-
-# Core Principle
-
-```
+```text
+Research
+  ↓
 Knowledge
-
-↓
-
-Decision
-
-↓
-
+  ↓
 Architecture
-
-↓
-
+  ↓
+Decision
+  ↓
+Planning
+  ↓
 Execution
-
-↓
-
+  ↓
+Validation
+  ↓
 Learning
-
-↓
-
+  ↓
 Improvement
 ```
 
-Knowledge always comes first.
+Knowledge comes before code. Significant implementation should be supported by verified research, documented architecture, traceable decisions, and clear validation criteria.
 
 ---
 
-# What is GangNiaga?
+## What GangNiaga Is
 
-GangNiaga is NOT:
+- Executive Intelligence layer
+- Company knowledge and organizational memory foundation
+- Architecture and decision system
+- Capability-driven orchestration model
+- Framework-agnostic and vendor-neutral AI operating model
+- Continuously improving knowledge repository
 
-- ❌ Project Management Tool
-- ❌ AI Chatbot
-- ❌ AI IDE
-- ❌ Workflow Builder
-- ❌ Agent Framework
-- ❌ Low-Code Platform
+## What GangNiaga Is Not
 
-GangNiaga IS:
-
-- ✅ Executive AI Layer
-- ✅ Company Brain
-- ✅ Knowledge Operating System
-- ✅ AI Orchestrator
-- ✅ Capability Router
-- ✅ Executive Intelligence Platform
+- Project management tool
+- AI chatbot
+- AI IDE
+- Low-code platform
+- Standalone agent framework
+- Single-model or single-vendor wrapper
 
 ---
 
-# System Position
+## System Position
 
-```
-Users
-
-        │
-
-        ▼
-
-GangNiaga Executive Intelligence
-
-        │
-
-        ▼
-
-AI Orchestrator
-
-        │
-
-        ▼
-
-Capability Router
-
-        │
-
-        ▼
-
-Execution Engines
-
-OpenClaw
-Hermes
-OpenHands
-Claude Code
-Codex
-Future Engines
-
-        │
-
-        ▼
-
-Models
-
-GPT
-Claude
-Gemini
-Qwen
-DeepSeek
-GLM
-Local Models
+```text
+Users and Organizational Objectives
+                │
+                ▼
+      Executive Intelligence
+                │
+                ▼
+       Knowledge and Decisions
+                │
+                ▼
+     Planning and Orchestration
+                │
+                ▼
+        Capability Routing
+                │
+                ▼
+       Execution Engines and Tools
+                │
+                ▼
+       AI Models and Infrastructure
 ```
 
----
-
-# Core Capabilities
-
-- Executive Planning
-- Executive Decision Making
-- Research Management
-- Architecture Intelligence
-- Knowledge Management
-- Capability Routing
-- Agent Orchestration
-- Workflow Planning
-- Memory Management
-- Continuous Learning
-- Pattern Library
-- Architecture Decision Records
-- Technology Intelligence
+Execution engines, agent frameworks, tools, models, and infrastructure remain replaceable. Executive principles, organizational knowledge, and documented decisions provide continuity.
 
 ---
 
-# Design Principles
+## Canonical Repository Structure
 
-1. Executive First
-2. Knowledge First
-3. Architecture First
-4. AI Native
-5. Framework Agnostic
-6. Vendor Neutral
-7. Zero Mandatory Cost
-8. Modular by Default
-9. Research Driven
-10. Decision Traceable
-
----
-
-# Repository Structure
-
+```text
+GANGNIAGA-MASTER/
+├── README.md
+├── MASTER.md
+├── DOCUMENT_MAP.md
+├── CONSTITUTION.md
+├── PROJECT.md
+├── VISION.md
+├── MISSION.md
+├── PHILOSOPHY.md
+├── PRINCIPLES.md
+├── GLOSSARY.md
+├── SOURCES.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── knowledge/
+│   ├── README.md
+│   ├── research/
+│   ├── reverse-engineering/
+│   ├── patterns/
+│   └── benchmarks/
+├── architecture/
+├── adr/
+├── standards/
+├── templates/
+├── roadmap/
+└── implementation/
 ```
-gangniaga-executive-os/
 
-README.md
+This structure is the locked Repository Blueprint v1.0. Structural changes require an approved Architecture Decision Record. Until every listed path exists, `DOCUMENT_MAP.md` distinguishes the current repository state from the locked target structure.
 
+---
+
+## Document Authority
+
+The intended authority order is:
+
+```text
+CONSTITUTION.md
+      ↓
 MASTER.md
-
-knowledge/
-
-architecture/
-
-research/
-
-patterns/
-
-adr/
-
-benchmarks/
-
-standards/
-
-roadmaps/
-
-implementation/
-
-templates/
-
-sources/
-```
-
----
-
-# Documentation Philosophy
-
-This repository is designed to become the **Single Source of Truth** for the entire GangNiaga ecosystem.
-
-Every major architectural decision must be documented.
-
-Every research finding must be traceable.
-
-Every implementation must be supported by documented reasoning.
-
----
-
-# Architecture Decision Records (ADR)
-
-Every major decision must answer:
-
-- Why?
-- Alternatives?
-- Trade-offs?
-- Consequences?
-- Future impact?
-
-No architectural decision should exist without documented reasoning.
-
----
-
-# Reverse Engineering Philosophy
-
-GangNiaga never copies implementations.
-
-GangNiaga studies principles.
-
-For every technology we ask:
-
-- What problem does it solve?
-- Why was it designed this way?
-- What trade-offs were made?
-- Which patterns are reusable?
-- Which anti-patterns should be avoided?
-
----
-
-# Research Sources
-
-Research is continuously gathered from:
-
-- Official Documentation
-- GitHub Repositories
-- Research Papers
-- Engineering Blogs
-- Reddit Discussions
-- Conference Talks
-- Architecture Articles
-- AI Documentation
-- Benchmarks
-- Release Notes
-
-Every document should reference its sources.
-
----
-
-# AI Development Philosophy
-
-Every AI Agent contributing to this repository must follow:
-
-Research
-
-↓
-
-Verification
-
-↓
-
-Architecture
-
-↓
-
-Decision
-
-↓
-
-Documentation
-
-↓
-
+      ↓
+Approved ADR
+      ↓
+Architecture Documents
+      ↓
+Standards
+      ↓
 Implementation
-
-↓
-
-Validation
-
-Coding is never the first step.
-
----
-
-# Executive Workflow
-
-```
-Idea
-
-↓
-
-Research
-
-↓
-
-Knowledge
-
-↓
-
-Architecture
-
-↓
-
-ADR
-
-↓
-
-Planning
-
-↓
-
-Execution
-
-↓
-
-Validation
-
-↓
-
-Learning
-
-↓
-
-Iteration
 ```
 
----
-
-# Project Goals
-
-Build an Executive AI Operating System capable of:
-
-- Managing knowledge
-- Managing architecture
-- Managing decisions
-- Managing execution
-- Managing learning
-- Managing future evolution
+`README.md` is the landing page. `DOCUMENT_MAP.md` is the navigation index. Neither overrides the Constitution, MASTER, or approved ADR.
 
 ---
 
-# Long-Term Vision
+## Start Here
 
-GangNiaga will become an Executive Layer capable of orchestrating:
-
-- Multiple AI Models
-- Multiple Agent Frameworks
-- Multiple Execution Engines
-- Multiple Development Environments
-
-without being tightly coupled to any of them.
+1. Read `README.md` for project orientation.
+2. Open `DOCUMENT_MAP.md` for repository navigation and document status.
+3. Read `CONSTITUTION.md` for immutable principles.
+4. Read `MASTER.md` for the complete executive operating model.
+5. Consult approved ADR before changing architecture or repository structure.
+6. Follow `CONTRIBUTING.md` before submitting changes.
 
 ---
 
-# Development Status
+## Development Status
 
-Current Phase
+**Current phase:** Foundation consistency and Executive Intelligence documentation.
 
-Phase 0 — Executive Intelligence Research
+Current priorities:
 
-Focus
+- Align foundation documents with the locked structure
+- Remove authority and terminology conflicts
+- Separate implemented content from planned architecture
+- Improve traceability and cross-references
+- Prepare the repository for architecture and implementation work
 
-- Knowledge Base
-- Research
-- Reverse Engineering
-- Architecture
-- ADR
-- Pattern Library
-
-Implementation begins only after Executive Foundation is complete.
+No capability should be described as operational unless implementation and validation evidence exist in the repository.
 
 ---
 
-# Contributing
+## Contribution Principle
 
-Every contribution must improve at least one of:
+Every contribution should improve at least one of:
 
-- Knowledge
-- Architecture
-- Documentation
-- Decision Quality
-- Research
+- Knowledge quality
+- Decision quality
+- Architecture clarity
+- Documentation consistency
+- Traceability
 - Maintainability
+- Executive Intelligence
+
+See `CONTRIBUTING.md` for the required workflow.
 
 ---
 
-# Guiding Principle
+## License
 
-> "Don't build another AI framework.
-
-Build the Executive Intelligence that makes every framework smarter."
+A repository license has not yet been selected. Until a `LICENSE` file is approved and added, no open-source license should be assumed.
 
 ---
 
-# License
-
-TBD
+> **Do not build another AI framework. Build the Executive Intelligence that makes every framework more useful.**

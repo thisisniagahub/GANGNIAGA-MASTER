@@ -1,679 +1,479 @@
 # 📚 GLOSSARY.md
 
-> **GangNiaga Executive OS Glossary**
+> **GangNiaga Executive OS — Official Terminology**
 >
-> Version: 1.0.0
+> Version: 1.1.0
 >
 > Status: Official
 >
-> Repository: GangNiaga Executive OS
+> Canonical locked filename: `GLOSSARY.md`
+>
+> Current repository path: `GLOSSORY.md`
 
 ---
 
-# Purpose
+# 1. Purpose
 
-This document defines the official terminology used throughout GangNiaga Executive OS.
+This document defines the shared terminology used throughout GangNiaga Executive OS.
 
-Its primary purpose is to ensure that every contributor, software architect, AI Agent, researcher, and future maintainer interprets technical concepts consistently.
+Its purpose is to reduce ambiguity, preserve architectural consistency, and help contributors, AI agents, researchers, architects, and maintainers interpret project concepts in the same way.
 
-Artificial Intelligence systems are highly dependent on context.
+The glossary is authoritative for terminology within its scope. It does not override constitutional rules, approved decisions, architecture, or standards.
 
-A shared vocabulary significantly reduces ambiguity, improves architectural consistency, and enables better collaboration between humans and AI Agents.
+The governing authority order is:
 
-This glossary should be considered the official dictionary of the GangNiaga Executive OS ecosystem.
-
-Whenever terminology conflicts occur, the definitions contained in this document take precedence.
-
----
-
-# Why a Glossary Matters
-
-Large software projects often fail because people use the same words to describe different concepts.
-
-For example:
-
-Developer A says:
-
-"Agent"
-
-meaning
-
-AI Model
-
-Developer B says:
-
-"Agent"
-
-meaning
-
-Workflow
-
-Developer C says:
-
-"Agent"
-
-meaning
-
-Autonomous Software
-
-Three people.
-
-One word.
-
-Three completely different meanings.
-
-GangNiaga Executive OS eliminates this ambiguity through standardized terminology.
-
----
-
-# Terminology Categories
-
-The glossary is divided into several domains.
-
-```
-Executive Intelligence
-
-↓
-
-Architecture
-
-↓
-
-Knowledge
-
-↓
-
-Artificial Intelligence
-
-↓
-
-Execution
-
-↓
-
-Research
-
-↓
-
-Governance
-
-↓
-
-Engineering
+```text
+CONSTITUTION.md
+    ↓
+MASTER.md
+    ↓
+Approved ADR
+    ↓
+Architecture Documents
+    ↓
+Standards
+    ↓
+Implementation Documents
 ```
 
+When a term conflicts with a higher-authority document, the higher-authority document governs and this glossary must be corrected.
+
 ---
 
-# Executive Intelligence
+# 2. Filename Status
+
+The locked repository blueprint specifies `GLOSSARY.md`.
+
+The current repository contains this document at `GLOSSORY.md`.
+
+Because the repository blueprint is locked against unapproved structural changes, this file must not be renamed casually. The mismatch remains documented until an approved governance decision authorizes the correction.
+
+---
+
+# 3. Foundation Terms
+
+## GangNiaga Executive OS
+
+The repository-wide initiative for building a durable company knowledge and executive intelligence foundation that can later coordinate AI capabilities, workflows, memory, and execution systems.
+
+It is not defined by one AI model, framework, vendor, or execution engine.
+
+## Company Knowledge & Executive Intelligence Foundation
+
+The primary objective of Phase 0.
+
+It is the documented foundation that preserves company knowledge, architectural reasoning, governance, research, terminology, and decision context before implementation expands.
+
+## Repository Blueprint
+
+The approved file-and-folder structure that defines where project knowledge belongs.
+
+The blueprint is a governance constraint. Its structure must not be changed without an approved decision.
+
+## Locked Target
+
+A file or folder required by the approved repository blueprint but not necessarily present yet.
+
+## Current State
+
+The repository structure and content that actually exist at a specific point in time.
+
+## Planned
+
+A documented capability, subsystem, file, or activity that is intended but not yet implemented or created.
+
+A planned item must not be described as operational.
+
+---
+
+# 4. Executive Intelligence
 
 ## Executive Intelligence
 
-The highest decision-making layer inside GangNiaga Executive OS.
+The highest decision-coordination capability within GangNiaga Executive OS.
 
-Executive Intelligence coordinates:
+Executive Intelligence coordinates knowledge, research, planning, architecture, governance, AI orchestration, execution, and learning.
 
-- Knowledge
-- Research
-- Planning
-- Decision Making
-- Architecture
-- AI Orchestration
-- Execution
-- Learning
-
-Executive Intelligence does **not** execute code directly.
-
-It decides **what should happen**, **why**, and **when**.
-
----
+It determines what should happen, why it should happen, and under which constraints. It does not directly perform every implementation task.
 
 ## Executive Layer
 
-The permanent coordination layer positioned above AI models, frameworks, and execution engines.
+The durable coordination layer positioned above replaceable AI models, frameworks, tools, and execution engines.
 
-Its responsibility includes:
-
-- capability selection
-- orchestration
-- planning
-- governance
-- architectural reasoning
-- executive decision making
-
-Execution engines remain replaceable.
-
-The Executive Layer remains permanent.
-
----
+Its responsibilities include planning, capability selection, orchestration, governance, architectural reasoning, and executive decision support.
 
 ## Executive Decision
 
-A documented strategic decision that influences architecture, governance, implementation, or long-term project evolution.
+A documented strategic decision that affects architecture, governance, implementation, or long-term project direction.
 
-Every Executive Decision should eventually be traceable through an ADR.
+Material executive decisions should be traceable through an Architecture Decision Record.
+
+## Decision Context
+
+The evidence, constraints, assumptions, alternatives, and consequences required to understand why a decision was made.
 
 ---
 
-# Knowledge
+# 5. Knowledge
 
 ## Knowledge
 
-Verified information that improves future decisions.
+Verified, reusable information that improves future decisions or execution.
 
-Knowledge may include:
-
-- documentation
-- research
-- architecture
-- standards
-- lessons learned
-- design patterns
-- engineering experience
-
-Knowledge is considered the highest-value asset of the project.
-
----
+Knowledge may include research, architecture, standards, patterns, lessons learned, decisions, documentation, and engineering experience.
 
 ## Knowledge Base
 
-The complete collection of reusable knowledge contained inside the repository.
+The complete collection of reusable knowledge preserved in the repository.
 
-It includes:
-
-Research
-
-Architecture
-
-Patterns
-
-ADR
-
-Standards
-
-Templates
-
-Documentation
-
-Knowledge Base exists independently of implementation.
-
----
+The knowledge base can exist before software implementation and remains valuable independently of any specific toolchain.
 
 ## Knowledge Engine
 
-A future subsystem responsible for organizing, indexing, retrieving, and managing reusable knowledge.
+A planned subsystem responsible for organizing, indexing, retrieving, connecting, and managing reusable knowledge for Executive Intelligence.
 
-Knowledge Engine supports Executive Intelligence.
-
-It does not replace documentation.
-
----
+It supports documentation; it does not replace documentation.
 
 ## Institutional Knowledge
 
-Knowledge that survives:
+Knowledge that survives contributor changes, technology changes, project transitions, and organizational growth.
 
-- contributor changes
-- technology evolution
-- project completion
-- organizational growth
+## Source
 
-Institutional knowledge should continuously expand.
+The original material from which a claim, observation, pattern, or decision is derived.
 
----
+## Evidence
 
-# Architecture
-
-## Architecture
-
-The high-level design of the system.
-
-Architecture defines:
-
-- responsibilities
-- boundaries
-- relationships
-- constraints
-- interactions
-
-Architecture answers:
-
-Why?
-
-What?
-
-Where?
-
-Implementation answers:
-
-How?
-
----
-
-## Architecture Blueprint
-
-The complete architectural representation of GangNiaga Executive OS.
-
-Includes:
-
-- Executive Layer
-- AI Orchestrator
-- Capability Router
-- Knowledge Engine
-- Memory Engine
-- Workflow Engine
-- Execution Layer
-
----
-
-## Architecture Decision Record (ADR)
-
-A permanent engineering document describing:
-
-- context
-- decision
-- alternatives
-- trade-offs
-- consequences
-
-ADR preserves organizational reasoning.
-
----
-
-## Pattern
-
-A reusable architectural solution for recurring engineering problems.
-
-Patterns are reusable.
-
-Implementations are replaceable.
-
----
-
-## Anti-Pattern
-
-A commonly repeated design approach that produces negative long-term consequences.
-
-GangNiaga documents anti-patterns to prevent repeating engineering mistakes.
-
----
-
-# Artificial Intelligence
-
-## AI Agent
-
-An autonomous or semi-autonomous software entity capable of performing tasks using reasoning and external tools.
-
-Within GangNiaga, AI Agents always operate under Executive Intelligence.
-
----
-
-## AI Model
-
-A language or reasoning model capable of generating outputs.
-
-Examples:
-
-GPT
-
-Claude
-
-Gemini
-
-Qwen
-
-DeepSeek
-
-GLM
-
-Local LLM
-
-Models provide intelligence.
-
-They do not define architecture.
-
----
-
-## AI Orchestrator
-
-The subsystem responsible for coordinating AI capabilities.
-
-Responsibilities include:
-
-- routing
-- delegation
-- workflow coordination
-- execution planning
-- task scheduling
-
-AI Orchestrator does not replace Executive Intelligence.
-
-It implements Executive decisions.
-
----
-
-## Capability
-
-A reusable functional ability.
-
-Examples include:
-
-Research
-
-Planning
-
-Architecture
-
-Coding
-
-Testing
-
-Documentation
-
-Reasoning
-
-Validation
-
-Capabilities remain stable even when AI models change.
-
----
-
-## Capability Router
-
-A routing component responsible for assigning work according to required capabilities rather than model names.
-
-Routing decisions are capability-driven.
-
----
-
-# Memory
-
-## Memory
-
-Information preserved across interactions.
-
-Memory enables continuity.
-
-Memory may include:
-
-- context
-- decisions
-- previous work
-- lessons
-- user preferences
-
----
-
-## Memory Engine
-
-A future subsystem responsible for:
-
-- memory retrieval
-- memory storage
-- context management
-- long-term continuity
-
-Memory Engine supports Executive Intelligence.
-
----
-
-## Context
-
-The information available when making decisions.
-
-Context may include:
-
-- documentation
-- ADR
-- architecture
-- research
-- previous conversations
-- project history
-
-Context determines decision quality.
-
----
-
-# Execution
-
-## Execution Engine
-
-The subsystem responsible for performing implementation work.
-
-Examples may include:
-
-OpenClaw
-
-Claude Code
-
-OpenHands
-
-Future execution engines
-
-Execution Engines remain replaceable.
-
----
-
-## Workflow
-
-A structured sequence of activities designed to achieve a specific objective.
-
-Workflow should be architecture-driven.
-
----
-
-## Orchestration
-
-The coordination of multiple capabilities, systems, AI Agents, workflows, and execution engines.
-
-Orchestration ensures the correct capability executes at the correct time.
-
----
-
-## Delegation
-
-Assigning work from Executive Intelligence to an execution capability.
-
-Delegation should be explicit and traceable.
-
----
-
-# Research
-
-## Research
-
-A structured investigation conducted before making important decisions.
-
-Research includes:
-
-- official documentation
-- engineering articles
-- open-source projects
-- benchmarks
-- academic papers
-- community knowledge
-
-Research improves decision quality.
-
----
-
-## Reverse Engineering
-
-The study of design principles rather than source code duplication.
-
-Reverse Engineering focuses on:
-
-Problem
-
-↓
-
-Architecture
-
-↓
-
-Trade-offs
-
-↓
-
-Patterns
-
-↓
-
-Reusable Knowledge
-
----
-
-## Benchmark
-
-A structured comparison of technologies using predefined evaluation criteria.
-
-Benchmarks support technology selection.
-
----
-
-# Governance
-
-## Governance
-
-The collection of rules, standards, and processes that preserve architectural integrity.
-
-Governance ensures long-term consistency.
-
----
-
-## Standard
-
-A documented expectation governing engineering activities.
-
-Standards define consistency.
-
----
-
-## Compliance
-
-The state of conforming to documented governance.
-
-Documentation,
-
-Architecture,
-
-ADR,
-
-Standards,
-
-Implementation,
-
-should remain compliant.
-
----
-
-# Engineering
-
-## Documentation
-
-Structured knowledge intended to explain, preserve, and communicate understanding.
-
-Documentation is considered part of engineering.
-
----
-
-## Technical Debt
-
-Future engineering cost introduced by short-term design decisions.
-
-GangNiaga seeks to minimize unnecessary technical debt.
-
----
-
-## Modularity
-
-Designing systems as independent, reusable components.
-
-Modularity improves maintainability.
-
----
+Information used to support or challenge a claim, recommendation, or decision.
 
 ## Traceability
 
-The ability to explain where information originated and why decisions were made.
-
-Traceability strengthens engineering quality.
+The ability to identify where information originated, how it was transformed, and why a decision was made.
 
 ---
 
-## Single Source of Truth (SSOT)
+# 6. Architecture
 
-The authoritative location for a particular type of information.
+## Architecture
 
-Within GangNiaga:
+The high-level design of a system, including responsibilities, boundaries, relationships, constraints, and interactions.
 
-MASTER.md serves as the repository-wide Single Source of Truth.
+Architecture primarily answers why, what, and where. Implementation primarily answers how.
+
+## Architecture Blueprint
+
+The documented representation of the intended GangNiaga Executive OS architecture.
+
+It may include the Executive Layer, AI Orchestrator, Capability Router, Knowledge Engine, Memory Engine, Workflow Engine, Execution Engine, security, governance, and deployment concerns.
+
+## Architecture Decision Record (ADR)
+
+A permanent decision document that records context, decision, alternatives, trade-offs, consequences, and status.
+
+An approved ADR may govern lower-level architecture, standards, and implementation guidance. It cannot silently override the Constitution.
+
+## Boundary
+
+A defined separation of responsibilities between components, documents, teams, or subsystems.
+
+## Module
+
+A cohesive unit with a clear responsibility, interface, and boundary.
+
+## Pattern
+
+A reusable solution approach for a recurring architectural or engineering problem.
+
+## Anti-Pattern
+
+A recurring approach that appears useful but creates harmful long-term consequences.
+
+## Constraint
+
+A rule or condition that limits acceptable design or implementation choices.
+
+## Dependency
+
+A relationship in which one component, document, or capability relies on another.
 
 ---
 
-## Framework Agnostic
+# 7. Artificial Intelligence
 
-The ability to operate independently of any single framework.
+## AI Model
 
-Frameworks may evolve.
+A language, reasoning, multimodal, or specialized machine-learning model that produces outputs from inputs.
 
-Architecture remains stable.
+Models provide capabilities but do not define repository governance or architecture.
 
----
+## AI Agent
+
+An autonomous or semi-autonomous software entity that uses models, context, rules, memory, and tools to perform tasks.
+
+Within GangNiaga, agents operate under defined executive, governance, and execution boundaries.
+
+## AI Orchestrator
+
+The subsystem responsible for coordinating AI capabilities, agents, tools, routing, delegation, workflow execution, and task sequencing.
+
+It implements executive direction; it does not replace Executive Intelligence.
+
+## Capability
+
+A reusable functional ability such as research, planning, architecture, coding, testing, documentation, validation, or reasoning.
+
+Capabilities should be described independently of a specific model whenever possible.
+
+## Capability Router
+
+A component that assigns work according to required capabilities, constraints, context, and quality needs rather than relying only on model names.
+
+## Tool
+
+An external function, service, connector, command, or interface that an agent or workflow can invoke.
+
+## Prompt
+
+Structured instructions and context provided to an AI model or agent to guide behavior and output.
 
 ## Model Agnostic
 
-The ability to operate independently of any specific AI model.
+Designed so that a capability or architecture is not permanently tied to one AI model.
 
-Capabilities determine execution.
+## Framework Agnostic
 
-Models remain interchangeable.
+Designed so that the architecture is not permanently tied to one software framework.
 
 ---
+
+# 8. Memory and Context
+
+## Memory
+
+Information preserved across interactions or execution cycles to support continuity.
+
+Memory may include decisions, prior work, preferences, lessons, summaries, and relevant state.
+
+## Memory Engine
+
+A planned subsystem responsible for memory storage, retrieval, lifecycle, relevance, and long-term continuity.
+
+## Context
+
+The information available when a decision or action is performed.
+
+Context may include current instructions, documentation, architecture, ADRs, research, repository state, conversation history, and execution results.
+
+## Context Window
+
+The bounded amount of information available to a model or agent during one operation.
+
+## State
+
+The current condition of a system, workflow, task, repository, or decision process.
+
+---
+
+# 9. Execution
+
+## Execution Engine
+
+The replaceable subsystem responsible for performing implementation or operational work.
+
+Examples may include coding agents, automation platforms, command runners, or future execution systems such as OpenClaw-based capabilities.
+
+## Execution Layer
+
+The collection of systems that perform actions after direction, constraints, and required capabilities have been determined.
+
+## Workflow
+
+A structured sequence of activities designed to achieve a defined objective.
+
+## Workflow Engine
+
+A subsystem that coordinates workflow states, transitions, dependencies, retries, approvals, and completion conditions.
+
+## Orchestration
+
+The coordination of capabilities, agents, tools, workflows, and execution engines so that the correct work occurs in the correct sequence.
+
+## Delegation
+
+The explicit assignment of work from one authority, agent, or capability to another.
+
+Delegation should preserve responsibility, constraints, expected output, and traceability.
+
+## Task
+
+A bounded unit of work with a defined objective, inputs, constraints, and completion criteria.
+
+## Validation
+
+The process of checking whether an output satisfies its requirements, evidence, standards, and intended purpose.
+
+---
+
+# 10. Research
+
+## Research
+
+A structured investigation performed to improve understanding or support a decision.
+
+Research may use official documentation, source code, engineering reports, benchmarks, academic papers, operational evidence, and credible community knowledge.
+
+## Reverse Engineering
+
+The study of an existing system to understand its problem framing, architecture, behavior, trade-offs, and reusable patterns.
+
+Within this repository, reverse engineering means learning from design principles rather than copying protected source code.
+
+## Benchmark
+
+A structured comparison of technologies, approaches, or capabilities using predefined criteria and evidence.
+
+## Finding
+
+A supported observation produced by research or analysis.
+
+## Hypothesis
+
+A proposed explanation or expectation that requires testing or evidence.
+
+## Assumption
+
+A condition treated as true for planning or analysis despite incomplete evidence.
+
+Assumptions should be explicit and revisited when evidence changes.
+
+---
+
+# 11. Governance
+
+## Governance
+
+The rules, authorities, standards, and processes that preserve project integrity and control change.
+
+## Constitution
+
+The highest normative authority in the repository.
+
+`CONSTITUTION.md` defines the project's non-negotiable governance, authority model, principles, and amendment rules.
+
+## Master Document
+
+The repository-wide operating reference and coordination document.
+
+`MASTER.md` serves as the operating Single Source of Truth within the constraints established by the Constitution and approved decisions.
+
+## Standard
+
+A documented expectation that governs recurring engineering or documentation activity.
+
+## Compliance
+
+The state of conforming to applicable constitutional rules, approved ADRs, architecture, standards, and implementation requirements.
+
+## Amendment
+
+A governed change to an authoritative document.
+
+Constitutional amendments require an explicit constitutional decision process.
+
+## Approval
+
+Formal acceptance by the authority defined for a document or decision.
+
+## Supersede
+
+To replace the authority or applicability of an earlier lower-level decision or document through an approved later decision.
+
+---
+
+# 12. Engineering and Documentation
+
+## Documentation
+
+Structured knowledge created to explain, preserve, govern, or communicate understanding.
+
+Documentation is an engineering artifact, not an administrative afterthought.
+
+## Implementation
+
+The concrete realization of approved architecture, standards, and decisions through code, configuration, infrastructure, workflows, or operations.
+
+## Technical Debt
+
+Future engineering cost introduced by a current shortcut, compromise, or incomplete design.
+
+## Modularity
+
+The design of a system as cohesive components with explicit responsibilities and boundaries.
+
+## Interface
+
+A defined contract through which components, systems, users, or agents interact.
+
+## Repository
+
+The version-controlled collection of project documents, decisions, templates, architecture, standards, research, and implementation artifacts.
+
+## Single Source of Truth (SSOT)
+
+The authoritative location for a defined category of information.
+
+Within GangNiaga:
+
+- `CONSTITUTION.md` is the highest normative authority.
+- `MASTER.md` is the repository-wide operating SSOT, constrained by the Constitution.
+- Approved ADRs are authoritative for their approved decision scope.
+- Specialized documents are authoritative within their domain when consistent with higher authority.
+
+SSOT does not mean that all information must exist in one file. It means each category of information has a clear authoritative home.
 
 ## Continuous Learning
 
-The systematic improvement of Executive Intelligence through accumulated knowledge, documented decisions, completed implementations, and reusable research.
-
-Continuous learning is the mechanism by which GangNiaga Executive OS becomes increasingly valuable over time.
+The systematic improvement of Executive Intelligence through accumulated knowledge, completed work, research, validation, and documented decisions.
 
 ---
 
-# Relationship to Other Documents
+# 13. Document Relationships
 
-This glossary supports:
+This glossary supports consistent terminology across:
 
-- README.md
-- MASTER.md
-- CONSTITUTION.md
-- PROJECT.md
-- VISION.md
-- MISSION.md
-- PHILOSOPHY.md
-- PRINCIPLES.md
-- DOCUMENT_MAP.md
+- `README.md`
+- `DOCUMENT_MAP.md`
+- `CONSTITUTION.md`
+- `MASTER.md`
+- approved ADRs
+- architecture documents
+- standards
+- research
+- implementation documents
 
-Every future document should use terminology consistent with this glossary.
+Navigation order and authority order are different concepts. A document may be read first for orientation without having higher governance authority.
 
 ---
 
-# Maintenance
+# 14. Maintenance Rules
 
-This glossary is a living document.
+A term should be added or changed only when it:
 
-New terminology should only be introduced when:
+- represents a necessary concept,
+- cannot be expressed clearly using existing terminology,
+- reduces ambiguity,
+- improves architecture or governance clarity,
+- supports long-term maintainability.
 
-- it represents a genuinely new concept,
-- it cannot be expressed using existing terminology,
-- it improves architectural clarity,
-- it supports long-term maintainability.
+Definitions must remain concise, internally consistent, and aligned with higher-authority documents.
 
-Terminology should remain stable to minimize ambiguity.
+Filename correction, structural movement, or document replacement must follow repository governance and the locked blueprint.
 
 ---
 
 # Official Statement
 
-> **A shared vocabulary creates shared understanding. Shared understanding creates better architecture. Better architecture creates better software.**
+> **Shared vocabulary creates shared understanding. Shared understanding strengthens decisions, architecture, and execution.**
 
 ---
 

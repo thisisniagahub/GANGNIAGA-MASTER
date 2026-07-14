@@ -2,23 +2,25 @@
 
 > **GangNiaga Executive OS Constitution**
 >
-> Version: 1.0.0
+> Version: 1.1.0
 >
 > Status: Official Constitution
 >
-> Repository: GangNiaga Executive OS
+> Repository: GANGNIAGA-MASTER
 
 ---
 
 # Purpose
 
-This Constitution defines the immutable principles, beliefs, and governance rules of GangNiaga Executive OS.
+This Constitution defines the highest-level principles, constraints, and governance rules of GangNiaga Executive OS.
 
-It is the highest-level document governing the entire project.
+It is the highest normative authority in the repository.
 
-Every architectural decision, research activity, implementation, and future evolution must align with this Constitution.
+Every architectural decision, research activity, standard, implementation plan, and future evolution must comply with this Constitution.
 
-If any document conflicts with this Constitution, the Constitution takes precedence.
+If any repository document conflicts with this Constitution, this Constitution takes precedence.
+
+README.md is the project entry point. MASTER.md is the repository-wide operating reference. Neither overrides this Constitution.
 
 ---
 
@@ -31,6 +33,16 @@ The objective is not merely to generate software.
 The objective is to create a system capable of understanding problems, conducting research, making informed decisions, designing robust architectures, orchestrating execution, learning continuously, and improving over time.
 
 Knowledge is the foundation of every action.
+
+---
+
+# Phase 0 Objective
+
+The current foundation objective is:
+
+> **Build a Company Knowledge & Executive Intelligence Foundation.**
+
+Architecture is one part of that foundation. Research, decisions, patterns, benchmarks, standards, memory, and institutional knowledge are also first-class assets.
 
 ---
 
@@ -55,10 +67,10 @@ GangNiaga Executive OS shall:
 
 # Core Values
 
-The project is guided by the following values.
+The project is guided by:
 
 - Executive Thinking
-- Knowledge Driven Development
+- Knowledge-Driven Development
 - Architecture First
 - Continuous Learning
 - Transparency
@@ -70,122 +82,124 @@ The project is guided by the following values.
 
 ---
 
-# Immutable Principles
+# Constitutional Principles
 
-The following principles are permanent unless replaced through an approved Architecture Decision Record (ADR).
+These principles remain binding unless amended through the constitutional amendment process defined in this document.
 
 ## Principle 1 — Knowledge Before Code
 
-Knowledge must always precede implementation.
+Knowledge must precede implementation.
 
-No implementation should begin without sufficient understanding of the problem.
+No implementation should begin without sufficient understanding of the problem, context, constraints, and expected outcome.
 
 ---
 
 ## Principle 2 — Research Before Decision
 
-Every important decision must be supported by research.
+Every significant decision must be supported by appropriate research.
 
-Research should include official documentation, architecture references, engineering practices, community discussions, and comparative analysis whenever appropriate.
+Research should prioritize primary sources and include comparative analysis, limitations, and conflicting evidence where relevant.
 
 ---
 
 ## Principle 3 — Architecture Before Implementation
 
-Architecture defines implementation.
+Architecture defines implementation boundaries and responsibilities.
 
-Implementation must never define architecture.
+Implementation must not silently redefine architecture.
 
 ---
 
 ## Principle 4 — Documentation Is Part of the Product
 
-Documentation is not optional.
+Documentation is a first-class deliverable and part of the system's institutional memory.
 
-Documentation is considered a first-class deliverable.
+Significant work is incomplete until the relevant knowledge and reasoning are preserved.
 
 ---
 
 ## Principle 5 — Decisions Must Be Traceable
 
-Every significant architectural decision must be documented through an ADR.
+Every significant architectural or governance decision must be documented through an Architecture Decision Record when required.
 
-Future contributors must understand:
+Future contributors must be able to understand:
 
 - Why the decision was made.
-- Alternatives considered.
-- Trade-offs accepted.
-- Expected consequences.
+- Which alternatives were considered.
+- Which trade-offs were accepted.
+- Which consequences were expected.
 
 ---
 
 ## Principle 6 — Framework Agnostic
 
-GangNiaga Executive OS must never depend exclusively on one framework.
+GangNiaga Executive OS must not depend exclusively on one framework.
 
-Frameworks are interchangeable execution tools.
-
-Architecture remains independent.
+Frameworks are replaceable implementation mechanisms. Architecture remains independent.
 
 ---
 
 ## Principle 7 — Model Agnostic
 
-No AI model should become a permanent dependency.
+No AI model should become a permanent architectural dependency.
 
-Models may evolve.
-
-The Executive Layer must remain stable.
+Models may evolve. The Executive Layer must remain stable.
 
 ---
 
 ## Principle 8 — Capability Over Model
 
-Capabilities are more important than model names.
+Capabilities are more important than model or vendor names.
 
-Routing decisions should prioritize capability requirements rather than vendor identity.
+Routing decisions should prioritize capability requirements, constraints, quality, security, and cost.
 
 ---
 
 ## Principle 9 — Modular Architecture
 
-Every major capability should exist as an independent module.
+Every major capability should have explicit responsibility and boundaries.
 
-Modules should minimize coupling and maximize maintainability.
+Modules should minimize coupling and maximize clarity, maintainability, and replaceability.
 
 ---
 
 ## Principle 10 — Executive Layer First
 
-GangNiaga Executive OS exists as the Executive Layer.
+GangNiaga Executive OS exists as the permanent Executive Intelligence Layer.
 
-Execution engines are replaceable.
-
-The Executive Layer is permanent.
+Execution engines, tools, frameworks, and models remain replaceable.
 
 ---
 
 # Governance
 
-Governance ensures architectural consistency throughout the lifetime of the project.
+Governance protects architectural consistency, institutional knowledge, and the identity of the project.
 
-All contributors shall follow the documented standards.
+All contributors and AI Agents must follow applicable repository standards and approved decisions.
 
-Every modification must preserve architectural integrity.
+Every modification must preserve constitutional compliance and architectural integrity.
+
+The locked Repository Blueprint v1.0 remains the structural baseline until a formally approved decision authorizes a change. Current work must not rename files, add or remove folders, or alter the roadmap structure.
 
 ---
 
 # Decision Authority
 
-Architectural decisions are governed through Architecture Decision Records (ADR).
+Architecture Decision Records preserve approved decisions and their reasoning.
 
-No undocumented architectural changes should become part of the project.
+An approved ADR may supersede lower-level architecture, standards, templates, or implementation guidance within its defined scope.
+
+An ADR does not override this Constitution merely by being approved. A constitutional change is valid only when the ADR explicitly follows the amendment process below.
+
+No undocumented architectural change should become authoritative.
 
 ---
 
-# Documentation Hierarchy
+# Authority Hierarchy
 
-```
+The repository authority hierarchy is:
+
+```text
 CONSTITUTION.md
 
 ↓
@@ -194,19 +208,11 @@ MASTER.md
 
 ↓
 
-Foundation Documents
+Approved ADR
 
 ↓
 
-Knowledge Base
-
-↓
-
-Architecture
-
-↓
-
-ADR
+Architecture Documents
 
 ↓
 
@@ -214,18 +220,50 @@ Standards
 
 ↓
 
-Implementation
+Implementation Documents
 ```
+
+Supporting foundation and knowledge documents provide specialized context and evidence. They must remain consistent with the hierarchy above.
+
+README.md and DOCUMENT_MAP.md provide entry and navigation functions; they do not outrank the Constitution.
+
+---
+
+# Document Responsibilities
+
+## CONSTITUTION.md
+
+Defines binding identity, principles, constraints, and governance.
+
+## MASTER.md
+
+Acts as the repository-wide operating reference and integration layer, constrained by this Constitution.
+
+## Approved ADR
+
+Records a scoped decision, alternatives, trade-offs, and consequences. It may supersede lower-level guidance within its scope.
+
+## Architecture
+
+Defines system responsibilities, boundaries, relationships, and constraints.
+
+## Standards
+
+Defines repeatable project-wide expectations consistent with higher authorities.
+
+## Implementation
+
+Translates approved knowledge, decisions, architecture, and standards into executable work.
 
 ---
 
 # Repository Philosophy
 
-The repository is intended to become the Single Source of Truth for the GangNiaga Executive OS ecosystem.
+The repository is the durable knowledge system for the GangNiaga Executive OS ecosystem.
 
-Every document contributes to the long-term knowledge of the project.
+MASTER.md serves as the repository-wide operating Single Source of Truth, while specialized documents remain authoritative for their defined domains and all remain subordinate to this Constitution.
 
-Knowledge should accumulate rather than disappear.
+Knowledge should accumulate, remain traceable, and survive individual contributors, tools, models, and conversations.
 
 ---
 
@@ -238,61 +276,63 @@ Engineering activities should emphasize:
 - Simplicity
 - Explainability
 - Reusability
+- Security
 - Scalability
 
-Short-term convenience must never compromise long-term quality.
+Short-term convenience must not compromise long-term quality or constitutional principles.
 
 ---
 
 # Research Philosophy
 
-Research exists to improve decision quality.
+Research exists to improve decision quality, not to validate preconceived opinions.
 
-Research is not conducted to validate preconceived opinions.
+Conflicting evidence, uncertainty, limitations, source quality, and trade-offs should be documented.
 
-Conflicting evidence should be documented.
-
-Trade-offs should be acknowledged.
+Research findings become authoritative only through the appropriate decision, architecture, or standard process.
 
 ---
 
 # AI Philosophy
 
-Artificial Intelligence is viewed as a collaborative executive capability.
+Artificial Intelligence is a collaborative executive capability.
 
-AI systems should augment human reasoning rather than replace human responsibility.
+AI systems should augment human reasoning and execution without removing accountability, governance, or traceability.
 
-Executive Intelligence coordinates knowledge, architecture, planning, execution, and learning.
+AI Agents must not invent authority, silently alter architecture, or treat temporary conversation context as permanent institutional knowledge.
 
 ---
 
 # Long-Term Commitment
 
-GangNiaga Executive OS is designed as a long-term architecture initiative.
+GangNiaga Executive OS is a long-term architecture and knowledge initiative.
 
-The project should remain understandable, extensible, and maintainable regardless of changes in technology.
+The project should remain understandable, extensible, maintainable, vendor-neutral, and adaptable regardless of technological change.
 
 ---
 
 # Amendment Process
 
-This Constitution may only be amended through a documented Architecture Decision Record (ADR).
+This Constitution may be amended only through an explicit constitutional ADR.
 
-Every amendment must include:
+The ADR must:
 
-- Context
-- Motivation
-- Alternatives
-- Impact Assessment
-- Migration Strategy
+- Identify the exact constitutional clauses affected.
+- Explain the context and motivation.
+- Present alternatives and trade-offs.
+- Assess architectural, governance, documentation, and migration impacts.
+- Define the approved replacement wording.
+- Update all conflicting repository documents in the same governed change or record a bounded migration plan.
+
+Until that process is completed, existing constitutional text remains authoritative.
 
 ---
 
 # Compliance
 
-All documentation, architecture, research, standards, templates, and implementation plans must comply with this Constitution.
+All documentation, research, architecture, ADRs, standards, templates, roadmap documents, and implementation plans must comply with this Constitution.
 
-Non-compliant changes should be reviewed before acceptance.
+Non-compliant changes must not be accepted until corrected or formally resolved through the applicable governance process.
 
 ---
 
