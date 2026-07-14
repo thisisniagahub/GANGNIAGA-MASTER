@@ -786,7 +786,7 @@ Kemaskini GEMINI.md → H2: CI pipeline active ✅
 
 ## FASA I: Stability & Health Monitoring
 
-### `[ ]` I1 — Repository Health Check Script
+### `[x]` I1 — Repository Health Check Script
 
 **Skills:** `compound-docs`
 **Complexity:** Sederhana
@@ -818,7 +818,7 @@ Kemaskini GEMINI.md → I1: Health check script created ✅
 
 ---
 
-### `[ ]` I2 — Kemaskini GEMINI.md Sebagai Living Context
+### `[x]` I2 — Kemaskini GEMINI.md Sebagai Living Context
 
 **Skills:** —
 **Complexity:** Ringan
