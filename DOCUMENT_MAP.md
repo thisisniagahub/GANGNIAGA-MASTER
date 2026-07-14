@@ -2,498 +2,351 @@
 
 > **GangNiaga Executive OS Documentation Map**
 >
-> Version: 1.0.0
+> Version: 1.1.0
 >
 > Status: Active
 >
-> Repository: GangNiaga Executive OS
+> Repository: `thisisniagahub/GANGNIAGA-MASTER`
 >
 > Last Updated: 2026
 
 ---
 
-# Purpose
+## Purpose
 
-This document serves as the **official navigation map** for the entire GangNiaga Executive OS repository.
+This document is the official navigation index for GangNiaga Executive OS.
 
-Every document inside this repository has a clearly defined purpose.
+It separates:
 
-Every contributor, developer, researcher and AI Agent should begin here before navigating deeper into the documentation.
+- documents and paths that currently exist,
+- the locked Repository Blueprint v1.0,
+- planned documents that have not yet been created,
+- and the authority relationship between documents.
 
-This file acts as the documentation index for the entire project.
-
----
-
-# Documentation Philosophy
-
-GangNiaga Executive OS follows a documentation-first development methodology.
-
-Every architectural decision must be documented.
-
-Every research must be traceable.
-
-Every implementation must reference documented knowledge.
-
-Documentation is considered part of the system architecture.
+Planned does not mean implemented. Listed does not mean complete. A document should only be treated as authoritative within its declared scope and status.
 
 ---
 
-# Documentation Layers
+## Document Authority
 
-```
-README
-
-↓
-
-MASTER
-
-↓
-
-Foundation
-
-↓
-
-Knowledge
-
-↓
-
-Architecture
-
-↓
-
-ADR
-
-↓
-
-Standards
-
-↓
-
-Implementation
-```
-
----
-
-# Repository Overview
-
-```
-gangniaga-executive-os/
-
-README.md
-
-MASTER.md
-
-DOCUMENT_MAP.md
-
+```text
 CONSTITUTION.md
-
-PROJECT.md
-
-VISION.md
-
-MISSION.md
-
-PHILOSOPHY.md
-
-PRINCIPLES.md
-
-GLOSSARY.md
-
-SOURCES.md
-
-CONTRIBUTING.md
-
-LICENSE
-
-knowledge/
-
-architecture/
-
-adr/
-
-standards/
-
-templates/
-
-roadmap/
-
-implementation/
-```
-
----
-
-# Foundation Documents
-
-| Document | Purpose |
-|-----------|---------|
-| README.md | Project landing page |
-| MASTER.md | Single Source of Truth |
-| DOCUMENT_MAP.md | Documentation index |
-| CONSTITUTION.md | Immutable project principles |
-| PROJECT.md | Complete project overview |
-| VISION.md | Long-term vision |
-| MISSION.md | Mission and objectives |
-| PHILOSOPHY.md | Executive thinking philosophy |
-| PRINCIPLES.md | Core design principles |
-| GLOSSARY.md | Common terminology |
-| SOURCES.md | Research references |
-| CONTRIBUTING.md | Contribution guidelines |
-| LICENSE | Repository license |
-
----
-
-# Knowledge Layer
-
-```
-knowledge/
-
-README.md
-
-research/
-
-reverse-engineering/
-
-patterns/
-
-benchmarks/
-```
-
----
-
-## research/
-
-Purpose
-
-Store all research documentation.
-
-Contents
-
-- Technology Research
-- AI Framework Research
-- Benchmark Analysis
-- Official Documentation Review
-- Engineering Analysis
-
----
-
-## reverse-engineering/
-
-Purpose
-
-Study architecture principles rather than copying implementations.
-
-Contents
-
-- OpenClaw
-- Hermes
-- LangGraph
-- Architecture Analysis
-- Pattern Extraction
-
----
-
-## patterns/
-
-Purpose
-
-Reusable architectural patterns.
-
-Contents
-
-- Gateway
-- Routing
-- Memory
-- Reflection
-- Planning
-- Orchestration
-- Governance
-- Security
-
----
-
-## benchmarks/
-
-Purpose
-
-Technology comparison.
-
-Contents
-
-- Cost
-- Performance
-- Coding
-- Reasoning
-
----
-
-# Architecture Layer
-
-```
-architecture/
-
-EXECUTIVE_OS.md
-
-AI_ORCHESTRATOR.md
-
-CAPABILITY_ROUTER.md
-
-KNOWLEDGE_ENGINE.md
-
-MEMORY_ENGINE.md
-
-EXECUTION_ENGINE.md
-
-WORKFLOW_ENGINE.md
-
-PLUGIN_SDK.md
-
-SECURITY.md
-
-GOVERNANCE.md
-
-DEPLOYMENT.md
-```
-
-Purpose
-
-Define the complete architecture of GangNiaga Executive OS.
-
----
-
-# ADR Layer
-
-```
-adr/
-
-README.md
-
-TEMPLATE.md
-
-ADR-0001
-
-ADR-0002
-
-ADR-0003
-
-ADR-0004
-
-ADR-0005
-```
-
-Purpose
-
-Record every major architectural decision.
-
-Each ADR must explain:
-
-- Context
-- Decision
-- Alternatives
-- Trade-offs
-- Consequences
-- References
-
----
-
-# Standards Layer
-
-```
-standards/
-
-DOCUMENTATION.md
-
-ARCHITECTURE.md
-
-CODING.md
-
-PROMPTS.md
-
-AGENTS.md
-
-NAMING.md
-```
-
-Purpose
-
-Define project-wide standards.
-
----
-
-# Templates Layer
-
-```
-templates/
-
-ADR_TEMPLATE.md
-
-RESEARCH_TEMPLATE.md
-
-ARCHITECTURE_TEMPLATE.md
-
-DECISION_TEMPLATE.md
-
-DOCUMENT_TEMPLATE.md
-```
-
-Purpose
-
-Ensure consistency across all documentation.
-
----
-
-# Roadmap Layer
-
-```
-roadmap/
-
-PHASE_0.md
-
-PHASE_1.md
-
-PHASE_2.md
-
-LONG_TERM_VISION.md
-```
-
-Purpose
-
-Define project evolution.
-
----
-
-# Implementation Layer
-
-```
-implementation/
-
-EXECUTION_PLAN.md
-
-MODULES.md
-
-MILESTONES.md
-
-CHECKLIST.md
-```
-
-Purpose
-
-Translate architecture into implementation.
-
----
-
-# Documentation Dependency
-
-```
-README
-
-↓
-
-MASTER
-
-↓
-
-Foundation
-
-↓
-
-Knowledge
-
-↓
-
-Architecture
-
-↓
-
-ADR
-
-↓
-
+      ↓
+MASTER.md
+      ↓
+Approved ADR
+      ↓
+Architecture Documents
+      ↓
 Standards
-
-↓
-
+      ↓
 Implementation
 ```
 
----
+Supporting roles:
 
-# Documentation Rules
+- `README.md` — project landing page
+- `DOCUMENT_MAP.md` — navigation and status index
+- `PROJECT.md` — project scope and identity
+- `VISION.md`, `MISSION.md`, `PHILOSOPHY.md`, `PRINCIPLES.md` — focused foundation documents
+- `GLOSSARY.md` — canonical terminology within the authority hierarchy above
+- `SOURCES.md` — research methodology and source policy
+- `CONTRIBUTING.md` — contribution workflow
 
-1. Every document must have a clear purpose.
-2. Every document must define its scope.
-3. Every architectural statement should be traceable.
-4. Every research document should reference its sources.
-5. Every major decision should have an ADR.
-6. Documentation should evolve together with the project.
-7. MASTER.md remains the Single Source of Truth.
-
----
-
-# Intended Audience
-
-This documentation is written for:
-
-- Software Architects
-- AI Engineers
-- Researchers
-- Contributors
-- AI Agents
-- Future Maintainers
+An approved ADR may supersede a previous architectural decision, but it does not override the Constitution.
 
 ---
 
-# Navigation Workflow
+## Current Repository State
 
+The following foundation files currently exist on the default branch:
+
+```text
+README.md
+MASTER.md
+DOCUMENT_MAP.md
+CONSTITUTION.md
+PROJECT.md
+VISION.md
+MISSION.md
+PHILOSOPHY.md
+PRINCIPLES.md
+GLOSSORY.md
+SOURCES.md
+CONTRIBUTING.md
 ```
-README
 
-↓
+Known current-state exceptions:
 
-DOCUMENT_MAP
+- `GLOSSORY.md` exists with a filename typo; the locked canonical name is `GLOSSARY.md`.
+- `LICENSE` does not yet exist and no license has been approved.
+- Some locked folders and documents may not yet exist.
+- `MASTER.md` contains later extensions beyond its original table of contents and requires a dedicated consistency review.
 
-↓
+These exceptions are tracked as foundation consistency work. They do not change the locked blueprint.
 
-MASTER
+---
 
-↓
+## Locked Repository Blueprint v1.0
 
-Foundation
+```text
+GANGNIAGA-MASTER/
+├── README.md
+├── MASTER.md
+├── DOCUMENT_MAP.md
+├── CONSTITUTION.md
+├── PROJECT.md
+├── VISION.md
+├── MISSION.md
+├── PHILOSOPHY.md
+├── PRINCIPLES.md
+├── GLOSSARY.md
+├── SOURCES.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── knowledge/
+│   ├── README.md
+│   ├── research/
+│   ├── reverse-engineering/
+│   ├── patterns/
+│   └── benchmarks/
+├── architecture/
+├── adr/
+├── standards/
+├── templates/
+├── roadmap/
+└── implementation/
+```
 
-↓
+Structural changes require an approved ADR. Content completion does not require changing this structure.
 
-Knowledge
+---
 
-↓
+## Foundation Documents
 
+| Document | Role | Current status |
+|---|---|---|
+| `README.md` | Project landing page | Exists |
+| `MASTER.md` | Executive operating model and repository-wide SSOT | Exists; consistency review required |
+| `DOCUMENT_MAP.md` | Navigation and status index | Exists |
+| `CONSTITUTION.md` | Highest-level immutable principles | Exists |
+| `PROJECT.md` | Project definition and scope | Exists |
+| `VISION.md` | Long-term direction | Exists |
+| `MISSION.md` | Mission and objectives | Exists |
+| `PHILOSOPHY.md` | Executive thinking philosophy | Exists |
+| `PRINCIPLES.md` | Core design principles | Exists |
+| `GLOSSARY.md` | Canonical terminology | Planned canonical filename; current file is `GLOSSORY.md` |
+| `SOURCES.md` | Research methodology and source policy | Exists |
+| `CONTRIBUTING.md` | Contribution workflow | Exists |
+| `LICENSE` | Legal usage terms | Not selected or created |
+
+---
+
+## Knowledge Layer
+
+Locked structure:
+
+```text
+knowledge/
+├── README.md
+├── research/
+├── reverse-engineering/
+├── patterns/
+└── benchmarks/
+```
+
+Responsibilities:
+
+- `research/` — verified technology and domain research
+- `reverse-engineering/` — architectural analysis and pattern extraction
+- `patterns/` — reusable, implementation-neutral solutions
+- `benchmarks/` — structured comparisons using declared criteria
+
+Documents in this layer must distinguish evidence, interpretation, recommendation, and decision.
+
+---
+
+## Architecture Layer
+
+Locked documents:
+
+```text
+architecture/
+├── README.md
+├── EXECUTIVE_OS.md
+├── AI_ORCHESTRATOR.md
+├── CAPABILITY_ROUTER.md
+├── KNOWLEDGE_ENGINE.md
+├── MEMORY_ENGINE.md
+├── EXECUTION_ENGINE.md
+├── WORKFLOW_ENGINE.md
+├── PLUGIN_SDK.md
+├── SECURITY.md
+├── GOVERNANCE.md
+└── DEPLOYMENT.md
+```
+
+Architecture documents define responsibilities, boundaries, interactions, constraints, failure modes, governance, and evolution. They must not present planned components as implemented systems.
+
+---
+
+## ADR Layer
+
+Locked documents:
+
+```text
+adr/
+├── README.md
+├── TEMPLATE.md
+├── ADR-0001-PROJECT-VISION.md
+├── ADR-0002-EXECUTIVE-LAYER.md
+├── ADR-0003-KNOWLEDGE-FIRST.md
+├── ADR-0004-CAPABILITY-ROUTER.md
+└── ADR-0005-OPENCLAW-AS-EXECUTION.md
+```
+
+Each ADR must record:
+
+- status,
+- context,
+- decision,
+- alternatives,
+- trade-offs,
+- consequences,
+- references,
+- and supersession relationships where applicable.
+
+---
+
+## Standards Layer
+
+```text
+standards/
+├── DOCUMENTATION.md
+├── ARCHITECTURE.md
+├── CODING.md
+├── PROMPTS.md
+├── AGENTS.md
+└── NAMING.md
+```
+
+Standards define recurring expectations. They operate below the Constitution, MASTER, approved ADR, and architecture documents.
+
+---
+
+## Templates Layer
+
+```text
+templates/
+├── ADR_TEMPLATE.md
+├── RESEARCH_TEMPLATE.md
+├── ARCHITECTURE_TEMPLATE.md
+├── DECISION_TEMPLATE.md
+└── DOCUMENT_TEMPLATE.md
+```
+
+Templates standardize knowledge capture. They do not create authority by themselves.
+
+---
+
+## Roadmap Layer
+
+```text
+roadmap/
+├── PHASE_0.md
+├── PHASE_1.md
+├── PHASE_2.md
+└── LONG_TERM_VISION.md
+```
+
+Roadmap documents describe intended evolution. They are plans, not evidence that capabilities already exist.
+
+---
+
+## Implementation Layer
+
+```text
+implementation/
+├── EXECUTION_PLAN.md
+├── MODULES.md
+├── MILESTONES.md
+└── CHECKLIST.md
+```
+
+Implementation documents translate approved architecture and ADR into executable work. Implementation must not silently redefine architecture.
+
+---
+
+## Navigation Workflow
+
+```text
+README.md
+    ↓
+DOCUMENT_MAP.md
+    ↓
+CONSTITUTION.md
+    ↓
+MASTER.md
+    ↓
+Relevant Foundation Documents
+    ↓
+Knowledge and Research
+    ↓
 Architecture
-
-↓
-
-ADR
-
-↓
-
+    ↓
+Approved ADR
+    ↓
+Standards
+    ↓
 Implementation
 ```
 
 ---
 
-# Status
+## Documentation Status Vocabulary
 
-Current Documentation Phase
+Use these terms precisely:
 
-```
-Phase 0
+- **Exists** — path is present in the repository.
+- **Draft** — content exists but is not approved.
+- **Proposed** — awaiting a decision.
+- **Approved** — accepted through the applicable governance process.
+- **Planned** — intended but not yet created or implemented.
+- **Implemented** — operational implementation exists.
+- **Validated** — implementation or claim has supporting evidence.
+- **Superseded** — replaced by a later approved decision while retained for history.
 
-Executive Intelligence Research
+---
 
-↓
+## Documentation Rules
 
-Foundation Documentation
+1. Every document must state its purpose and scope.
+2. Claims must distinguish current state from future intent.
+3. Research must preserve traceable sources.
+4. Significant architecture decisions require ADR.
+5. Cross-references must use canonical repository paths.
+6. Structural changes require an approved ADR.
+7. Documentation and implementation must remain synchronized.
+8. Missing files must not be described as existing.
+9. No license should be assumed until `LICENSE` is approved and present.
+10. The locked Repository Blueprint v1.0 remains unchanged unless superseded through governance.
 
-↓
+---
 
-Architecture Knowledge Base
+## Current Priority
+
+```text
+Foundation consistency
+        ↓
+Authority alignment
+        ↓
+Canonical naming
+        ↓
+Current-versus-planned status accuracy
+        ↓
+Architecture and ADR completion
+        ↓
+Implementation planning
 ```
 
 ---
