@@ -721,7 +721,7 @@ Kemaskini GEMINI.md → G1: v2.0.0 released and pushed ✅
 
 ## FASA H: GitHub Operations & CI
 
-### `[ ]` H1 — Setup GitHub Issues & Project Board
+### `[x]` H1 — Setup GitHub Issues & Project Board
 
 **Skills:** `github-ops`
 **Complexity:** Sederhana
@@ -753,7 +753,7 @@ Kemaskini GEMINI.md → H1: GitHub Issues/Project created ✅
 
 ---
 
-### `[ ]` H2 — Setup Docs CI Pipeline
+### `[x]` H2 — Setup Docs CI Pipeline
 
 **Skills:** `deployment-patterns`
 **Complexity:** Sederhana
