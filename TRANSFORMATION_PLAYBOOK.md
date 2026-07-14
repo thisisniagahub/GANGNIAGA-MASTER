@@ -650,7 +650,7 @@ Kemaskini GEMINI.md → F2: Validation passed ✅ / F2: [X] failures found ❌
 
 ---
 
-### `[ ]` F3 — Code Tour untuk Onboarding
+### `[x]` F3 — Code Tour untuk Onboarding
 
 **Skills:** `code-tour`
 **Complexity:** Sederhana

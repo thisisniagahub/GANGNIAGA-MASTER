@@ -1,0 +1,59 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Onboarding Walkthrough",
+  "description": "Walkthrough of the GangNiaga Executive OS documentation and repository structure.",
+  "steps": [
+    {
+      "file": "README.md",
+      "line": 1,
+      "title": "Start here: Project overview",
+      "description": "README.md is the starting point of the repository. It introduces the project name (GangNiaga Executive OS), vision, mission, and the canonical repository layout."
+    },
+    {
+      "file": "DOCUMENT_MAP.md",
+      "line": 1,
+      "title": "Navigation index",
+      "description": "DOCUMENT_MAP.md acts as the repository index. It maps out all existing files, folders, and documents, tracking target states and exception statuses under Blueprint v2.0."
+    },
+    {
+      "file": "CONSTITUTION.md",
+      "line": 1,
+      "title": "Highest authority",
+      "description": "CONSTITUTION.md is the supreme legal and operational authority of the repository. No document, architecture, or standard can contradict the Constitution."
+    },
+    {
+      "file": "MASTER.md",
+      "line": 1,
+      "title": "Operating SSOT",
+      "description": "MASTER.md is the subordinate Single Source of Truth. It has been modularized to 3,781 lines, referencing specialized systems to separate folder files while keeping the core foundation."
+    },
+    {
+      "file": "G0_DECISION_PACK.md",
+      "line": 1,
+      "title": "Current governance gate",
+      "description": "G0_DECISION_PACK.md details the governance justification, stakeholders, capability gaps, and approved alternative for structural change authorization."
+    },
+    {
+      "file": "adr/ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md",
+      "line": 1,
+      "title": "How structural changes work",
+      "description": "ADR-0006 is the constitutional amendment that establishes the risk-classified controlled-change model (CC-0 to CC-4) for repository structure evolution."
+    },
+    {
+      "directory": "strategy",
+      "title": "Programme planning",
+      "description": "The strategy/ folder contains strategy and planning documents like the Programme Backlog, Enterprise Direction, and Gated Transformation Plan."
+    },
+    {
+      "directory": "architecture",
+      "title": "System design",
+      "description": "The architecture/ folder holds domain files defining the target system layers, including the Intelligence Layer, Knowledge Layer, and other orchestrators."
+    },
+    {
+      "file": "CONTRIBUTING.md",
+      "line": 1,
+      "title": "How to contribute",
+      "description": "CONTRIBUTING.md contains the developer guide, change classes guidelines, and validation loops required for any repository contributions."
+    }
+  ]
+}
