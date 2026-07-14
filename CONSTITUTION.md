@@ -212,7 +212,7 @@ Approved ADR
 
 ↓
 
-Architecture
+Architecture Documents
 
 ↓
 
@@ -220,7 +220,7 @@ Standards
 
 ↓
 
-Implementation
+Implementation Documents
 ```
 
 Supporting foundation and knowledge documents provide specialized context and evidence. They must remain consistent with the hierarchy above.

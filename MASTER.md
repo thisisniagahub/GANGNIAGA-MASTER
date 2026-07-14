@@ -132,10 +132,13 @@ PART VII — Executive Appendices
 Appendices A–L
 
 PART VIII — Foundation Status and Governed Roadmap
+Purpose
 Current Foundation Baseline
 Locked Target State
 Future Implementation Gates
+Governed Roadmap Interpretation
 Remaining Governed Decisions
+MASTER.md Completion Statement
 ```
 
 ---
