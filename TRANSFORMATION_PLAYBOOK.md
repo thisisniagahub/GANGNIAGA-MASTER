@@ -379,7 +379,7 @@ Arahan:
 
 ## FASA D: Link Repair & Document Consistency
 
-### `[ ]` D1 — Audit + Fix Broken Links (Combined)
+### `[x]` D1 — Audit + Fix Broken Links (Combined)
 
 **Skills:** `verification-loop`
 **Complexity:** Sederhana

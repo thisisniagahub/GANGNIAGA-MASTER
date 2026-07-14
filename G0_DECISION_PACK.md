@@ -11,7 +11,7 @@
 > **Owner:** `Megat`
 > **Executive approver:** `Megat`
 > **Last reviewed:** 2026-07-15
-> **Source:** Formalized from `chat2.md` draft material
+> **Source:** Formalized from `G0_DECISION_PACK.md` draft material
 
 ---
 

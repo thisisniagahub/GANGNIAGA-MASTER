@@ -59,7 +59,7 @@ An approved ADR may supersede a previous architectural decision, but it does not
 
 ## Current Repository State
 
-The following foundation files currently exist on the default branch:
+The following files currently exist in the repository:
 
 ```text
 README.md
@@ -75,7 +75,25 @@ GLOSSORY.md
 SOURCES.md
 CONTRIBUTING.md
 G0_DECISION_PACK.md
-ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md
+GEMINI.md
+TRANSFORMATION_PLAYBOOK.md
+adr/README.md
+adr/ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md
+architecture/README.md
+implementation/README.md
+implementation/AUDIT_NOTES.md
+knowledge/README.md
+knowledge/benchmarks/README.md
+knowledge/patterns/README.md
+knowledge/research/README.md
+knowledge/reverse-engineering/README.md
+roadmap/README.md
+standards/README.md
+strategy/README.md
+strategy/ENTERPRISE_DIRECTION.md
+strategy/GATED_TRANSFORMATION_PLAN.md
+strategy/PROGRAMME_BACKLOG.md
+templates/README.md
 ```
 
 Known current-state exceptions:
@@ -85,7 +103,6 @@ Known current-state exceptions:
 - Some folders and documents may not yet exist.
 - `MASTER.md` contains later extensions beyond its original table of contents and requires a dedicated consistency review.
 - Structural lock has been replaced by controlled-change model (ADR-0006).
-- `chat1.md`, `chat2.md`, `chat3.md`, `chat4.md`, `chat5.md` — Pending migration (see TRANSFORMATION_PLAYBOOK.md).
 
 These exceptions are tracked as foundation consistency work. They do not change the blueprint.
 
@@ -155,7 +172,7 @@ Blueprint v1.0 was the original locked structural baseline. It did not define st
 | `CONTRIBUTING.md` | Contribution workflow | Exists | Includes blueprint and validation constraints |
 | `LICENSE` | Legal usage terms | Planned | License selection and file creation require an explicit approved decision |
 | `G0_DECISION_PACK.md` | Governance gate G0 pack | Approved | Business Need & Governance basis |
-| `ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md` | Constitutional Change ADR | Approved | Replaces structural lock |
+| `adr/ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md` | Constitutional Change ADR | Approved | Replaces structural lock |
 
 ---
 

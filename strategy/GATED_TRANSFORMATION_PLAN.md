@@ -1,4 +1,4 @@
-﻿> Migrated from chat5.md on 2026-07-15. Original preserved in git history.
+> Migrated from chat5.md on 2026-07-15. Original preserved in git history.
 
 # Gated Transformation Plan
 
@@ -35,7 +35,7 @@ Output: Enterprise Programme Charter dan cadangan Blueprint v2.
 Buat constitutional ADR:
 
 ```text
-ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md
+adr/ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md
 ```
 
 ADR ini akan:
