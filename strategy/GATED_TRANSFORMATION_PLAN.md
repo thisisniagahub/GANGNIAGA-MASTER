@@ -43,7 +43,7 @@ ADR ini akan:
 - Menggantikan absolute structural lock dengan controlled change.
 - Menentukan siapa boleh meluluskan folder/fail baharu.
 - Menentukan review, migration dan rollback.
-- Menyelesaikan keputusan `GLOSSORY.md` versus `GLOSSARY.md`.
+- Menyelesaikan keputusan `GLOSSARY.md` versus `GLOSSARY.md`.
 - Tidak mencampurkan keputusan LICENSE.
 
 Kemudian selaraskan secara atomik:
@@ -210,7 +210,7 @@ Setiap PR mesti kecil, boleh direview dan boleh dirollback.
 
 Langkah pertama yang aku cadangkan:
 
-1. Audit dan lindungi perubahan `GLOSSORY.md → GLOSSARY.md` yang sedang berada dalam worktree.
+1. Audit dan lindungi perubahan `GLOSSARY.md → GLOSSARY.md` yang sedang berada dalam worktree.
 2. Rewrite `F:\TODO.md` menjadi **Enterprise Transformation TODO v2**.
 3. Sediakan draft G0: business outcomes, decision rights, risk appetite dan Blueprint v2 requirements.
 4. Selepas kau review G0, barulah kita hasilkan constitutional ADR dan PR pertama.

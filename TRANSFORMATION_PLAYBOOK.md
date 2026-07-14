@@ -119,7 +119,7 @@ Konteks:
 3. Tukar tajuk: "# 3. Repository Blueprint and Controlled-Change Model"
 4. Ganti "The approved repository blueprint is locked" → "Repository structural changes are governed by the controlled-change model defined in ADR-0006"
 5. Ganti senarai "Contributors must not" → ringkasan change classes CC-0 sampai CC-4
-6. Kekalkan nota GLOSSORY.md dan LICENSE
+6. Kekalkan nota GLOSSARY.md dan LICENSE
 
 ## Fail 3: README.md
 1. Buka f:\GANGNIAGA-MASTER\README.md
@@ -395,7 +395,7 @@ Skills: Aktifkan `verification-loop` — jalankan validation selepas pembaikan
 Grep SEMUA fail .md di f:\GANGNIAGA-MASTER (rekursif) untuk:
 - Pattern backtick: `chat1.md`, `chat2.md`, `chat3.md`, `chat4.md`, `chat5.md`
 - Pattern backtick: `ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md` (jika rujuk root, tukar ke adr/)
-- Pattern backtick: `GLOSSORY.md` (catat untuk Fasa F, jangan ubah lagi)
+- Pattern backtick: `GLOSSARY.md` (catat untuk Fasa F, jangan ubah lagi)
 
 Untuk setiap hit, tunjukkan: [Fail | Baris | Rujukan Lama | Rujukan Baharu]
 
@@ -582,7 +582,7 @@ Arahan:
 
 ## FASA F: Housekeeping & QA
 
-### `[ ]` F1 — GLOSSORY.md → GLOSSARY.md Rename
+### `[x]` F1 — GLOSSARY.md → GLOSSARY.md Rename
 
 **Skills:** —
 **Complexity:** Ringan (CC-0)
@@ -591,15 +591,15 @@ Arahan:
 PROMPT:
 
 Projek: f:\GANGNIAGA-MASTER
-Task: Rename GLOSSORY.md → GLOSSARY.md (CC-0 editorial fix)
+Task: Rename GLOSSARY.md → GLOSSARY.md (CC-0 editorial fix)
 
 Arahan:
-1. git mv f:\GANGNIAGA-MASTER\GLOSSORY.md f:\GANGNIAGA-MASTER\GLOSSARY.md
-2. Grep SEMUA fail .md (rekursif) untuk "GLOSSORY" — gantikan SEMUA dengan "GLOSSARY"
+1. git mv f:\GANGNIAGA-MASTER\GLOSSARY.md f:\GANGNIAGA-MASTER\GLOSSARY.md
+2. Grep SEMUA fail .md (rekursif) untuk "GLOSSARY" — gantikan SEMUA dengan "GLOSSARY"
 3. Kemaskini DOCUMENT_MAP.md:
-   - Buang "known exception" nota tentang GLOSSORY.md
+   - Buang "known exception" nota tentang GLOSSARY.md
    - Kemaskini table: GLOSSARY.md status → "Exists"
-4. git add -A && git commit -m "docs(CC-0): rename GLOSSORY.md to GLOSSARY.md — editorial correction"
+4. git add -A && git commit -m "docs(CC-0): rename GLOSSARY.md to GLOSSARY.md — editorial correction"
 
 ## Session Handoff:
 Kemaskini GEMINI.md → F1: GLOSSARY.md renamed ✅
@@ -632,7 +632,7 @@ Skills: Aktifkan `verification-loop` dan `ponytail-review`
 ## Check 3: Stale Content
 - Grep untuk "chat1", "chat2", "chat3", "chat4", "chat5" — MESTI 0 (kecuali migration notes)
 - Grep untuk "Locked Repository Blueprint v1.0" tanpa konteks sejarah — MESTI 0
-- Grep untuk "GLOSSORY" — MESTI 0
+- Grep untuk "GLOSSARY" — MESTI 0
 
 ## Check 4: Header Consistency
 - Sample 10 fail .md — pastikan setiap satu ada version dan status metadata
@@ -770,7 +770,7 @@ Arahan:
 2. Checks:
    - markdownlint (markdown style consistency)
    - markdown-link-check (internal link validation)
-   - case-sensitive filename check (tiada GLOSSORY-style typos)
+   - case-sensitive filename check (tiada GLOSSARY-style typos)
    - detect stale references (chat*.md patterns)
 3. Trigger: push to master, pull_request
 4. Cipta f:\GANGNIAGA-MASTER\.markdownlint.json dengan rules yang sesuai
@@ -804,7 +804,7 @@ Arahan:
    a. Semua fail dalam DOCUMENT_MAP.md wujud secara fizikal
    b. Tiada fail .md di root yang tiada dalam DOCUMENT_MAP.md
    c. Tiada rujukan ke chat*.md dalam mana-mana fail
-   d. Tiada GLOSSORY (typo lama) dalam mana-mana fail
+   d. Tiada GLOSSARY (typo lama) dalam mana-mana fail
    e. Setiap folder dalam Blueprint v2.0 ada README.md
    f. MASTER.md < 5000 baris (alert jika membesar semula)
    g. git status clean (tiada uncommitted changes)

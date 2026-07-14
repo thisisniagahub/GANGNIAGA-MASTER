@@ -32,8 +32,8 @@ Following the `ponytail-audit` standard (assessing the tree for documentation ov
    - *Remediation:* Consolidate preambles. Let `MASTER.md`'s header handle general philosophy and have sub-documents start directly with their specific domains.
    - *Location:* [MASTER.md](file:///F:/GANGNIAGA-MASTER/MASTER.md)
 3. `<delete>` **Redundant Glossary Explanations**:
-   - *Issue:* Definitions in Part VII (Appendices) duplicate terms defined in `GLOSSORY.md`.
-   - *Remediation:* Reference `GLOSSORY.md` directly.
+   - *Issue:* Definitions in Part VII (Appendices) duplicate terms defined in `GLOSSARY.md`.
+   - *Remediation:* Reference `GLOSSARY.md` directly.
    - *Location:* [MASTER.md (Part VII / Appendices)](file:///F:/GANGNIAGA-MASTER/MASTER.md#L6984-L7648)
 4. `<shrink>` **Tooling/Standard Operating Checklists**:
    - *Issue:* Detailed step-by-step developer guidelines inside Appendices duplicate operational workflows.

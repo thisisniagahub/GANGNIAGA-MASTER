@@ -38,7 +38,7 @@ This document does not:
 - amend `CONSTITUTION.md`;
 - authorize repository structural changes;
 - approve Repository Blueprint v2;
-- rename `GLOSSORY.md`;
+- rename `GLOSSARY.md`;
 - select or create a license;
 - approve an architecture, vendor, model, framework, or execution engine;
 - claim that GangNiaga Executive OS is implemented or operational;
@@ -99,7 +99,7 @@ This draft is based on repository evidence available in the current foundation d
 - `MISSION.md`;
 - `PHILOSOPHY.md`;
 - `PRINCIPLES.md`;
-- `GLOSSORY.md`;
+- `GLOSSARY.md`;
 - `SOURCES.md`;
 - `CONTRIBUTING.md`;
 - the Locked Repository Blueprint v1.0;
@@ -406,7 +406,7 @@ G1 must comply with every requirement of the amendment process.
 
 ---
 
-## 16. `GLOSSORY.md` Rename Treatment
+## 16. `GLOSSARY.md` Rename Treatment
 
 This decision pack does not authorize the rename. The rename must remain a separate governed decision.
 
@@ -500,7 +500,7 @@ Until then:
 
 - the current Constitution remains authoritative;
 - Locked Repository Blueprint v1.0 remains the structural baseline;
-- `GLOSSORY.md` must not be renamed;
+- `GLOSSARY.md` must not be renamed;
 - `LICENSE` must not be created;
 - no Blueprint v2 structure is approved;
 - no planned architecture is implemented;

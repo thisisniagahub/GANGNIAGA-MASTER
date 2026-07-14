@@ -1,4 +1,4 @@
-﻿> Migrated from chat1.md on 2026-07-15. Original preserved in git history.
+> Migrated from chat1.md on 2026-07-15. Original preserved in git history.
 
 # GANGNIAGA — Enterprise Transformation TODO v2
 
@@ -124,7 +124,7 @@ Every completed task must identify:
 
 ### [ ] GN-G0-002 — Preserve and resolve the current glossary worktree conflict
 
-- **Deliverable:** Evidence-backed disposition of `D GLOSSORY.md` and `?? GLOSSARY.md` without losing either version.
+- **Deliverable:** Evidence-backed disposition of `D GLOSSARY.md` and `?? GLOSSARY.md` without losing either version.
 - **Owner / approver:** `<Repository Maintainer>` / `<Documentation Governance Owner>`
 - **Dependencies / risk:** `GN-G0-001` / `R4`
 - **Acceptance & evidence:** Both versions are backed up or diffed; intended filename is explicitly approved; all references are migrated atomically; `git status` contains no unexplained change.
@@ -731,7 +731,7 @@ VISION.md
 MISSION.md
 PHILOSOPHY.md
 PRINCIPLES.md
-GLOSSORY.md / GLOSSARY.md — resolve through governance
+GLOSSARY.md / GLOSSARY.md — resolve through governance
 SOURCES.md
 CONTRIBUTING.md
 LICENSE — only after explicit legal/license approval

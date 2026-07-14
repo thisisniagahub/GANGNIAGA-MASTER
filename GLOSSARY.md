@@ -8,7 +8,7 @@
 >
 > Canonical locked filename: `GLOSSARY.md`
 >
-> Current repository path: `GLOSSORY.md`
+> Current repository path: `GLOSSARY.md`
 
 ---
 
@@ -44,7 +44,7 @@ When a term conflicts with a higher-authority document, the higher-authority doc
 
 The locked repository blueprint specifies `GLOSSARY.md`.
 
-The current repository contains this document at `GLOSSORY.md`.
+The current repository contains this document at `GLOSSARY.md`.
 
 Because the repository blueprint is locked against unapproved structural changes, this file must not be renamed casually. The mismatch remains documented until an approved governance decision authorizes the correction.
 

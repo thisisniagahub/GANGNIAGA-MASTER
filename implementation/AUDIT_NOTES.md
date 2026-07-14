@@ -11,5 +11,5 @@ Verified state:
 - 13 untracked Blueprint documents under `knowledge/` and `architecture/`
 - 26 permitted Blueprint files still missing
 - `LICENSE` must remain absent
-- `GLOSSORY.md` must remain unchanged
+- `GLOSSARY.md` must remain unchanged
 - Empty knowledge subdirectories cannot be committed because Git does not track empty directories, and unlisted placeholder files are not authorized.

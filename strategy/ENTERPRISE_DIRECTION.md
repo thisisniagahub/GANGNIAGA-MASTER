@@ -1,4 +1,4 @@
-﻿> Migrated from chat3.md on 2026-07-15. Original preserved in git history.
+> Migrated from chat3.md on 2026-07-15. Original preserved in git history.
 
 # GANGNIAGA Enterprise Direction
 
@@ -1382,7 +1382,7 @@ Output:
 Purpose:
 
 - create only the missing files and folders already defined by the locked Blueprint;
-- keep `GLOSSORY.md`;
+- keep `GLOSSARY.md`;
 - do not create `LICENSE`;
 - preserve the roadmap.
 
@@ -1750,7 +1750,7 @@ This document intentionally leaves the following open:
 - Which FinOps attribution and budget model should be used.
 - Which assurance activities require independent review.
 - Whether and how the locked Blueprint should later evolve.
-- Whether `GLOSSORY.md` should eventually be renamed through governance.
+- Whether `GLOSSARY.md` should eventually be renamed through governance.
 - Which license, if any, should be approved.
 
 No answer should be inferred from the existence of this draft.

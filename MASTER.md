@@ -3017,7 +3017,7 @@ They define the language, concepts, terminology, responsibilities, checklists, a
 
 # Executive Terminology
 
-To support consistency across documentation, architecture, ADR, implementation, and AI Agents, the following terms summarize the operating vocabulary. `GLOSSORY.md` remains the specialized terminology document within the repository authority hierarchy.
+To support consistency across documentation, architecture, ADR, implementation, and AI Agents, the following terms summarize the operating vocabulary. `GLOSSARY.md` remains the specialized terminology document within the repository authority hierarchy.
 
 ---
 
@@ -3678,7 +3678,7 @@ At the publication of Version 1.1.0:
 
 - Phase 0 is focused on building a **Company Knowledge & Executive Intelligence Foundation**.
 - The repository contains the existing root foundation documents recorded in `DOCUMENT_MAP.md`.
-- The current glossary path remains `GLOSSORY.md`; `GLOSSARY.md` is the canonical locked target filename pending a governed decision.
+- The current glossary path remains `GLOSSARY.md`; `GLOSSARY.md` is the canonical locked target filename pending a governed decision.
 - No `LICENSE` has been selected or created.
 - Planned architecture, knowledge, ADR, standards, template, roadmap, and implementation paths must not be assumed to exist until the repository inventory confirms them.
 - No target capability is operational merely because it is described in this document.
@@ -3750,7 +3750,7 @@ Work may iterate between these activities, but implementation must not silently 
 
 The following items remain outside the authority of this cleanup and require their own approved decisions where applicable:
 
-- whether and when to correct `GLOSSORY.md` to the canonical `GLOSSARY.md` filename,
+- whether and when to correct `GLOSSARY.md` to the canonical `GLOSSARY.md` filename,
 - selection of a repository license and creation of `LICENSE`,
 - creation or activation of target folders and documents,
 - approval of detailed implementation architecture,

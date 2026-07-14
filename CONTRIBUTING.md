@@ -60,7 +60,7 @@ Repository structural changes are governed by the controlled-change model define
 
 Content may be completed or corrected within existing files when the change remains consistent with the blueprint and higher-authority documents.
 
-The current `GLOSSORY.md` path is a known mismatch with the locked canonical filename `GLOSSARY.md`. Do not rename it casually. The correction requires an approved decision.
+The current `GLOSSARY.md` path is a known mismatch with the locked canonical filename `GLOSSARY.md`. Do not rename it casually. The correction requires an approved decision.
 
 A `LICENSE` file must not be created until the project has explicitly selected a license.
 

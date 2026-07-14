@@ -71,7 +71,7 @@ VISION.md
 MISSION.md
 PHILOSOPHY.md
 PRINCIPLES.md
-GLOSSORY.md
+GLOSSARY.md
 SOURCES.md
 CONTRIBUTING.md
 G0_DECISION_PACK.md
@@ -98,7 +98,6 @@ templates/README.md
 
 Known current-state exceptions:
 
-- `GLOSSORY.md` exists with a filename typo; the locked canonical name is `GLOSSARY.md`.
 - `LICENSE` does not yet exist and no license has been approved.
 - Some folders and documents may not yet exist.
 - `MASTER.md` contains later extensions beyond its original table of contents and requires a dedicated consistency review.
@@ -167,7 +166,7 @@ Blueprint v1.0 was the original locked structural baseline. It did not define st
 | `MISSION.md` | Mission and objectives | Exists | Supporting foundation document |
 | `PHILOSOPHY.md` | Executive thinking philosophy | Exists | Supporting foundation document |
 | `PRINCIPLES.md` | Core design principles | Exists | Supporting foundation document |
-| `GLOSSARY.md` | Canonical terminology | Planned | Current content exists at `GLOSSORY.md`; rename requires a governed decision |
+| `GLOSSARY.md` | Canonical terminology | Exists | |
 | `SOURCES.md` | Research methodology and source policy | Exists | Target research paths are not yet implied to exist |
 | `CONTRIBUTING.md` | Contribution workflow | Exists | Includes blueprint and validation constraints |
 | `LICENSE` | Legal usage terms | Planned | License selection and file creation require an explicit approved decision |

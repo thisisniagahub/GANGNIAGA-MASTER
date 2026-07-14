@@ -30,14 +30,14 @@ This clause was appropriate during the repository's formation to prevent uncontr
 The absolute structural lock creates the following operational issues:
 
 1. **Ambiguity:** "Formally approved decision" is not defined with sufficient specificity — who approves, what evidence is required, and what change classes exist.
-2. **Proportionality gap:** A low-risk editorial correction (e.g., fixing `GLOSSORY.md` → `GLOSSARY.md`) requires the same undefined process as a constitutional amendment.
+2. **Proportionality gap:** A low-risk editorial correction (e.g., fixing `GLOSSARY.md` → `GLOSSARY.md`) requires the same undefined process as a constitutional amendment.
 3. **Stagnation risk:** Legitimate structural evolution (new governance artifacts, strategy documents, enterprise registers) cannot proceed without constitutional uncertainty.
 4. **Workaround pressure:** Needed artifacts accumulate as unstructured `chat*.md` files in root because the governed path is unclear.
 5. **Knowledge fragmentation:** Evidence and decisions drift into external systems or temporary files rather than the governed repository.
 
 ### 1.3 Evidence
 
-- `DOCUMENT_MAP.md` records known structural exceptions (e.g., `GLOSSORY.md` typo, missing `LICENSE`).
+- `DOCUMENT_MAP.md` records known structural exceptions (e.g., `GLOSSARY.md` typo, missing `LICENSE`).
 - Five unstructured `chat*.md` files exist in root — containing legitimate strategy, governance, and planning content with no governed home.
 - `MASTER.md` has grown to 7,765 lines because content that belongs in domain-specific files has no authorized path to move there.
 - `chat4.md` explicitly documents that creating root `TODO.md` would violate the locked Blueprint.
@@ -141,7 +141,7 @@ Rejected. Incompatible with project identity and constitutional principles.
 3. `MASTER.md` references to the structural lock are updated.
 4. `README.md` "Canonical Repository Structure" is updated.
 5. `CONTRIBUTING.md` Section 3 (Locked Repository Blueprint) is updated.
-6. `GLOSSORY.md` rename becomes a CC-0 governed decision (separate approval).
+6. `GLOSSARY.md` rename becomes a CC-0 governed decision (separate approval).
 
 ### 7.2 Enabled future work
 
@@ -188,7 +188,7 @@ If the change is reverted:
 - [ ] All seven documents updated atomically in one commit.
 - [ ] No internal link is broken.
 - [ ] No authority claim contradicts the Constitution.
-- [ ] GLOSSORY.md rename is NOT performed (separate decision).
+- [ ] GLOSSARY.md rename is NOT performed (separate decision).
 - [ ] LICENSE is NOT created (separate decision).
 - [ ] No planned component is described as implemented.
 - [ ] Full diff reviewed by independent reviewer.
