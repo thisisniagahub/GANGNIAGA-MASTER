@@ -15,7 +15,7 @@ GangNiaga Executive OS — Enterprise AI Operating System documentation and gove
 | B: Governance Reset | `[x]` Complete | Committed (SHA: bd5a4c658eaa2b8b85e47e6f22ddb7a42ec2a452) |
 | C: Structural Migration | `[x]` Complete | C1 & C2 completed ✅ |
 | D: Link Repair | `[x]` Complete | Links repaired, DOCUMENT_MAP.md updated ✅ |
-| E: MASTER.md Modularization | `[ ]` Active | Ready to execute E1 |
+| E: MASTER.md Modularization | `[ ]` Active | E2 completed, next is E3 |
 | F: Housekeeping & QA | `[ ]` Blocked | Menunggu Fasa E |
 | G: Git & Release | `[ ]` Blocked | Menunggu Fasa G |
 | H: GitHub Ops & CI | `[ ]` Blocked | Menunggu Fasa H |
@@ -29,6 +29,8 @@ GangNiaga Executive OS — Enterprise AI Operating System documentation and gove
 - C1: Folders scaffolded, chat1,3,5 migrated ✅
 - C2: chat2,4 cleared, ADR-0006 moved ✅
 - D1: Links repaired, DOCUMENT_MAP.md updated ✅
+- E1: MASTER.md decomposition plan created ✅
+- E2: PART II extracted to architecture/ ✅ (MASTER.md: 7764 → 6143 lines)
 
 ## Key Documents Created
 - `G0_DECISION_PACK.md` — Governance gate evidence and basis (DRAFT)

@@ -428,7 +428,7 @@ Kemaskini GEMINI.md → D1: Links repaired, DOCUMENT_MAP.md updated ✅
 
 ## FASA E: MASTER.md Modularization
 
-### `[ ]` E1 — Analisis Pecahan MASTER.md (READ ONLY)
+### `[x]` E1 — Analisis Pecahan MASTER.md (READ ONLY)
 
 **Skills:** `ponytail-audit`, `council`
 **Complexity:** Analisis sahaja
@@ -472,7 +472,7 @@ Kemaskini GEMINI.md → E1: MASTER.md decomposition plan created ✅
 
 ---
 
-### `[ ]` E2 — Pecahkan PART II (Architecture) dari MASTER.md
+### `[x]` E2 — Pecahkan PART II (Architecture) dari MASTER.md
 
 **Skills:** `code-review`
 **Complexity:** Besar — ini task paling berat
