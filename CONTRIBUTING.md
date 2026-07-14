@@ -2,7 +2,7 @@
 
 > **GangNiaga Executive OS Contribution Guidelines**
 >
-> Version: 1.0.0
+> Version: 1.1.0
 >
 > Status: Official
 >
@@ -10,686 +10,425 @@
 
 ---
 
-# Purpose
+# 1. Purpose
 
-This document defines the official contribution guidelines for GangNiaga Executive OS.
+This document defines how humans and AI systems contribute to GangNiaga Executive OS.
 
-Unlike traditional open-source repositories that primarily focus on code contributions, GangNiaga Executive OS considers **knowledge, architecture, research, documentation, governance, standards, and implementation** equally important.
+Contributions may include knowledge, research, architecture, governance, standards, templates, documentation, implementation, validation, or maintenance.
 
-Every contribution should strengthen the Executive Intelligence ecosystem.
-
-This document applies equally to:
-
-- Human Contributors
-- Software Architects
-- AI Engineers
-- Researchers
-- Documentation Writers
-- AI Coding Agents
-- Autonomous AI Systems
-- Future Contributors
+Every contribution should leave the repository clearer, more useful, and more trustworthy than before.
 
 ---
 
-# Contribution Philosophy
+# 2. Governing Authority
 
-GangNiaga Executive OS is built upon one belief.
+All contributions must respect the repository authority order:
+
+```text
+CONSTITUTION.md
+    ↓
+MASTER.md
+    ↓
+Approved ADR
+    ↓
+Architecture Documents
+    ↓
+Standards
+    ↓
+Implementation Documents
+```
+
+`README.md` is the entry point.
+
+`DOCUMENT_MAP.md` is the repository navigation map.
+
+Neither navigation order nor reading order changes governance authority.
+
+When documents conflict, contributors must not resolve the conflict informally. The conflict must be corrected through the appropriate document or decision process.
+
+---
+
+# 3. Locked Repository Blueprint
+
+The approved repository blueprint is locked.
+
+Contributors must not, without an approved governance decision:
+
+- rename files,
+- add folders,
+- remove folders,
+- move documents,
+- change the roadmap structure,
+- replace the approved repository structure.
+
+Content may be completed or corrected within existing files when the change remains consistent with the blueprint and higher-authority documents.
+
+The current `GLOSSORY.md` path is a known mismatch with the locked canonical filename `GLOSSARY.md`. Do not rename it casually. The correction requires an approved decision.
+
+A `LICENSE` file must not be created until the project has explicitly selected a license.
+
+---
+
+# 4. Contribution Philosophy
 
 > **Every contribution should leave the repository smarter than before.**
 
-A contribution is not measured by:
+Contribution quality is measured by improvement to:
 
-- Number of commits
-- Lines of code
-- Number of files
+- decision quality,
+- knowledge value,
+- architectural clarity,
+- traceability,
+- maintainability,
+- reusability,
+- implementation quality.
 
-Instead it is measured by how much it improves:
-
-- Knowledge
-- Decision Quality
-- Architecture
-- Maintainability
-- Reusability
-- Documentation
-- Executive Intelligence
+Commit count, file count, and line count are not measures of value.
 
 ---
 
-# Core Contribution Principles
-
-Every contribution should satisfy the following principles.
+# 5. Core Principles
 
 ## Knowledge First
 
-Contribute understanding before implementation.
+Important changes should begin with understanding.
 
-Research is a valid contribution.
+Research, documentation, architecture, and decision records are valid engineering contributions.
 
-Documentation is a valid contribution.
+## Architecture Before Implementation
 
-Architecture is a valid contribution.
+Implementation must follow approved architecture and decisions.
 
-Coding is only one type of contribution.
+Do not use code to silently introduce architecture.
 
----
+## Documentation Is Part of Delivery
 
-## Architecture First
-
-Before modifying implementation, contributors should understand:
-
-- Project Vision
-- Mission
-- Constitution
-- Philosophy
-- Principles
-- Existing Architecture
-- Existing ADR
-
-Implementation should follow architecture.
-
----
-
-## Documentation First
-
-Every significant contribution should include documentation updates where applicable.
-
-Documentation includes:
-
-- Architecture
-- ADR
-- Standards
-- Templates
-- Research
-- README
-- MASTER
-
-Documentation is part of the deliverable.
-
----
+A change is incomplete when the repository no longer explains the system accurately.
 
 ## Explainability
 
-Future contributors should understand:
+A future contributor should be able to understand:
 
-- Why something exists.
-- Why it changed.
-- What problem it solves.
-- What trade-offs were accepted.
+- what changed,
+- why it changed,
+- which evidence supported it,
+- which trade-offs were accepted,
+- what consequences remain.
 
-If a contribution cannot be explained, it should be reconsidered.
+## Traceability
 
----
+Material claims and decisions should point to their source, research, ADR, architecture, issue, pull request, or implementation evidence.
 
-# Contributor Responsibilities
+## Minimum Necessary Change
 
-Every contributor is responsible for:
-
-- Preserving architectural integrity.
-- Respecting project philosophy.
-- Following repository standards.
-- Documenting major decisions.
-- Maintaining consistency.
-- Preserving knowledge.
-- Improving documentation.
-- Avoiding unnecessary complexity.
+Prefer the smallest complete change that solves the actual problem without introducing unrelated structure or complexity.
 
 ---
 
-# Contribution Categories
-
-GangNiaga recognizes multiple contribution types.
-
----
+# 6. Contribution Types
 
 ## Research
 
-Examples
+Research contributions may include technology analysis, official-source review, benchmarks, reverse engineering, comparisons, and lessons learned.
 
-- Technology Analysis
-- Framework Research
-- Benchmark Review
-- Architecture Review
-- Reverse Engineering
-- Engineering Articles
-
-Deliverables
-
-Research documents
-
-References
-
-Lessons Learned
-
-Patterns
-
-Trade-offs
-
----
+Research should separate facts, findings, assumptions, and recommendations.
 
 ## Documentation
 
-Examples
-
-README improvements
-
-Architecture documentation
-
-Standards
-
-Templates
-
-Glossary
-
-Knowledge Base
-
-Documentation quality directly improves Executive Intelligence.
-
----
+Documentation contributions may improve root documents, architecture, standards, templates, research, roadmaps, implementation plans, or terminology.
 
 ## Architecture
 
-Examples
+Architecture contributions may define boundaries, modules, capabilities, workflows, security, governance, memory, knowledge, or execution design.
 
-Architecture proposals
+Material architecture changes normally require an ADR.
 
-Component design
+## Architecture Decision Records
 
-Capability modeling
+An ADR should document:
 
-Workflow design
+- context,
+- decision,
+- alternatives,
+- trade-offs,
+- consequences,
+- status.
 
-Security architecture
+An ADR may govern lower-level guidance within its scope. It cannot silently override the Constitution.
 
-Governance architecture
+## Standards and Templates
 
-Every architectural proposal should include reasoning.
-
----
-
-## ADR
-
-Examples
-
-New architectural decisions
-
-Updated decisions
-
-Decision reviews
-
-ADR modifications
-
-Every ADR should clearly explain:
-
-Context
-
-Decision
-
-Alternatives
-
-Trade-offs
-
-Consequences
-
----
-
-## Standards
-
-Examples
-
-Documentation standards
-
-Coding standards
-
-Architecture standards
-
-Prompt standards
-
-Agent standards
-
-Naming standards
-
-Standards ensure long-term consistency.
-
----
-
-## Templates
-
-Examples
-
-Research templates
-
-ADR templates
-
-Architecture templates
-
-Decision templates
-
-Templates improve repository consistency.
-
----
+Standards define recurring expectations. Templates make those expectations repeatable.
 
 ## Implementation
 
-Examples
+Implementation includes code, configuration, automation, infrastructure, modules, workflows, and execution tooling.
 
-Infrastructure
-
-Automation
-
-Developer tooling
-
-Modules
-
-Execution Engine
-
-Implementation should always reference architecture.
+Implementation must reference the architecture or decision that authorizes it when applicable.
 
 ---
 
-# Contribution Workflow
+# 7. Before Contributing
 
-Every contribution should follow this lifecycle.
+Use this reading order for orientation:
 
+```text
+README.md
+    ↓
+DOCUMENT_MAP.md
+    ↓
+CONSTITUTION.md
+    ↓
+MASTER.md
+    ↓
+Relevant ADR
+    ↓
+Relevant Architecture
+    ↓
+Relevant Standards
+    ↓
+Relevant Implementation or Research Documents
 ```
-Identify Problem
 
-↓
+Also review `PROJECT.md`, `VISION.md`, `MISSION.md`, `PHILOSOPHY.md`, and `PRINCIPLES.md` when the proposed change affects project direction.
 
-Research
+Confirm the actual repository state before describing a planned file, folder, subsystem, or capability as existing.
 
-↓
+---
 
-Verification
+# 8. Contribution Workflow
 
-↓
+Use the following lifecycle for material changes:
 
-Architecture
-
-↓
-
-ADR (if required)
-
-↓
-
-Documentation
-
-↓
-
-Implementation
-
-↓
-
-Validation
-
-↓
-
+```text
+Identify the Problem
+    ↓
+Inspect Current State
+    ↓
+Research and Verify
+    ↓
+Define Scope and Constraints
+    ↓
+Propose Architecture or Decision
+    ↓
+Create or Update ADR When Required
+    ↓
+Update Documentation
+    ↓
+Implement
+    ↓
+Validate
+    ↓
 Review
-
-↓
-
+    ↓
 Merge
 ```
 
-Implementation should never bypass research for significant changes.
+Small editorial corrections may use a lighter process, but they must still preserve authority, terminology, and repository structure.
 
 ---
 
-# Before Contributing
+# 9. Branch and Commit Discipline
 
-Every contributor should read:
+Use a focused branch for each logical change.
 
-```
-README.md
+Keep commits reviewable and coherent. A commit should represent one understandable step.
 
-↓
+Recommended commit format:
 
-DOCUMENT_MAP.md
-
-↓
-
-MASTER.md
-
-↓
-
-CONSTITUTION.md
-
-↓
-
-PROJECT.md
-
-↓
-
-VISION.md
-
-↓
-
-MISSION.md
-
-↓
-
-PHILOSOPHY.md
-
-↓
-
-PRINCIPLES.md
+```text
+<type>: <clear change summary>
 ```
 
-Understanding the project comes before modifying it.
+Common types include:
+
+- `docs`
+- `research`
+- `architecture`
+- `adr`
+- `standards`
+- `feat`
+- `fix`
+- `refactor`
+- `test`
+- `chore`
+
+Do not mix unrelated structural, architectural, and editorial changes in one commit.
 
 ---
 
-# Pull Request Expectations
+# 10. Pull Request Requirements
 
-Every Pull Request should clearly explain:
+Every pull request should explain:
 
 ## Objective
 
-What is changing?
-
----
+What outcome does the change produce?
 
 ## Motivation
 
-Why is the change necessary?
-
----
+Why is the change necessary now?
 
 ## Scope
 
-Which documents or modules are affected?
+Which documents, decisions, modules, or workflows are affected?
 
----
+## Authority Alignment
+
+Which constitutional rule, Master direction, ADR, architecture, or standard governs the change?
+
+## Current State and Target State
+
+What exists before the change, and what will exist after it?
+
+## Evidence
+
+Which sources, tests, benchmarks, repository observations, or prior decisions support the change?
 
 ## Impact
 
-How does this affect architecture?
+What changes for architecture, governance, compatibility, security, maintenance, or future work?
 
----
+## ADR Requirement
 
-## References
+Does the change require a new ADR or an amendment to an existing ADR?
 
-What research supports this change?
+## Validation
 
----
-
-## ADR
-
-Does this require an Architecture Decision Record?
-
----
+How was the change checked?
 
 ## Documentation
 
-Which documentation was updated?
+Which documents were updated to keep the repository accurate?
 
 ---
 
-# Documentation Requirements
+# 11. Review Criteria
 
-Major changes should update documentation where necessary.
+Reviewers should evaluate:
 
-Possible documents include:
+- constitutional compliance,
+- alignment with the locked blueprint,
+- correctness of current-state claims,
+- architectural consistency,
+- evidence quality,
+- terminology consistency,
+- traceability,
+- maintainability,
+- security implications,
+- documentation completeness,
+- long-term consequences.
 
-README
-
-MASTER
-
-Architecture
-
-ADR
-
-Standards
-
-Research
-
-Templates
-
-Implementation
-
-Documentation should remain synchronized with implementation.
+A contribution should improve the repository rather than merely increase its size.
 
 ---
 
-# Research Requirements
+# 12. Research Requirements
 
-When proposing architectural changes:
+Use primary and official sources whenever possible.
 
-Research should include:
+For architectural or technology recommendations, record:
 
-Official Documentation
+- the question being investigated,
+- evaluation criteria,
+- sources,
+- findings,
+- limitations,
+- trade-offs,
+- recommendation.
 
-GitHub
+Do not present assumptions as verified facts.
 
-Engineering Articles
-
-Benchmarks
-
-Community Knowledge
-
-Academic Sources (when applicable)
-
-Architectural proposals should be evidence-based.
+Do not copy source code or protected material merely to imitate an existing system. Extract reusable principles, patterns, and trade-offs.
 
 ---
 
-# Coding Guidelines
+# 13. Documentation Requirements
 
-Implementation should prioritize:
+Documentation must distinguish clearly between:
 
-Clarity
+- current state,
+- locked target,
+- planned work,
+- approved decisions,
+- unresolved questions.
 
-Maintainability
+Do not claim that a file, subsystem, workflow, or capability exists when it is only planned.
 
-Modularity
+Use terminology from the glossary, subject to higher-authority documents.
 
-Readability
-
-Testability
-
-Explainability
-
-Avoid unnecessary abstraction.
+Update navigation documents when content changes affect how readers find authoritative information.
 
 ---
 
-# Architectural Integrity
+# 14. Architecture and Implementation Rules
 
 Contributors should avoid:
 
-Tight Coupling
+- hidden dependencies,
+- undocumented decisions,
+- architecture drift,
+- unnecessary abstraction,
+- avoidable vendor lock-in,
+- avoidable framework lock-in,
+- duplicated authority,
+- untraceable automation,
+- implementation that bypasses governance.
 
-Hidden Dependencies
+Prefer clear boundaries, explicit interfaces, modular responsibilities, testability, and replaceable execution components.
 
-Undocumented Decisions
-
-Vendor Lock-In
-
-Framework Lock-In
-
-Architecture Drift
-
-Executive Layer must remain independent.
-
----
-
-# AI Agent Contributions
-
-AI Agents are expected to:
-
-Read project documentation.
-
-Respect project philosophy.
-
-Follow architecture.
-
-Preserve terminology.
-
-Reference existing knowledge.
-
-Avoid contradicting ADR.
-
-Update documentation when appropriate.
-
-AI-generated work should remain explainable.
+The Executive Layer must remain independent of any single model, framework, or execution engine.
 
 ---
 
-# Review Criteria
+# 15. AI Agent Contributions
 
-Every contribution should be evaluated according to:
+AI agents must:
 
-Knowledge Value
+- read the relevant authoritative documents,
+- inspect actual repository state,
+- respect the locked blueprint,
+- preserve terminology,
+- avoid invented facts or files,
+- distinguish plans from implemented capabilities,
+- cite or record evidence where required,
+- keep changes explainable,
+- update documentation when the change affects repository truth.
 
-Architecture Quality
-
-Documentation Quality
-
-Research Quality
-
-Maintainability
-
-Consistency
-
-Traceability
-
-Long-Term Impact
-
-Contributions should improve the repository rather than merely increase its size.
+AI-generated work remains subject to human governance and review.
 
 ---
 
-# Things We Encourage
+# 16. Collaboration Conduct
 
-✔ Better documentation
+Contributors should use respectful, evidence-based discussion.
 
-✔ Better architecture
+Disagreement should focus on claims, evidence, architecture, trade-offs, and consequences rather than individuals.
 
-✔ Better research
-
-✔ Better explanations
-
-✔ Better standards
-
-✔ Better templates
-
-✔ Better ADR
-
-✔ Better maintainability
-
-✔ Better Executive Intelligence
+Major uncertainty should be documented rather than hidden behind confident wording.
 
 ---
 
-# Things We Discourage
+# 17. Contributor Checklist
 
-✘ Unverified assumptions
+Before requesting review, confirm:
 
-✘ Architecture without documentation
-
-✘ Framework-specific design
-
-✘ Undocumented decisions
-
-✘ Duplicate knowledge
-
-✘ Unnecessary complexity
-
-✘ Vendor lock-in
-
-✘ Breaking established terminology
-
----
-
-# Repository Values
-
-Every contribution should reinforce:
-
-Knowledge
-
-↓
-
-Architecture
-
-↓
-
-Decision Quality
-
-↓
-
-Documentation
-
-↓
-
-Implementation
-
-↓
-
-Learning
-
-↓
-
-Continuous Improvement
-
----
-
-# Contributor Mindset
-
-Contributors should ask:
-
-- Does this improve understanding?
-- Does this preserve knowledge?
-- Is the reasoning documented?
-- Can future contributors understand this?
-- Does this align with the Constitution?
-- Does this strengthen Executive Intelligence?
-
-If the answer is "No", the contribution should be revised.
-
----
-
-# Code of Collaboration
-
-We value:
-
-Respect
-
-Constructive feedback
-
-Evidence-based discussion
-
-Transparency
-
-Shared learning
-
-Long-term thinking
-
-Architectural consistency
-
-Disagreements should focus on ideas rather than individuals.
-
-The objective is always to improve the project.
-
----
-
-# Relationship to Other Documents
-
-This document should be read together with:
-
-- README.md
-- DOCUMENT_MAP.md
-- MASTER.md
-- CONSTITUTION.md
-- PHILOSOPHY.md
-- PRINCIPLES.md
-- SOURCES.md
-
-These documents collectively define how GangNiaga Executive OS is developed and maintained.
+- the change solves a defined problem,
+- the actual repository state was inspected,
+- the authority hierarchy was respected,
+- the locked blueprint was preserved,
+- required ADRs were addressed,
+- terminology is consistent,
+- sources and assumptions are distinguishable,
+- validation was completed,
+- documentation remains accurate,
+- no unrelated structural change was introduced.
 
 ---
 
 # Official Contribution Statement
 
-> **Every contribution should improve the knowledge of the system, the quality of its architecture, the clarity of its documentation, and the intelligence of every future decision.**
+> **Every contribution should improve repository knowledge, decision quality, architectural clarity, and the reliability of future execution.**
 
 ---
 
