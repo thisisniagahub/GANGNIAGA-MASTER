@@ -736,21 +736,23 @@ This document directly supports:
 - PHILOSOPHY.md
 - PRINCIPLES.md
 
-It also governs every document under:
+It is intended to govern research and evidence stored in these locked target paths when those paths exist:
 
-```
+```text
 knowledge/
 
-research/
+knowledge/research/
 
-reverse-engineering/
+knowledge/reverse-engineering/
 
-benchmarks/
+knowledge/benchmarks/
 
 architecture/
 
 adr/
 ```
+
+`DOCUMENT_MAP.md` remains the authority for whether a target path currently exists. Listing a path here does not mark it as implemented.
 
 ---
 

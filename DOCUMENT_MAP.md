@@ -124,21 +124,21 @@ Structural changes require an approved ADR. Content completion does not require 
 
 ## Foundation Documents
 
-| Document | Role | Current status |
-|---|---|---|
-| `README.md` | Project landing page | Exists |
-| `MASTER.md` | Executive operating model and repository-wide SSOT | Exists; consistency review required |
-| `DOCUMENT_MAP.md` | Navigation and status index | Exists |
-| `CONSTITUTION.md` | Highest-level immutable principles | Exists |
-| `PROJECT.md` | Project definition and scope | Exists |
-| `VISION.md` | Long-term direction | Exists |
-| `MISSION.md` | Mission and objectives | Exists |
-| `PHILOSOPHY.md` | Executive thinking philosophy | Exists |
-| `PRINCIPLES.md` | Core design principles | Exists |
-| `GLOSSARY.md` | Canonical terminology | Planned canonical filename; current file is `GLOSSORY.md` |
-| `SOURCES.md` | Research methodology and source policy | Exists |
-| `CONTRIBUTING.md` | Contribution workflow | Exists |
-| `LICENSE` | Legal usage terms | Not selected or created |
+| Document | Role | Current status | Notes |
+|---|---|---|---|
+| `README.md` | Project landing page | Exists | Foundation-aligned entry point |
+| `MASTER.md` | Executive operating model and repository-wide SSOT | Exists | End-to-end consistency review completed |
+| `DOCUMENT_MAP.md` | Navigation and status index | Exists | Records current and target states |
+| `CONSTITUTION.md` | Highest-level immutable principles | Exists | Highest normative authority |
+| `PROJECT.md` | Project definition and scope | Exists | Phase 0 status clarified |
+| `VISION.md` | Long-term direction | Exists | Supporting foundation document |
+| `MISSION.md` | Mission and objectives | Exists | Supporting foundation document |
+| `PHILOSOPHY.md` | Executive thinking philosophy | Exists | Supporting foundation document |
+| `PRINCIPLES.md` | Core design principles | Exists | Supporting foundation document |
+| `GLOSSARY.md` | Canonical terminology | Planned | Current content exists at `GLOSSORY.md`; rename requires a governed decision |
+| `SOURCES.md` | Research methodology and source policy | Exists | Target research paths are not yet implied to exist |
+| `CONTRIBUTING.md` | Contribution workflow | Exists | Includes blueprint and validation constraints |
+| `LICENSE` | Legal usage terms | Planned | License selection and file creation require an explicit approved decision |
 
 ---
 

@@ -2,13 +2,13 @@
 
 > **GangNiaga Executive OS**
 >
-> **Master Architecture Constitution**
+> **Repository-Wide Executive Operating Reference**
 >
-> **Single Source of Truth (SSOT)**
+> **Operating Single Source of Truth (SSOT)**
 >
-> Version: 1.0.0
+> Version: 1.1.0
 >
-> Status: Official Foundation
+> Status: Official Foundation Operating Reference
 >
 > Repository: GangNiaga Executive OS
 
@@ -18,8 +18,8 @@
 
 | Property | Value |
 |----------|-------|
-| Document Type | Master Constitution |
-| Authority | Highest (after README entry point) |
+| Document Type | Executive Operating Reference |
+| Authority | Subordinate to `CONSTITUTION.md` |
 | Scope | Entire Repository |
 | Audience | Humans & AI Agents |
 | Priority | Critical |
@@ -30,9 +30,9 @@
 
 # Purpose
 
-MASTER.md is the **Single Source of Truth (SSOT)** for the entire GangNiaga Executive OS ecosystem.
+MASTER.md is the repository-wide **operating Single Source of Truth (SSOT)** for GangNiaga Executive OS.
 
-This document consolidates the executive understanding of the project into a single authoritative reference.
+It consolidates the executive understanding of the project into one operational reference while remaining subordinate to `CONSTITUTION.md`, the repository's highest normative authority.
 
 It exists so that any human contributor or AI Agent can understand:
 
@@ -43,129 +43,104 @@ It exists so that any human contributor or AI Agent can understand:
 - how it should evolve,
 - and how every component fits together.
 
-Unlike README.md, which serves as the repository landing page, MASTER.md defines the complete executive blueprint of the project.
+`README.md` is the repository landing page and `DOCUMENT_MAP.md` is the navigation index. Neither has governance authority over `CONSTITUTION.md` or this document.
 
-Every document inside this repository derives its meaning from this document.
+Specialized documents remain authoritative within their declared domains when they are consistent with the repository authority hierarchy.
 
-If inconsistencies arise between documents, this document serves as the primary architectural reference unless superseded by an approved Architecture Decision Record (ADR).
+The repository authority hierarchy is:
+
+```text
+CONSTITUTION.md
+    ↓
+MASTER.md
+    ↓
+Approved ADR
+    ↓
+Architecture Documents
+    ↓
+Standards
+    ↓
+Implementation Documents
+```
+
+An approved ADR may supersede lower-level guidance within its scope. It cannot override `CONSTITUTION.md` or this document unless the applicable governed amendment process is followed.
+
+---
+
+# Current-State Interpretation
+
+The repository is currently in Phase 0. Its objective is to build a **Company Knowledge & Executive Intelligence Foundation**.
+
+At this stage, the repository contains foundation documentation. Descriptions of layers, engines, routers, agents, registries, workflows, memory systems, and execution systems define a target operating and architecture model unless implementation and validation evidence explicitly marks them as operational.
+
+The locked Repository Blueprint v1.0 is a governed target structure. A path listed in that blueprint must not be treated as present merely because it is documented. `DOCUMENT_MAP.md` records the current repository state.
 
 ---
 
 # Table of Contents
 
-```
-PART I
-
-Executive Foundation
-
+```text
+PART I — Executive Foundation
 01 Introduction
+02 Why GangNiaga Exists
+03 Executive Thinking
+04 Executive Intelligence Paradigm
+05 Executive Operating System
+06 Fundamental Belief
+07 Knowledge Economy
+08 Long-Term Objective
+09 Project Identity
+10 Project Boundaries and Responsibilities
 
-02 Project Identity
-
-03 Vision
-
-04 Mission
-
-05 Philosophy
-
-06 Principles
-
-07 Executive Intelligence
-
-08 Executive Operating System
-
-09 Design Goals
-
-10 Core Values
-
-
-
-PART II
-
-Executive Architecture
-
-11 Executive Layer
-
+PART II — Target Executive Architecture
+11 Executive Intelligence Layer
 12 Knowledge Layer
-
 13 Decision Layer
+14 Planning Layer
+15 Orchestration Layer
+16 Execution Layer
+17 Learning Layer
+18 Governance Layer
 
-14 Orchestration Layer
-
-15 Execution Layer
-
-16 Learning Layer
-
-17 Governance Layer
-
-18 Security Layer
-
-
-
-PART III
-
-Knowledge System
-
+PART III — Target Knowledge System
 19 Knowledge Base
-
-20 Research Framework
-
-21 Reverse Engineering
-
+20 Executive Research Framework
+21 Reverse Engineering Framework
 22 Pattern Library
-
 23 Architecture Library
+24 Architecture Decision Records
+25 Standards System
+26 Template System
 
-24 ADR
-
-25 Standards
-
-26 Templates
-
-
-
-PART IV
-
-Engineering
-
+PART IV — Engineering System
 27 Development Workflow
-
 28 Repository Structure
-
 29 Documentation Strategy
+30 AI Agent Operating Model
+31 Quality Assurance Framework
+32 Contribution Governance
 
-30 AI Agent Workflow
+PART V — Executive Governance
+33 Executive Governance Model
 
-31 Quality Standards
+PART VI — Evolution and Operating Model
+34 Future Evolution Strategy
+Engineering Operating Model
+Repository Evolution Model
 
-32 Contribution Rules
+PART VII — Executive Appendices
+Appendices A–L
 
-33 Governance Model
-
-34 Future Evolution
-
-
-
-PART V
-
-Appendix
-
-35 Glossary
-
-36 References
-
-37 Roadmap
-
-38 Repository Map
-
-39 AI Agent Startup Guide
-
-40 Closing Statement
+PART VIII — Foundation Status and Governed Roadmap
+Current Foundation Baseline
+Locked Target State
+Future Implementation Gates
+Remaining Governed Decisions
 ```
 
 ---
 
-# PART I
+# PART I — Executive Foundation
 
 # 01 — Introduction
 
@@ -189,7 +164,7 @@ The Executive Layer becomes responsible for ensuring that every implementation i
 
 ---
 
-# Why GangNiaga Exists
+# 02 — Why GangNiaga Exists
 
 Modern software development increasingly relies on Artificial Intelligence.
 
@@ -211,7 +186,7 @@ GangNiaga Executive OS exists to solve these problems by introducing an Executiv
 
 ---
 
-# Executive Thinking
+# 03 — Executive Thinking
 
 GangNiaga adopts a fundamentally different philosophy from traditional development platforms.
 
@@ -281,7 +256,7 @@ Execution becomes the final consequence of disciplined executive thinking.
 
 ---
 
-# The Executive Intelligence Paradigm
+# 04 — Executive Intelligence Paradigm
 
 Executive Intelligence represents the ability to coordinate engineering activities before implementation begins.
 
@@ -298,7 +273,7 @@ Executive Intelligence therefore becomes the permanent decision-making layer.
 
 ---
 
-# Executive Operating System
+# 05 — Executive Operating System
 
 GangNiaga Executive OS treats software engineering as an operating system problem rather than a coding problem.
 
@@ -325,7 +300,7 @@ The Executive Layer becomes the scheduler of intelligence.
 
 ---
 
-# Fundamental Belief
+# 06 — Fundamental Belief
 
 GangNiaga Executive OS is founded upon one belief.
 
@@ -341,7 +316,7 @@ Executive Intelligence coordinates all three.
 
 ---
 
-# The Knowledge Economy
+# 07 — Knowledge Economy
 
 Knowledge is treated as the primary engineering asset.
 
@@ -365,7 +340,7 @@ Implementation is temporary.
 
 ---
 
-# Long-Term Objective
+# 08 — Long-Term Objective
 
 The long-term objective is to establish GangNiaga Executive OS as the permanent Executive Intelligence Layer capable of coordinating multiple:
 
@@ -380,7 +355,7 @@ without becoming dependent upon any single implementation technology.
 
 ---
 
-# Project Identity
+# 09 — Project Identity
 
 GangNiaga Executive OS identifies itself using the following definition.
 
@@ -416,7 +391,9 @@ This identity should remain stable regardless of technological evolution.
 
 ---
 
-# What GangNiaga Is
+# 10 — Project Boundaries and Responsibilities
+
+## What GangNiaga Is
 
 GangNiaga Executive OS IS:
 
@@ -440,7 +417,7 @@ GangNiaga Executive OS IS:
 
 ---
 
-# What GangNiaga Is Not
+## What GangNiaga Is Not
 
 GangNiaga Executive OS is NOT:
 
@@ -466,7 +443,7 @@ They do not define GangNiaga.
 
 ---
 
-# Executive Responsibility
+## Executive Responsibility
 
 The Executive Layer is responsible for coordinating:
 
@@ -518,7 +495,7 @@ Every completed activity should strengthen future decision making.
 
 ---
 
-# Relationship With Other Documents
+## Relationship With Other Documents
 
 MASTER.md serves as the executive integration layer.
 
@@ -578,25 +555,27 @@ MASTER connects them into one coherent operating model.
 
 ---
 
-# Guiding Statement
+## Guiding Statement
 
 > GangNiaga Executive OS is designed to become the permanent Executive Intelligence Layer that transforms knowledge into architecture, architecture into decisions, decisions into execution, and execution into continuously improving organizational intelligence.
 
 ---
 
-# END OF PART I
+## Part I Summary
 
-**Next: PART II — Executive Architecture** 
+Part I defines the identity, purpose, boundaries, and executive philosophy that guide the remainder of this operating reference.
 
 ---
 
-# PART II
+# PART II — Target Executive Architecture
 
 # Executive Architecture
 
 > **The Executive Intelligence Architecture**
 
-The Executive Architecture defines how GangNiaga Executive OS thinks, coordinates, governs, and continuously evolves.
+The Executive Architecture defines the target model for how GangNiaga Executive OS should think, coordinate, govern, and continuously evolve.
+
+> **Status:** Target architecture. These layers are not operational unless implementation and validation evidence explicitly says otherwise.
 
 Unlike traditional software architectures that begin with APIs, services, or databases, GangNiaga begins with **Executive Intelligence**.
 
@@ -1378,24 +1357,9 @@ The objective is improving decision quality before implementation.
 
 ---
 
-# End of PART II (Sections 11–14)
+# Architecture Continuation
 
-**Next:** PART II (Continuation)
-
-- 15 — Orchestration Layer
-- 16 — Execution Layer
-- 17 — Learning Layer
-- 18 — Governance Layer
-- Executive Layer Interaction Model
-- Capability Flow Architecture
-- End-to-End Executive Lifecycle
-``` 
-
----
-
-# PART II (Continuation)
-
-# Executive Architecture
+The remaining target layers complete the planning-to-learning and governance cycle.
 
 ## 15 — Orchestration Layer
 
@@ -2129,35 +2093,21 @@ Architecture-Centric
 
 # Governance Hierarchy
 
-```
-Constitution
-
-↓
-
+```text
+CONSTITUTION.md
+    ↓
 MASTER.md
-
-↓
-
-ADR
-
-↓
-
-Principles
-
-↓
-
-Architecture
-
-↓
-
+    ↓
+Approved ADR
+    ↓
+Architecture Documents
+    ↓
 Standards
-
-↓
-
-Implementation
+    ↓
+Implementation Documents
 ```
 
-Higher-level documents take precedence.
+Supporting principles, research, and knowledge inform this hierarchy without overriding it.
 
 ---
 
@@ -2252,24 +2202,7 @@ Unlike traditional software systems that terminate after execution, GangNiaga is
 
 ---
 
-# End of PART II
-
-**Next: PART III — Knowledge System**
-
-Sections:
-
-- 19 — Knowledge Base
-- 20 — Executive Research Framework
-- 21 — Reverse Engineering Framework
-- 22 — Pattern Library
-- 23 — Architecture Library
-- 24 — Architecture Decision Records (ADR)
-- 25 — Standards System
-- 26 — Template System
-
----
-
-# PART III
+# PART III — Target Knowledge System
 
 # Knowledge System
 
@@ -2279,7 +2212,9 @@ Sections:
 
 # Introduction
 
-The Knowledge System is the intellectual foundation of GangNiaga Executive OS.
+The Knowledge System is the target intellectual foundation of GangNiaga Executive OS.
+
+> **Status:** Target knowledge architecture. Phase 0 is establishing the foundation documents and governance needed before these planned repositories and systems are implemented.
 
 Unlike traditional software systems where code is the primary asset, GangNiaga considers **knowledge** to be the highest-value organizational resource.
 
@@ -2931,16 +2866,14 @@ Actionable
 
 All completed research should eventually become part of:
 
-```
-knowledge/
+```text
+knowledge/research/
 
-research/
+knowledge/reverse-engineering/
 
-reverse-engineering/
+knowledge/benchmarks/
 
-benchmarks/
-
-sources/
+SOURCES.md
 ```
 
 The repository should continuously expand its collective understanding.
@@ -3131,24 +3064,7 @@ Instead of repeatedly solving known problems, GangNiaga learns from existing eng
 
 ---
 
-# End of PART III (Sections 19–21)
-
-**Next:** PART III (Continuation)
-
-- 22 — Pattern Library
-- 23 — Architecture Library
-- 24 — Architecture Decision Records (ADR)
-- 25 — Standards System
-- 26 — Template System
-- Knowledge Graph Architecture
-- Knowledge Evolution Model
-- Executive Knowledge Loop
-
----
-
-# PART III (Continuation)
-
-# Knowledge System
+# Knowledge System Continuation
 
 ## 22 — Pattern Library
 
@@ -3849,23 +3765,7 @@ Without ADR, Executive Intelligence loses continuity.
 
 ---
 
-# End of PART III (Sections 22–24)
-
-**Next:** PART III (Final)
-
-- 25 — Standards System
-- 26 — Template System
-- Knowledge Graph Architecture
-- Knowledge Governance
-- Knowledge Evolution Framework
-- Executive Knowledge Loop
-- PART III Summary
-
----
-
-# PART III (Final)
-
-# Knowledge System
+# Knowledge Standards and Templates
 
 ## 25 — Standards System
 
@@ -3909,16 +3809,20 @@ Standards preserve continuity across these changes.
 
 All standards inherit authority from higher-level documents.
 
-```
-MASTER.md
-
-↓
-
+```text
 CONSTITUTION.md
 
 ↓
 
-Architecture Principles
+MASTER.md
+
+↓
+
+Approved ADR
+
+↓
+
+Architecture Documents
 
 ↓
 
@@ -4658,7 +4562,7 @@ Unlike traditional software systems, GangNiaga is designed to become progressive
 
 ---
 
-# PART III Summary
+## Part III Summary
 
 The Knowledge System provides the intellectual infrastructure that supports every executive function within GangNiaga Executive OS.
 
@@ -4675,24 +4579,7 @@ This transformation enables GangNiaga to evolve beyond a software repository int
 
 ---
 
-# End of PART III
-
-**Next:** **PART IV — Engineering System**
-
-Sections:
-
-- 27 — Development Workflow
-- 28 — Repository Structure
-- 29 — Documentation Strategy
-- 30 — AI Agent Operating Model
-- 31 — Quality Assurance Framework
-- 32 — Contribution Governance
-- 33 — Executive Governance Model
-- 34 — Future Evolution Strategy 
-
----
-
-# PART IV
+# PART IV — Engineering System
 
 # Engineering System
 
@@ -4703,6 +4590,8 @@ Sections:
 # Introduction
 
 The Engineering System defines how GangNiaga Executive OS is designed, developed, maintained, governed, and continuously improved.
+
+> **Status:** Normative engineering model for present documentation work and future implementation. References to implementation capabilities describe the governed target state until evidence marks them as operational.
 
 Unlike traditional software engineering methodologies that primarily emphasize implementation, GangNiaga treats engineering as the systematic execution of Executive Intelligence.
 
@@ -5110,7 +4999,9 @@ Productivity alone is insufficient.
 
 The repository is not simply a storage location for source code.
 
-It is the operational environment of GangNiaga Executive OS.
+It is intended to become the operational knowledge environment of GangNiaga Executive OS.
+
+> **Status:** The structures described in this section are the locked Repository Blueprint v1.0 target. They are not a statement that every listed path currently exists. Consult `DOCUMENT_MAP.md` for the current repository inventory. Structural changes require an approved governance decision.
 
 Its structure should optimize:
 
@@ -5500,24 +5391,7 @@ Documentation should remain a living asset.
 
 ---
 
-# End of PART IV (Sections 27–29)
-
-**Next:** **PART IV (Continuation)**
-
-- 30 — AI Agent Operating Model
-- 31 — Quality Assurance Framework
-- 32 — Contribution Governance
-- 33 — Executive Governance Model
-- 34 — Future Evolution Strategy
-- Engineering Operating Model
-- Executive Engineering Loop
-- PART IV Summary 
-
----
-
-# PART IV (Continuation)
-
-# Engineering System
+# AI-Assisted Engineering Continuation
 
 ## 30 — AI Agent Operating Model
 
@@ -5529,13 +5403,15 @@ Documentation should remain a living asset.
 
 The AI Agent Operating Model defines how Artificial Intelligence systems participate within GangNiaga Executive OS.
 
+> **Status:** Normative target operating model. Current AI-assisted documentation work must follow the governance constraints here, but the full agent architecture is not yet implemented.
+
 Unlike conventional AI platforms where agents operate autonomously with loosely defined responsibilities, GangNiaga establishes a structured executive hierarchy.
 
 Every AI Agent exists to support Executive Intelligence.
 
 No AI Agent should become the Executive Intelligence itself.
 
-The Executive Layer always remains the highest authority.
+Within the target operating architecture, the Executive Layer remains the highest coordination layer. Repository authority remains governed by `CONSTITUTION.md` and the documented authority hierarchy.
 
 ---
 
@@ -6257,23 +6133,7 @@ Engineering is therefore a continuous knowledge transformation process.
 
 ---
 
-# End of PART IV (Sections 30–32)
-
-**Next:** **PART IV (Final)**
-
-- 33 — Executive Governance Model
-- 34 — Future Evolution Strategy
-- Engineering Operating Model
-- Executive Engineering Lifecycle
-- Repository Evolution Model
-- PART IV Summary
-- Transition to PART V (Appendices) 
-
----
-
-# PART IV (Final)
-
-# Engineering System
+# PART V — Executive Governance
 
 ## 33 — Executive Governance Model
 
@@ -6326,49 +6186,23 @@ Governance protects organizational intelligence.
 
 # Governance Hierarchy
 
-Every governance decision follows the same hierarchy.
+Every governance decision follows the repository authority hierarchy.
 
-```
-Vision
-
-↓
-
-Mission
-
-↓
-
-Executive Philosophy
-
-↓
-
-Core Principles
-
-↓
-
+```text
+CONSTITUTION.md
+    ↓
 MASTER.md
-
-↓
-
-Architecture
-
-↓
-
-ADR
-
-↓
-
+    ↓
+Approved ADR
+    ↓
+Architecture Documents
+    ↓
 Standards
-
-↓
-
-Implementation
-
-↓
-
-Execution
+    ↓
+Implementation Documents
 ```
 
-Higher layers always take precedence.
+Vision, Mission, Philosophy, Principles, research, and supporting knowledge provide essential context. They do not override the authority hierarchy above.
 
 Implementation never overrides philosophy.
 
@@ -6718,6 +6552,8 @@ Governance success is measured over years rather than weeks.
 
 ---
 
+# PART VI — Evolution and Operating Model
+
 # 34 — Future Evolution Strategy
 
 > **Designing for Decades Rather Than Versions**
@@ -6741,6 +6577,8 @@ Executive Decision Making
 Autonomous Systems
 
 Future evolution is therefore a first-class architectural concern.
+
+> **Status:** Governed future direction. This section does not authorize a structural or roadmap change and does not claim that future capabilities are implemented.
 
 ---
 
@@ -7088,7 +6926,7 @@ The repository becomes progressively more intelligent over time.
 
 ---
 
-# PART IV Summary
+## Part VI Summary
 
 The Engineering System transforms Executive Intelligence into sustainable engineering practice.
 
@@ -7111,7 +6949,7 @@ Engineering is the disciplined execution of Executive Intelligence.
 
 ---
 
-# Transition to PART V
+# Transition to PART VII
 
 # Appendices
 
@@ -7140,20 +6978,13 @@ These appendices transform philosophy into daily engineering practice.
 
 ---
 
-# End of PART IV
-
-**Next:** **PART V — Executive Appendices (A–Z Reference Manual)**
-
-
----
-
-# PART V
+# PART VII — Executive Appendices
 
 # Executive Appendices
 
 > **Operational Reference Manual**
 
-The Appendices are the permanent reference layer of GangNiaga Executive OS.
+The Appendices are the supporting operational reference layer of GangNiaga Executive OS.
 
 Unlike previous sections that explain philosophy, architecture, engineering, and governance, this section provides the operational standards that every human contributor and AI Agent should consistently follow.
 
@@ -7167,7 +6998,7 @@ They define the language, concepts, terminology, responsibilities, checklists, a
 
 # Executive Terminology
 
-To ensure consistency across documentation, architecture, ADR, implementation, and AI Agents, the following terminology is considered canonical.
+To support consistency across documentation, architecture, ADR, implementation, and AI Agents, the following terms summarize the operating vocabulary. `GLOSSORY.md` remains the specialized terminology document within the repository authority hierarchy.
 
 ---
 
@@ -7341,7 +7172,7 @@ Never inside temporary chat sessions.
 
 # Repository Glossary
 
-The repository contains several major knowledge domains.
+The locked Repository Blueprint v1.0 defines the following target domains. Their inclusion here does not claim that the paths currently exist; `DOCUMENT_MAP.md` is the current-state inventory.
 
 ---
 
@@ -7381,7 +7212,7 @@ Evolution
 
 ---
 
-## patterns/
+## knowledge/patterns/
 
 Contains reusable engineering knowledge.
 
@@ -7455,7 +7286,7 @@ Roadmaps
 
 ---
 
-## research/
+## knowledge/research/
 
 Executive research documents.
 
@@ -7471,19 +7302,19 @@ Technology Analysis
 
 ---
 
-## governance/
+## roadmap/
 
-Repository governance documentation.
+Governed project evolution documentation.
 
-Review Procedures
+Phases
 
-Contribution Rules
+Milestones
 
-Quality Gates
+Long-Term Direction
 
-Compliance
+Dependencies
 
-Executive Policies
+Decision Gates
 
 ---
 
@@ -7812,142 +7643,119 @@ Every future research document should reference original sources whenever practi
 
 ---
 
-# MASTER.md Completion Statement
+# PART VIII — Foundation Status and Governed Roadmap
 
-This document serves as the constitutional foundation of GangNiaga Executive OS.
+## Purpose
 
-It defines:
+This part closes the operating reference by distinguishing the repository's verified current state from its locked target state and future implementation intent.
 
-- Vision
-- Mission
-- Philosophy
-- Executive Principles
-- Executive Architecture
-- Knowledge System
-- Engineering System
-- Governance
-- Organizational Learning
-- Repository Standards
-- Future Evolution
+It does not replace or amend the locked roadmap. It defines the interpretation and governance gates that must be satisfied while that roadmap is executed.
 
-It is intended to function as the **Single Source of Truth (SSOT)** for all future contributors, AI Agents, execution engines, and engineering activities.
+---
 
-Any implementation that conflicts with this document should be reviewed before acceptance.
+## Current Foundation Baseline
+
+At the publication of Version 1.1.0:
+
+- Phase 0 is focused on building a **Company Knowledge & Executive Intelligence Foundation**.
+- The repository contains the existing root foundation documents recorded in `DOCUMENT_MAP.md`.
+- The current glossary path remains `GLOSSORY.md`; `GLOSSARY.md` is the canonical locked target filename pending a governed decision.
+- No `LICENSE` has been selected or created.
+- Planned architecture, knowledge, ADR, standards, template, roadmap, and implementation paths must not be assumed to exist until the repository inventory confirms them.
+- No target capability is operational merely because it is described in this document.
+
+Current-state claims must be supported by repository evidence. When evidence is absent, the item must be described as proposed, planned, or target-state architecture.
+
+---
+
+## Locked Target State
+
+Repository Blueprint v1.0 remains the structural baseline.
+
+This MASTER explains the intended operating relationships among:
+
+- Executive Intelligence,
+- knowledge and research,
+- architecture and decisions,
+- planning and orchestration,
+- execution and validation,
+- memory and learning,
+- governance and continuous improvement.
+
+These relationships preserve valuable design knowledge. They do not authorize file renames, folder creation or removal, roadmap changes, architecture implementation, or license selection.
+
+---
+
+## Future Implementation Gates
+
+Before a planned capability is represented as implemented, the governed work should provide:
+
+1. verified research and traceable sources,
+2. an approved decision when the change requires an ADR,
+3. architecture boundaries and failure modes,
+4. security, privacy, access, and audit requirements,
+5. implementation and migration plans,
+6. validation evidence,
+7. documentation that updates current-state status,
+8. lessons that return to organizational knowledge.
+
+The minimum evidence depends on risk. High-impact capabilities involving identity, credentials, payments, personal data, external accounts, autonomous execution, or destructive tools require stricter approval and validation.
+
+---
+
+## Governed Roadmap Interpretation
+
+The locked roadmap is preserved. This document applies the following interpretation without changing its structure:
+
+```text
+Phase 0 Foundation
+    ↓
+Verified Knowledge and Research
+    ↓
+Approved Decisions
+    ↓
+Target Architecture
+    ↓
+Implementation Planning
+    ↓
+Controlled Implementation
+    ↓
+Validation and Learning
+```
+
+Work may iterate between these activities, but implementation must not silently redefine higher-authority decisions or architecture.
+
+---
+
+## Remaining Governed Decisions
+
+The following items remain outside the authority of this cleanup and require their own approved decisions where applicable:
+
+- whether and when to correct `GLOSSORY.md` to the canonical `GLOSSARY.md` filename,
+- selection of a repository license and creation of `LICENSE`,
+- creation or activation of locked target folders and documents,
+- approval of detailed implementation architecture,
+- technology, model, framework, and execution-engine selections,
+- security and data-governance controls for operational agents and integrations.
+
+Recording an item here does not pre-approve it.
+
+---
+
+## MASTER.md Completion Statement
+
+MASTER.md is the repository-wide operational reference for GangNiaga Executive OS. It integrates foundation knowledge, target architecture, governance, engineering, operating-model, and future-evolution guidance under `CONSTITUTION.md`.
+
+It is not the Constitution and is not the repository's highest authority. Any lower-level decision, architecture, standard, or implementation that conflicts with this document must be corrected or resolved through the applicable governed process. Any conflict with `CONSTITUTION.md` is resolved in favor of the Constitution.
 
 ---
 
 # End of MASTER.md
 
-**Version:** 1.0 (Foundation Edition)
+**Version:** 1.1.0 (Foundation Operating Reference)
 
-**Status:** Locked Foundation
+**Status:** Official Foundation Operating Reference
 
 **Project:** GangNiaga Executive OS
 
 > *Build Once. Think Forever. Execute Anywhere.*
-
-
-
-MASTER.md
-
-PART I
-Executive Foundation
-
-1. Vision
-2. Mission
-3. Philosophy
-...
-10. Core Principles
-
-──────────────────────────
-
-PART II
-Executive Architecture
-
-11. Executive Intelligence
-12. AI Orchestrator
-13. Capability Router
-...
-
-──────────────────────────
-
-PART III
-Knowledge System
-
-21. Knowledge Architecture
-22. Pattern Library
-23. Architecture Library
-24. ADR
-25. Standards
-26. Templates
-
-──────────────────────────
-
-PART IV
-Engineering System
-
-27. Development Workflow
-28. Repository Structure
-29. Documentation
-30. AI Agent Model
-31. QA
-32. Contribution
-33. Governance
-34. Future Evolution
-
-──────────────────────────
-
-PART V
-Executive Appendices
-
-Glossary
-Checklists
-Capability Matrix
-Reference Sources
-
-──────────────────────────
-
-PART VI
-Executive Operating Model
-
-35. Executive Operating Cycle
-36. Planning
-37. Decision
-38. Capability Registry
-39. Context Management
-40. Memory System
-
-──────────────────────────
-
-PART VII
-AI Native Architecture
-
-41. AI Orchestrator
-42. Capability Router
-43. Model Router
-44. Multi-Agent Coordination
-45. Tool Registry
-46. Execution Layer
-47. Memory Layer
-48. Reflection Engine
-49. Self-Improvement Engine
-50. Executive Intelligence Core
-
-──────────────────────────
-
-PART VIII
-Future Roadmap
-
-51. Evolution Strategy
-52. Long-term Vision
-53. Research Roadmap
-54. Architecture Roadmap
-55. Executive AI Roadmap
-
-──────────────────────────
-
-END 
-
-
-
-

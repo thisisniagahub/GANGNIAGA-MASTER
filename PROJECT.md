@@ -2,9 +2,9 @@
 
 > **GangNiaga Executive OS Project Overview**
 >
-> Version: 1.0.0
+> Version: 1.1.0
 >
-> Status: Active
+> Status: Active Foundation
 >
 > Repository: GangNiaga Executive OS
 
@@ -44,9 +44,9 @@ Executive Decision System
 
 # Project Summary
 
-GangNiaga Executive OS is an Executive AI Operating System designed to coordinate knowledge, architecture, decision making, planning, orchestration, execution, and continuous learning.
+GangNiaga Executive OS is a project to build an Executive AI Operating System designed to coordinate knowledge, architecture, decision making, planning, orchestration, execution, and continuous learning.
 
-Rather than functioning as a chatbot, coding assistant, or workflow automation tool, GangNiaga serves as the Executive Layer responsible for coordinating multiple AI systems and execution engines.
+Rather than functioning as a chatbot, coding assistant, or workflow automation tool, GangNiaga is intended to serve as the Executive Layer responsible for coordinating multiple AI systems and execution engines.
 
 The project emphasizes architecture-first development, research-driven decision making, and long-term maintainability.
 
@@ -65,7 +65,7 @@ Modern AI ecosystems suffer from several recurring challenges.
 
 These limitations reduce maintainability, scalability, and organizational learning.
 
-GangNiaga Executive OS addresses these issues by establishing a centralized Executive Intelligence Layer.
+GangNiaga Executive OS is intended to address these issues by establishing a centralized Executive Intelligence Layer.
 
 ---
 
@@ -346,11 +346,14 @@ Current Development Phase
 
 Phase 0
 
-Executive Intelligence Research
+Company Knowledge & Executive Intelligence Foundation
 
-Architecture Foundation
+Current repository state:
 
-Knowledge Base Development
+- foundation documentation exists,
+- target architecture and repository domains are documented but are not automatically implemented,
+- current paths and filename exceptions are recorded in `DOCUMENT_MAP.md`,
+- no capability should be treated as operational without implementation and validation evidence.
 
 ---
 
