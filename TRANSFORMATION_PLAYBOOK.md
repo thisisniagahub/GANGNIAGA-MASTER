@@ -74,7 +74,7 @@ Guna `/compact` secara strategik untuk mengelakkan auto-compaction yang hilangka
 **Masa:** 20-40 minit
 **Fail:**
 - `f:\GANGNIAGA-MASTER\G0_DECISION_PACK.md`
-- `f:\GANGNIAGA-MASTER\ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md`
+- `f:\GANGNIAGA-MASTER\adr\ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md`
 
 **Tindakan anda:**
 1. Baca kedua-dua fail
@@ -393,20 +393,20 @@ Skills: Aktifkan `verification-loop` — jalankan validation selepas pembaikan
 
 ## Langkah 1: Audit
 Grep SEMUA fail .md di f:\GANGNIAGA-MASTER (rekursif) untuk:
-- Pattern backtick: `chat1.md`, `chat2.md`, `chat3.md`, `chat4.md`, `chat5.md`
-- Pattern backtick: `ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md` (jika rujuk root, tukar ke adr/)
+- Pattern backtick: "chat1.md", "chat2.md", "chat3.md", "chat4.md", "chat5.md"
+- Pattern backtick: "ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md" (jika rujuk root, tukar ke adr/)
 - Pattern backtick: `GLOSSARY.md` (catat untuk Fasa F, jangan ubah lagi)
 
 Untuk setiap hit, tunjukkan: [Fail | Baris | Rujukan Lama | Rujukan Baharu]
 
 ## Langkah 2: Fix
 Untuk setiap broken link, kemaskini:
-- `chat1.md` → `strategy/PROGRAMME_BACKLOG.md`
-- `chat2.md` → `G0_DECISION_PACK.md`
-- `chat3.md` → `strategy/ENTERPRISE_DIRECTION.md`
-- `chat4.md` → `implementation/AUDIT_NOTES.md`
-- `chat5.md` → `strategy/GATED_TRANSFORMATION_PLAN.md`
-- Root `ADR-0006-*.md` → `adr/ADR-0006-*.md`
+- "chat1.md" → `strategy/PROGRAMME_BACKLOG.md`
+- "chat2.md" → `G0_DECISION_PACK.md`
+- "chat3.md" → `strategy/ENTERPRISE_DIRECTION.md`
+- "chat4.md" → `implementation/AUDIT_NOTES.md`
+- "chat5.md" → `strategy/GATED_TRANSFORMATION_PLAN.md`
+- Root "ADR-0006-*.md" → "adr/ADR-0006-*.md"
 
 ## Langkah 3: Kemaskini DOCUMENT_MAP.md
 - Kemaskini "Current Repository State" — senarai semua fail yang SEKARANG wujud (rekursif)
@@ -607,7 +607,7 @@ Kemaskini GEMINI.md → F1: GLOSSARY.md renamed ✅
 
 ---
 
-### `[ ]` F2 — Final Validation Pass
+### `[x]` F2 — Final Validation Pass
 
 **Skills:** `verification-loop`, `ponytail-review`
 **Complexity:** Sederhana
@@ -625,7 +625,7 @@ Skills: Aktifkan `verification-loop` dan `ponytail-review`
 - Flag sebarang mismatch
 
 ## Check 2: Broken References
-- Grep semua .md untuk backtick references (`something.md`)
+- Grep semua .md untuk backtick references ("something.md")
 - Sahkan setiap rujukan menghala ke fail yang wujud
 - MESTI mendapat 0 broken references
 

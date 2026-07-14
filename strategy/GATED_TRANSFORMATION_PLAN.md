@@ -76,7 +76,7 @@ Review date
 Status
 ```
 
-Active task truth menggunakan GitHub Issues/Project. `TODO.md` menjadi dashboard, bukan sumber tunggal.
+Active task truth menggunakan GitHub Issues/Project. "TODO.md" menjadi dashboard, bukan sumber tunggal.
 
 Pada gate ini juga kita betulkan:
 
@@ -210,7 +210,7 @@ Setiap PR mesti kecil, boleh direview dan boleh dirollback.
 
 Langkah pertama yang aku cadangkan:
 
-1. Audit dan lindungi perubahan `GLOSSARY.md → GLOSSARY.md` yang sedang berada dalam worktree.
+1. Audit dan lindungi perubahan "GLOSSARY.md → GLOSSARY.md" yang sedang berada dalam worktree.
 2. Rewrite `F:\TODO.md` menjadi **Enterprise Transformation TODO v2**.
 3. Sediakan draft G0: business outcomes, decision rights, risk appetite dan Blueprint v2 requirements.
 4. Selepas kau review G0, barulah kita hasilkan constitutional ADR dan PR pertama.

@@ -2,7 +2,7 @@
 
 Read-only audit complete and delivered to the parent agent.
 
-Key blocker identified: creating root `TODO.md` would violate the locked Blueprint. The compliant location for the requested comprehensive checklist is `implementation/CHECKLIST.md`.
+Key blocker identified: creating root "TODO.md" would violate the locked Blueprint. The compliant location for the requested comprehensive checklist is "implementation/CHECKLIST.md".
 
 Verified state:
 

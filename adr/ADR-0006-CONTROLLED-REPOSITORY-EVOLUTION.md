@@ -32,15 +32,15 @@ The absolute structural lock creates the following operational issues:
 1. **Ambiguity:** "Formally approved decision" is not defined with sufficient specificity — who approves, what evidence is required, and what change classes exist.
 2. **Proportionality gap:** A low-risk editorial correction (e.g., fixing `GLOSSARY.md` → `GLOSSARY.md`) requires the same undefined process as a constitutional amendment.
 3. **Stagnation risk:** Legitimate structural evolution (new governance artifacts, strategy documents, enterprise registers) cannot proceed without constitutional uncertainty.
-4. **Workaround pressure:** Needed artifacts accumulate as unstructured `chat*.md` files in root because the governed path is unclear.
+4. **Workaround pressure:** Needed artifacts accumulate as unstructured "chat*.md" files in root because the governed path is unclear.
 5. **Knowledge fragmentation:** Evidence and decisions drift into external systems or temporary files rather than the governed repository.
 
 ### 1.3 Evidence
 
 - `DOCUMENT_MAP.md` records known structural exceptions (e.g., `GLOSSARY.md` typo, missing `LICENSE`).
-- Five unstructured `chat*.md` files exist in root — containing legitimate strategy, governance, and planning content with no governed home.
+- Five unstructured "chat*.md" files exist in root — containing legitimate strategy, governance, and planning content with no governed home.
 - `MASTER.md` has grown to 7,765 lines because content that belongs in domain-specific files has no authorized path to move there.
-- `chat4.md` explicitly documents that creating root `TODO.md` would violate the locked Blueprint.
+- "chat4.md" explicitly documents that creating root "TODO.md" would violate the locked Blueprint.
 - The G0 Decision Pack (see `G0_DECISION_PACK.md`) documents 14 capability gaps, 8 business outcomes, and 5 governance alternatives.
 
 ---
@@ -146,7 +146,7 @@ Rejected. Incompatible with project identity and constitutional principles.
 ### 7.2 Enabled future work
 
 - Strategy, governance, and planning artifacts can be placed in governed folders.
-- `chat*.md` content can be migrated to proper locations.
+- "chat*.md" content can be migrated to proper locations.
 - `MASTER.md` content can be modularized into domain-specific files.
 - Enterprise registers and control documents can be created.
 
