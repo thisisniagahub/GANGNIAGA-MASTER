@@ -23,7 +23,7 @@ GangNiaga Executive OS — Enterprise AI Operating System documentation and gove
 - Playbook Transformation: 100% Complete (Fasa A-J) 💯
 
 ## Current Phase
-Phase 0 — Company Knowledge & Executive Intelligence Foundation
+Phase 1 — Architecture Foundation (Hybrid Model)
 
 ## Key Architecture Decisions
 - ADR-0006: Structural lock replaced with CC-0 to CC-4 change classes
@@ -35,5 +35,4 @@ Run: `powershell scripts/health-check.ps1`
 ## Important Rules
 - All structural changes require ADR-0006 change classification
 - CONSTITUTION.md is highest authority
-- No planned component described as implemented
-- LICENSE not yet selected
+- LICENSE is Proprietary / Closed Source
