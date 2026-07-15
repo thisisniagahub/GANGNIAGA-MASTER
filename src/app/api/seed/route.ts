@@ -10,7 +10,7 @@ export async function POST() {
     ];
     await Promise.all(dummyData.map(async (doc) => {
       const emb = await ai.generateEmbedding(doc);
-      await vectorStore.insert(doc, emb, { source: "dummy_seed" });
+      await vectorStore.insert(doc, emb, '00000000-0000-0000-0000-000000000000', { source: "dummy_seed" });
     }));
     return NextResponse.json({ message: "Data dummy berjaya dimasukkan!" });
   } catch(e) {

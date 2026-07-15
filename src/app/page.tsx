@@ -1,9 +1,9 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
-
 export default function HomePage() {
+  const [conversationId, setConversationId] = useState<string | null>(null);
   const [messages, setMessages] = useState([
-    { role: 'ai', content: 'Selamat datang ke GangNiaga Executive OS. Sila tekan "Initialize Memory" di panel sebelah kiri untuk memuatkan data percubaan, kemudian tanyakan soalan anda.' }
+    { role: 'ai', content: 'Selamat datang ke GangNiaga Executive OS. Sila muat naik dokumen di panel sebelah kiri untuk memuatkan data, kemudian tanyakan soalan anda.' }
   ]);
   const [input, setInput] = useState('');
   const [isThinking, setIsThinking] = useState(false);
@@ -26,23 +26,6 @@ export default function HomePage() {
     scrollToBottom();
   }, [messages, isThinking]);
 
-  const handleSeed = async () => {
-    setIsSeeding(true);
-    try {
-      const response = await fetch('/api/seed', { method: 'POST' });
-      const data = await response.json();
-      if (response.ok) {
-        showToast("Memory successfully initialized!");
-      } else {
-        showToast(data.error || "Failed to initialize memory", true);
-      }
-    } catch (e) {
-      showToast("Network error. Is the server running?", true);
-    } finally {
-      setIsSeeding(false);
-    }
-  };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || isThinking) return;
@@ -53,20 +36,26 @@ export default function HomePage() {
     setIsThinking(true);
 
     try {
+      const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+      if (conversationId) {
+        headers['x-conversation-id'] = conversationId;
+      }
+
       const response = await fetch('/api/knowledge/ask', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify({ query: userMsg })
       });
       const data = await response.json();
       
       if (response.ok) {
         setMessages(prev => [...prev, { role: 'ai', content: data.answer }]);
+        if (data.conversationId) setConversationId(data.conversationId);
       } else {
         setMessages(prev => [...prev, { role: 'ai', content: "Maaf, terdapat ralat teknikal: " + (data.error || "Unknown error") }]);
         showToast("API Error", true);
       }
-    } catch (error) {
+    } catch {
       setMessages(prev => [...prev, { role: 'ai', content: "Ralat rangkaian. Sila pastikan server beroperasi." }]);
       showToast("Network Error", true);
     } finally {
@@ -75,7 +64,7 @@ export default function HomePage() {
   };
 
   const renderContent = (content: string) => {
-    let formatted = content
+    const formatted = content
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
@@ -120,11 +109,39 @@ export default function HomePage() {
 
           <div className="menu-section">
             <h3>ACTIONS</h3>
-            <button id="seed-btn" className="primary-btn" onClick={handleSeed} disabled={isSeeding}>
-              <span>{isSeeding ? "Initializing..." : "Initialize Memory"}</span>
-              <div className="btn-glow"></div>
-            </button>
-            <p className="help-text">Loads standard company knowledge into the vector database.</p>
+            <div className="upload-container">
+              <input type="file" id="file-upload" accept=".txt,.md,.csv" style={{ display: 'none' }} onChange={async (e) => {
+                const file = e.target.files?.[0];
+                if (!file) return;
+                setIsSeeding(true);
+                const formData = new FormData();
+                formData.append('file', file);
+                try {
+                  const response = await fetch('/api/ingest', { method: 'POST', body: formData });
+                  const data = await response.json();
+                  if (response.ok) {
+                    showToast("Document ingested successfully!");
+                  } else {
+                    showToast(data.error || "Failed to ingest document", true);
+                  }
+                } catch {
+                  showToast("Network error during ingestion.", true);
+                } finally {
+                  setIsSeeding(false);
+                  e.target.value = ''; // reset
+                }
+              }} />
+              <button 
+                id="seed-btn" 
+                className="primary-btn" 
+                onClick={() => document.getElementById('file-upload')?.click()} 
+                disabled={isSeeding}
+              >
+                <span>{isSeeding ? "Uploading..." : "Upload Document"}</span>
+                <div className="btn-glow"></div>
+              </button>
+            </div>
+            <p className="help-text">Uploads documents to the vector database.</p>
           </div>
         </div>
 

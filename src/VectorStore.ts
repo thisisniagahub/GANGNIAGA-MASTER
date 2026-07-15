@@ -1,52 +1,99 @@
-// In-memory VectorStore for Preview purposes
+import { supabaseAdmin } from './lib/supabase';
 
-interface Document {
-  id: number;
+export interface Document {
+  id: string;
   content: string;
   metadata: any;
-  embedding: number[];
+  similarity?: number;
 }
 
 export class VectorStore {
-  private documents: Document[] = [];
-  private nextId: number = 1;
-
   constructor() {}
 
   async initialize() {
-    console.log("Mock VectorStore initialized");
+    console.log("VectorStore initialized with Supabase pgvector");
   }
 
-  async insert(content: string, embedding: number[], metadata: any = {}) {
-    this.documents.push({
-      id: this.nextId++,
-      content,
-      metadata,
-      embedding
-    });
-  }
-
-  async search(queryEmbedding: number[], limit: number = 5) {
-    // Simple cosine similarity search in memory
-    const results = this.documents.map(doc => {
-      let dotProduct = 0;
-      let normA = 0;
-      let normB = 0;
-      for (let i = 0; i < queryEmbedding.length; i++) {
-        dotProduct += queryEmbedding[i] * doc.embedding[i];
-        normA += queryEmbedding[i] * queryEmbedding[i];
-        normB += doc.embedding[i] * doc.embedding[i];
+  async insert(content: string, embedding: number[], userId: string, metadata: any = {}) {
+    try {
+      if (!userId) {
+        throw new Error('User ID is required to insert into VectorStore');
       }
-      const similarity = dotProduct / (Math.sqrt(normA) * Math.sqrt(normB));
-      return {
-        ...doc,
-        similarity
-      };
+
+      // Check if dummy document exists
+      let { data: doc } = await supabaseAdmin.from('documents')
+        .select('id')
+        .eq('title', 'System Knowledge Base')
+        .eq('owner_id', userId)
+        .single();
+      
+      if (!doc) {
+        const { data: newDoc, error: docError } = await supabaseAdmin.from('documents')
+          .insert({ owner_id: userId, title: 'System Knowledge Base', status: 'ready' })
+          .select('id').single();
+        if (docError) throw docError;
+        doc = newDoc;
+      }
+
+      // Check if dummy version exists
+      let { data: version } = await supabaseAdmin.from('document_versions')
+        .select('id')
+        .eq('document_id', doc.id)
+        .eq('version_number', 1)
+        .single();
+
+      if (!version) {
+        const { data: newVersion, error: verError } = await supabaseAdmin.from('document_versions')
+          .insert({ document_id: doc.id, version_number: 1, content_hash: 'dummy' })
+          .select('id').single();
+        if (verError) throw verError;
+        version = newVersion;
+      }
+
+      // Insert chunk
+      const { data: chunk, error: chunkError } = await supabaseAdmin.from('chunks')
+        .insert({
+          document_version_id: version.id,
+          chunk_index: 0,
+          content,
+          token_count: Math.ceil(content.length / 4)
+        })
+        .select('id').single();
+      
+      if (chunkError) throw chunkError;
+
+      // Insert embedding
+      const { error: embedError } = await supabaseAdmin.from('chunk_embeddings')
+        .insert({
+          chunk_id: chunk.id,
+          model: 'dummy-model',
+          embedding
+        });
+
+      if (embedError) throw embedError;
+    } catch (e) {
+      console.error('Failed to insert into vector store:', e);
+      throw e;
+    }
+  }
+
+  async search(queryEmbedding: number[], limit: number = 5): Promise<Document[]> {
+    const { data, error } = await supabaseAdmin.rpc('match_chunks', {
+      query_embedding: queryEmbedding,
+      match_threshold: 0.1, // very low threshold for testing
+      match_count: limit
     });
 
-    results.sort((a, b) => b.similarity - a.similarity);
-    return results.slice(0, limit).map(({ id, content, metadata, similarity }) => ({
-      id, content, metadata, similarity
+    if (error) {
+      console.error('Search error:', error);
+      throw error;
+    }
+
+    return data.map((d: any) => ({
+      id: d.id,
+      content: d.content,
+      metadata: d.metadata,
+      similarity: d.similarity
     }));
   }
 }

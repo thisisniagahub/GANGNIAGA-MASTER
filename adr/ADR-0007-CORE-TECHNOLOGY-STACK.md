@@ -33,7 +33,7 @@ Chosen option: **Option 2: Next.js App Router + Supabase + Vercel (No Docker)**,
 
 ### 4.1 Consequences
 * **Positive:** Unifies frontend and backend in one Next.js repository. Turnkey user auth and database security via Supabase policies. Native deployment triggers on every commit.
-* **Negative:** Vercel Hobby tier function timeout (10s) requires ingestion jobs to run in batches or via background edge functions.
+* **Negative:** Vercel Hobby tier function timeout (default 10s, configurable up to 60s depending on Fluid Compute and project configuration, verified 2026-07; see [Vercel Limits](https://vercel.com/docs/functions/serverless-functions/runtimes#maxduration)) requires ingestion jobs to run in batches or via background edge functions.
 
 ## 5. Migration and Rollback Plan
 * **Migration:** Scaffold Next.js App Router in the root directory. Retire `docker-compose.yml` and `docker:up` scripts. Configure Supabase client and environment variables.

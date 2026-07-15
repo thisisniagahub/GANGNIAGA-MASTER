@@ -69,7 +69,7 @@ An approved ADR may supersede lower-level guidance within its scope. It cannot o
 
 # Current-State Interpretation
 
-The repository is currently in Phase 0. Its objective is to build a **Company Knowledge & Executive Intelligence Foundation**.
+The repository is currently in Phase 1 (Architecture Foundation). Its objective is to build a **Company Knowledge & Executive Intelligence Foundation**.
 
 At this stage, the repository contains foundation documentation. Descriptions of layers, engines, routers, agents, registries, workflows, memory systems, and execution systems define a target operating and architecture model unless implementation and validation evidence explicitly marks them as operational.
 
@@ -574,30 +574,32 @@ Part I defines the identity, purpose, boundaries, and executive philosophy that 
 
 The target executive architecture is documented in the `architecture/` directory.
 
-- [Executive Intelligence Layer](file:///F:/GANGNIAGA-MASTER/architecture/EXECUTIVE_INTELLIGENCE_LAYER.md)
-- [Knowledge Layer](file:///F:/GANGNIAGA-MASTER/architecture/KNOWLEDGE_LAYER.md)
-- [Decision Layer](file:///F:/GANGNIAGA-MASTER/architecture/DECISION_LAYER.md)
-- [Planning Layer](file:///F:/GANGNIAGA-MASTER/architecture/PLANNING_LAYER.md)
-- [Orchestration Layer](file:///F:/GANGNIAGA-MASTER/architecture/ORCHESTRATION_LAYER.md)
-- [Execution Layer](file:///F:/GANGNIAGA-MASTER/architecture/EXECUTION_LAYER.md)
-- [Learning Layer](file:///F:/GANGNIAGA-MASTER/architecture/LEARNING_LAYER.md)
-- [Governance Layer](file:///F:/GANGNIAGA-MASTER/architecture/GOVERNANCE_LAYER.md)
+- [Executive Intelligence Layer](architecture/EXECUTIVE_INTELLIGENCE_LAYER.md)
+- [Knowledge Layer](architecture/KNOWLEDGE_LAYER.md)
+- [Decision Layer](architecture/DECISION_LAYER.md)
+- [Planning Layer](architecture/PLANNING_LAYER.md)
+- [Orchestration Layer](architecture/ORCHESTRATION_LAYER.md)
+- [Execution Layer](architecture/EXECUTION_LAYER.md)
+- [Learning Layer](architecture/LEARNING_LAYER.md)
+- [Governance Layer](architecture/GOVERNANCE_LAYER.md)
 
 For the complete architecture overview, consult the individual domain documents.
+
 ## PART III — Target Knowledge System
 
 The target knowledge system is documented in the `knowledge/` directory.
 
-- [Knowledge Base](file:///F:/GANGNIAGA-MASTER/knowledge/KNOWLEDGE_BASE.md)
-- [Executive Research Framework](file:///F:/GANGNIAGA-MASTER/knowledge/EXECUTIVE_RESEARCH_FRAMEWORK.md)
-- [Reverse Engineering Framework](file:///F:/GANGNIAGA-MASTER/knowledge/REVERSE_ENGINEERING_FRAMEWORK.md)
-- [Pattern Library](file:///F:/GANGNIAGA-MASTER/knowledge/PATTERN_LIBRARY.md)
-- [Architecture Library](file:///F:/GANGNIAGA-MASTER/knowledge/ARCHITECTURE_LIBRARY.md)
-- [ADR System](file:///F:/GANGNIAGA-MASTER/knowledge/ADR_SYSTEM.md)
-- [Standards System](file:///F:/GANGNIAGA-MASTER/knowledge/STANDARDS_SYSTEM.md)
-- [Template System](file:///F:/GANGNIAGA-MASTER/knowledge/TEMPLATE_SYSTEM.md)
+- [Knowledge Base](knowledge/KNOWLEDGE_BASE.md)
+- [Executive Research Framework](knowledge/EXECUTIVE_RESEARCH_FRAMEWORK.md)
+- [Reverse Engineering Framework](knowledge/REVERSE_ENGINEERING_FRAMEWORK.md)
+- [Pattern Library](knowledge/PATTERN_LIBRARY.md)
+- [Architecture Library](knowledge/ARCHITECTURE_LIBRARY.md)
+- [ADR System](knowledge/ADR_SYSTEM.md)
+- [Standards System](knowledge/STANDARDS_SYSTEM.md)
+- [Template System](knowledge/TEMPLATE_SYSTEM.md)
 
 For the complete knowledge system overview, consult the individual domain documents.
+
 # PART IV — Engineering System
 
 # Engineering System
@@ -3097,15 +3099,9 @@ Any external system capable of performing implementation.
 
 Examples include:
 
-OpenClaw
+Hermes-Agent (development and delivery operator; may execute playbook and repository-development tasks under human review. Not automatically a product-runtime component.)
 
-Claude Code
-
-OpenHands
-
-Codex
-
-Aider
+OpenClaw (candidate external orchestration or execution gateway; remains a candidate unless governed adoption is approved and implemented.)
 
 Future execution platforms
 
@@ -3622,7 +3618,7 @@ The Executive Architecture and Knowledge System of GangNiaga Executive OS are in
 
 ### AI Engineering
 
-- OpenClaw
+- OpenClaw (Candidate external gateway)
 - OpenHands
 - Claude Code
 - LangGraph
@@ -3676,7 +3672,7 @@ It does not replace or amend the locked roadmap. It defines the interpretation a
 
 At the publication of Version 1.1.0:
 
-- Phase 0 is focused on building a **Company Knowledge & Executive Intelligence Foundation**.
+- Phase 1 (Architecture Foundation) is underway, migrating to Next.js, Supabase and Vercel.
 - The repository contains the existing root foundation documents recorded in `DOCUMENT_MAP.md`.
 - The current glossary path remains `GLOSSARY.md`; `GLOSSARY.md` is the canonical locked target filename pending a governed decision.
 - No `LICENSE` has been selected or created.
@@ -3690,6 +3686,16 @@ Current-state claims must be supported by repository evidence. When evidence is 
 ## Governed Target State
 
 Repository Blueprint v2.0 (governed by ADR-0006) is the structural baseline. Blueprint v1.0 was the original baseline.
+
+The approved core technology stack (governed by ADR-0007) mandates:
+- Framework: Next.js App Router (TypeScript)
+- Database & Auth: Supabase (PostgreSQL, Auth, pgvector)
+- Hosting: Vercel
+- Operational Constraint: STRICTLY NO DOCKER
+Provider selections are outside the scope of ADR-0007. Currently proposed or owner-directed operating selections (subject to security, privacy, data-policy, cost, evaluation, and operational approval) include:
+- Intended Primary AI Provider: NVIDIA NIM
+- Intended Fallback AI Provider: OpenRouter
+- Intended Local AI Provider: Ollama
 
 This MASTER explains the intended operating relationships among:
 
@@ -3754,7 +3760,6 @@ The following items remain outside the authority of this cleanup and require the
 - selection of a repository license and creation of `LICENSE`,
 - creation or activation of target folders and documents,
 - approval of detailed implementation architecture,
-- technology, model, framework, and execution-engine selections,
 - security and data-governance controls for operational agents and integrations.
 
 Recording an item here does not pre-approve it.

@@ -65,6 +65,7 @@ The following files currently exist in the repository:
 README.md
 MASTER.md
 DOCUMENT_MAP.md
+PRD.md
 CONSTITUTION.md
 PROJECT.md
 VISION.md
@@ -191,6 +192,8 @@ GANGNIAGA-MASTER/
 
 Repository structural changes are governed by the controlled-change model defined in ADR-0006.
 
+Note: The inclusion of `PRD.md` into the formal Blueprint is Pending Governance (requires CC-3 approval). It exists in the current repository state but is not yet formally part of the Blueprint v2.0.
+
 ### Historical Reference: Blueprint v1.0
 Blueprint v1.0 was the original locked structural baseline. It did not define strategy/ or adr/ folders.
 
@@ -201,8 +204,9 @@ Blueprint v1.0 was the original locked structural baseline. It did not define st
 | Document | Role | Current status | Notes |
 |---|---|---|---|
 | `README.md` | Project landing page | Exists | Foundation-aligned entry point |
-| `MASTER.md` | Executive operating model and repository-wide SSOT | Exists | End-to-end consistency review completed |
+| `MASTER.md` | Executive operating model and repository-wide SSOT | Exists | Requires dedicated consistency review |
 | `DOCUMENT_MAP.md` | Navigation and status index | Exists | Records current and target states |
+| `PRD.md` | Product Requirements Document | Draft | Defines boundaries and releases, inclusion into Blueprint pending governance |
 | `CONSTITUTION.md` | Highest-level immutable principles | Exists | Highest normative authority |
 | `PROJECT.md` | Project definition and scope | Exists | Phase 0 status clarified |
 | `VISION.md` | Long-term direction | Exists | Supporting foundation document |
@@ -215,11 +219,12 @@ Blueprint v1.0 was the original locked structural baseline. It did not define st
 | `LICENSE` | Legal usage terms | Exists | Proprietary and Confidential |
 | `G0_DECISION_PACK.md` | Governance gate G0 pack | Approved | Business Need & Governance basis |
 | `adr/ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md` | Constitutional Change ADR | Approved | Replaces structural lock |
-| `IMPLEMENTATION_PLAYBOOK_V2.md` | Core Execution Plan | Approved | Governed candidate accepted for execution |
+| `adr/ADR-0007-CORE-TECHNOLOGY-STACK.md` | Stack Selection ADR | Approved | Approves framework/DB/hosting; provider selections are outside scope |
+| `IMPLEMENTATION_PLAYBOOK_V2.md` | Core Execution Plan | Proposed | Owner-directed execution playbook pending governed adoption |
 | `implementation/PLAYBOOK_V2_REVIEW_AND_DECISIONS.md` | Review and stack decisions | Approved | Records locked decisions |
-| `IMPLEMENTATION_PLAYBOOK_V2_REVIEW.md` | Review notes | Advisory | Review of the playbook |
-| `IMPROVEMENT_PLAN.md` | Stale transition document | Advisory | Replaced by Playbook V2 |
-| `IMPLEMENTATION_PLAYBOOK.md` | Stale execution playbook | Advisory | Replaced by Playbook V2 |
+| `IMPLEMENTATION_PLAYBOOK_V2_REVIEW.md` | Review notes | Superseded | Review of the playbook |
+| `IMPROVEMENT_PLAN.md` | Stale transition document | Superseded | Replaced by Playbook V2 |
+| `IMPLEMENTATION_PLAYBOOK.md` | Stale execution playbook | Superseded | Replaced by Playbook V2 |
 
 ---
 
@@ -229,10 +234,10 @@ These files are currently retained for reference but are **Advisory** and do not
 
 | Document | Role | Current status | Notes |
 |---|---|---|---|
-| `implementation/PONYTAIL_AUDIT_REPORT.md` | Codebase audit report | Advisory | Pre-execution analysis |
-| `implementation/SECURITY_FINDINGS.md` | Security scan results | Advisory | Pre-execution analysis |
-| `scripts/health-check-report.ps1` | Health check output | Advisory | Point-in-time status report |
-| `conductor/*` | Orchestration scaffolding | Advisory | Represents scaffolding, not final architecture |
+| `implementation/PONYTAIL_AUDIT_REPORT.md` | Codebase audit report | Superseded | Pre-execution analysis |
+| `implementation/SECURITY_FINDINGS.md` | Security scan results | Superseded | Pre-execution analysis |
+| `scripts/health-check-report.ps1` | Health check output | Superseded | Point-in-time status report |
+| `conductor/*` | Orchestration scaffolding | Superseded | Represents scaffolding, not final architecture |
 
 ---
 
@@ -267,17 +272,14 @@ Locked documents:
 ```text
 architecture/
 ├── README.md
-├── EXECUTIVE_OS.md
-├── AI_ORCHESTRATOR.md
-├── CAPABILITY_ROUTER.md
-├── KNOWLEDGE_ENGINE.md
-├── MEMORY_ENGINE.md
-├── EXECUTION_ENGINE.md
-├── WORKFLOW_ENGINE.md
-├── PLUGIN_SDK.md
-├── SECURITY.md
-├── GOVERNANCE.md
-└── DEPLOYMENT.md
+├── DECISION_LAYER.md
+├── EXECUTION_LAYER.md
+├── EXECUTIVE_INTELLIGENCE_LAYER.md
+├── GOVERNANCE_LAYER.md
+├── KNOWLEDGE_LAYER.md
+├── LEARNING_LAYER.md
+├── ORCHESTRATION_LAYER.md
+└── PLANNING_LAYER.md
 ```
 
 Architecture documents define responsibilities, boundaries, interactions, constraints, failure modes, governance, and evolution. They must not present planned components as implemented systems.
@@ -292,11 +294,11 @@ Locked documents:
 adr/
 ├── README.md
 ├── TEMPLATE.md
-├── ADR-0001-PROJECT-VISION.md
-├── ADR-0002-EXECUTIVE-LAYER.md
-├── ADR-0003-KNOWLEDGE-FIRST.md
-├── ADR-0004-CAPABILITY-ROUTER.md
-├── ADR-0005-OPENCLAW-AS-EXECUTION.md
+├── ADR-0001-PROJECT-VISION.md (Planned)
+├── ADR-0002-EXECUTIVE-LAYER.md (Planned)
+├── ADR-0003-KNOWLEDGE-FIRST.md (Planned)
+├── ADR-0004-CAPABILITY-ROUTER.md (Planned)
+├── ADR-0005-OPENCLAW-AS-EXECUTION.md (Missing/Pending)
 ├── ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md
 └── ADR-0007-CORE-TECHNOLOGY-STACK.md
 ```

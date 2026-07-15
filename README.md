@@ -161,21 +161,21 @@ Implementation
 
 ## Development Status
 
-Currently in **Phase 1: Architecture Foundation (Hybrid Model)**. 
+Currently in **Phase 1: Architecture Foundation (Next.js + Supabase + Vercel)**.
 
 ### Development Track: Bounded Pilot (Knowledge Engine)
-The repository has been bootstrapped with a Node.js, Express, and PostgreSQL (pgvector) stack to fulfill the Bounded Pilot (`GN-STR-PIL-001`). 
+Migration to Next.js App Router, Supabase, and Vercel is underway to fulfill the Bounded Pilot (`GN-STR-PIL-001`). No Docker is the approved operational constraint. Production readiness and Release A completion require full implementation and validation evidence.
 
 **Getting Started:**
 ```bash
 # 1. Install Dependencies
 npm install
 
-# 2. Start PostgreSQL Container
-docker compose up -d db
-
-# 3. Start Development Server
+# 2. Start Development Server
 npm run dev
+
+# 3. Build for Production
+npm run build
 
 # 4. Run Tests
 npm test

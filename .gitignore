@@ -34,5 +34,14 @@ eslint-debug.log*
 # Chat logs
 CHAT_LOG_PREVIEW.jsonl
 
+# Test artifacts
+playwright-report/
+test-results/
+
+# Next.js generated
+next-env.d.ts
+
 # Temporary files
 .git_files.txt
+
+.vercel
