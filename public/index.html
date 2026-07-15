@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GangNiaga Executive OS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-panel">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="glow-text">GN</span>
+                </div>
+                <h2>Executive OS</h2>
+            </div>
+            
+            <div class="sidebar-menu">
+                <div class="menu-section">
+                    <h3>SYSTEM STATUS</h3>
+                    <div class="status-indicator">
+                        <span class="dot active"></span>
+                        <span>Engine: Online</span>
+                    </div>
+                    <div class="status-indicator">
+                        <span class="dot active"></span>
+                        <span>Memory: Local (VectorStore)</span>
+                    </div>
+                </div>
+
+                <div class="menu-section">
+                    <h3>ACTIONS</h3>
+                    <button id="seed-btn" class="primary-btn">
+                        <span>Initialize Memory</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <p class="help-text">Loads standard company knowledge into the vector database.</p>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <p>v2.0.0 Bounded Pilot</p>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container">
+            <header class="chat-header glass-panel">
+                <div class="header-content">
+                    <h1>Executive Intelligence Core</h1>
+                    <p>Ask anything about the company's internal documents, policies, or status.</p>
+                </div>
+            </header>
+
+            <div id="chat-messages" class="chat-messages">
+                <!-- Welcome Message -->
+                <div class="message ai-message">
+                    <div class="avatar ai-avatar">GN</div>
+                    <div class="message-bubble">
+                        <p>Selamat datang ke GangNiaga Executive OS. Sila tekan "Initialize Memory" di panel sebelah kiri untuk memuatkan data percubaan, kemudian tanyakan soalan anda.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area glass-panel">
+                <form id="chat-form">
+                    <input type="text" id="chat-input" placeholder="Tanya soalan eksekutif..." autocomplete="off" required>
+                    <button type="submit" id="send-btn" class="send-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

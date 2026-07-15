@@ -1,9 +1,11 @@
 import express from 'express';
+import path from 'path';
 import { VectorStore } from './VectorStore';
 import { PilotAI } from './AI';
 
 const app = express();
 app.use(express.json());
+app.use(express.static(path.join(__dirname, '../public')));
 
 const vectorStore = new VectorStore();
 const ai = new PilotAI();

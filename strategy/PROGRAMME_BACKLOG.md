@@ -210,24 +210,24 @@ Every completed task must identify:
 - **Deliverable:** Use-case register with beneficiaries, value hypothesis, data needs, risk tier, human accountability, dependencies, cost, and acceptance measures.
 - **Owner / approver:** `<Product Lead>` / `<Portfolio Board>`
 - **Dependencies / risk:** `GN-G1-003` / `R3`
-- **Acceptance & evidence:** All use cases are scored with one approved prioritization method; R4 use cases cannot enter a pilot without dedicated control approval.
-- **Status:** `NS`
+- **Acceptance & evidence:** All use cases are scored with one approved prioritization method; R4 use cases cannot enter a pilot without dedicated control approval. Evidence: `strategy/USE_CASE_PORTFOLIO.md`
+- **Status:** `D`
 
 ### [ ] GN-G1-005 — Define the enterprise operating model
 
 - **Deliverable:** Product, platform, service, knowledge, data, AI, security, risk, and support ownership model.
 - **Owner / approver:** `<Operating Model Lead>` / `<Executive Sponsor>`
 - **Dependencies / risk:** `GN-G1-001`, `GN-G1-003` / `R3`
-- **Acceptance & evidence:** Every planned service has business owner, product owner, technical owner, data owner, control owner, and support owner; responsibility gaps equal zero.
-- **Status:** `NS`
+- **Acceptance & evidence:** Every planned service has business owner, product owner, technical owner, data owner, control owner, and support owner; responsibility gaps equal zero. Evidence: `strategy/ENTERPRISE_OPERATING_MODEL.md`
+- **Status:** `D`
 
 ### [ ] GN-G1-006 — Establish portfolio roadmap and benefits realization
 
 - **Deliverable:** Outcome-based roadmap with transition states, funding assumptions, dependencies, benefit owners, kill criteria, and review gates.
 - **Owner / approver:** `<Portfolio Manager>` / `<Investment Committee>`
 - **Dependencies / risk:** `GN-G1-002` through `GN-G1-005` / `R3`
-- **Acceptance & evidence:** Roadmap traces all funded work to outcomes and risks; each tranche has entry, exit, evidence, stop, and re-prioritization criteria.
-- **Status:** `NS`
+- **Acceptance & evidence:** Roadmap traces all funded work to outcomes and risks; each tranche has entry, exit, evidence, stop, and re-prioritization criteria. Evidence: `strategy/PORTFOLIO_ROADMAP.md`
+- **Status:** `D`
 
 ---
 
