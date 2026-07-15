@@ -11,7 +11,7 @@
 - [x] Base Architecture Design (ADRs)
 - [x] Core Environment Setup (`docker-compose`, etc.)
 - [x] Initial Service Scaffolding
-- [ ] Automation Hooks
+- [x] Automation Hooks
 
 ## 3. Track Management
 All execution in Phase 1 will be managed via the `conductor/` directory to ensure autonomous agent synchronization.
