@@ -237,69 +237,69 @@ Every completed task must identify:
 
 **Exit gate:** Approved risk appetite, obligations, controls, records rules, supplier controls, and auditable governance registers.
 
-### [ ] GN-G2-001 — Define the GRC operating model
+### [x] GN-G2-001 — Define the GRC operating model
 
 - **Deliverable:** Governance, risk, compliance, assurance, internal-audit, committee, and escalation model.
 - **Owner / approver:** `<Chief Risk/Compliance Role>` / `<Executive Risk Committee>`
 - **Dependencies / risk:** `G0`, `GN-G1-005` / `R4`
-- **Acceptance & evidence:** Decision rights, independent challenge, assurance ownership, reporting cadence, and material-risk escalation thresholds are approved.
-- **Status:** `NS`
+- **Acceptance & evidence:** Decision rights, independent challenge, assurance ownership, reporting cadence, and material-risk escalation thresholds are approved. [Evidence: `architecture/GRC_OPERATING_MODEL.md`]
+- **Status:** `D`
 
-### [ ] GN-G2-002 — Approve risk appetite and create the risk register
+### [x] GN-G2-002 — Approve risk appetite and create the risk register
 
 - **Deliverable:** Risk taxonomy, scoring method, appetite/tolerance statements, and enterprise risk register.
 - **Owner / approver:** `<Enterprise Risk Owner>` / `<Risk Committee>`
 - **Dependencies / risk:** `GN-G2-001` / `R4`
-- **Acceptance & evidence:** Every R3/R4 risk has owner, treatment, due date, residual-risk decision, control links, and escalation path; no overdue unaccepted R4 risk.
-- **Status:** `NS`
+- **Acceptance & evidence:** Every R3/R4 risk has owner, treatment, due date, residual-risk decision, control links, and escalation path; no overdue unaccepted R4 risk. [Evidence: `architecture/ENTERPRISE_RISK_REGISTER.md`]
+- **Status:** `D`
 
-### [ ] GN-G2-003 — Build the obligation and framework-applicability register
+### [x] GN-G2-003 — Build the obligation and framework-applicability register
 
 - **Deliverable:** Jurisdiction, regulation, contract, policy, standard, and certification applicability assessment.
 - **Owner / approver:** `<Compliance and Legal Leads>` / `<Executive Risk Committee>`
 - **Dependencies / risk:** `GN-G2-001` / `R4`
-- **Acceptance & evidence:** Each candidate framework is marked applicable, not applicable, or under review with rationale and legal/compliance owner; no compliance claim lacks evidence.
-- **Status:** `NS`
+- **Acceptance & evidence:** Each candidate framework is marked applicable, not applicable, or under review with rationale and legal/compliance owner; no compliance claim lacks evidence. [Evidence: `architecture/OBLIGATION_REGISTER.md`]
+- **Status:** `D`
 
-### [ ] GN-G2-004 — Create the control and evidence system
+### [x] GN-G2-004 — Create the control and evidence system
 
 - **Deliverable:** Controls library mapped to obligations, risks, systems, owners, tests, evidence, exceptions, and assurance frequency.
 - **Owner / approver:** `<Controls Architect>` / `<Assurance Lead>`
 - **Dependencies / risk:** `GN-G2-002`, `GN-G2-003` / `R4`
-- **Acceptance & evidence:** 100% of accepted material obligations and R3/R4 risks map to controls; every key control has test method and retained evidence.
-- **Status:** `NS`
+- **Acceptance & evidence:** 100% of accepted material obligations and R3/R4 risks map to controls; every key control has test method and retained evidence. [Evidence: `architecture/CONTROL_AND_EVIDENCE_SYSTEM.md`]
+- **Status:** `D`
 
-### [ ] GN-G2-005 — Govern privacy, records, legal, IP, and licensing
+### [x] GN-G2-005 — Govern privacy, records, legal, IP, and licensing
 
 - **Deliverable:** Privacy governance, records schedule, legal-hold process, IP policy, open-source policy, content-usage rules, and repository-license decision.
 - **Owner / approver:** `<Privacy/Legal Counsel>` / `<Authorized Legal Approver>`
 - **Dependencies / risk:** `GN-G2-003` / `R4`
-- **Acceptance & evidence:** Data retention, deletion, legal hold, copyright, training-data rights, and license posture are approved; `LICENSE` is created only after an explicit decision.
-- **Status:** `NS`
+- **Acceptance & evidence:** Data retention, deletion, legal hold, copyright, training-data rights, and license posture are approved; `LICENSE` is created only after an explicit decision. [Evidence: `architecture/LEGAL_AND_PRIVACY_GOVERNANCE.md`]
+- **Status:** `D`
 
-### [ ] GN-G2-006 — Establish third-party and supplier risk management
+### [x] GN-G2-006 — Establish third-party and supplier risk management
 
 - **Deliverable:** Supplier inventory, due-diligence model, contract-control checklist, concentration-risk view, data-processing terms, monitoring, and exit plans.
 - **Owner / approver:** `<Procurement/Vendor Risk Lead>` / `<Risk Committee>`
 - **Dependencies / risk:** `GN-G2-002`, `GN-G2-003` / `R4`
-- **Acceptance & evidence:** Every material provider has risk tier, accountable owner, approved terms, monitoring cadence, portability plan, and tested exit criteria where critical.
-- **Status:** `NS`
+- **Acceptance & evidence:** Every material provider has risk tier, accountable owner, approved terms, monitoring cadence, portability plan, and tested exit criteria where critical. [Evidence: `architecture/SUPPLIER_RISK_MANAGEMENT.md`]
+- **Status:** `D`
 
-### [ ] GN-G2-007 — Create enterprise governance registers
+### [x] GN-G2-007 — Create enterprise governance registers
 
 - **Deliverable:** Decision, ADR, requirement, risk, control, obligation, exception, waiver, audit finding, incident, supplier, data, AI-system, service, SLO, change, and benefits registers.
 - **Owner / approver:** `<Information Governance Lead>` / `<Governance Lead>`
 - **Dependencies / risk:** `GN-G0-004`, `GN-G2-004` / `R3`
-- **Acceptance & evidence:** Registers have schemas, unique IDs, owners, access rules, retention, relationships, and review SLAs; orphan critical records equal zero.
-- **Status:** `NS`
+- **Acceptance & evidence:** Registers have schemas, unique IDs, owners, access rules, retention, relationships, and review SLAs; orphan critical records equal zero. [Evidence: `architecture/ENTERPRISE_GOVERNANCE_REGISTERS.md`]
+- **Status:** `D`
 
-### [ ] GN-G2-008 — Establish controlled-document and knowledge governance
+### [x] GN-G2-008 — Establish controlled-document and knowledge governance
 
 - **Deliverable:** Content ownership matrix, document lifecycle, review cadence, source/citation policy, staleness policy, archival, supersession, and deduplication rules.
 - **Owner / approver:** `<Knowledge Governance Lead>` / `<Governance Lead>`
 - **Dependencies / risk:** `GN-G0-006`, `GN-G2-007` / `R3`
-- **Acceptance & evidence:** Every controlled document has a canonical owner and next review; semantic duplication has an assigned consolidation action; expired documents cannot silently remain authoritative.
-- **Status:** `NS`
+- **Acceptance & evidence:** Every controlled document has a canonical owner and next review; semantic duplication has an assigned consolidation action; expired documents cannot silently remain authoritative. [Evidence: `knowledge/KNOWLEDGE_GOVERNANCE.md`]
+- **Status:** `D`
 
 ---
 
@@ -373,13 +373,13 @@ Every completed task must identify:
 
 **Exit gate:** Approved data/knowledge lifecycle, AI inventory and risk model, evaluation framework, and operating controls.
 
-### [ ] GN-G4-001 — Establish enterprise data governance
+### [x] GN-G4-001 — Establish enterprise data governance
 
 - **Deliverable:** Data domains, ownership, stewardship, classification, quality, access, retention, residency, consent, deletion, and sharing policies.
 - **Owner / approver:** `<Chief Data/Data Governance Lead>` / `<Data Governance Council>`
 - **Dependencies / risk:** `G2`, `GN-G3-001` / `R4`
-- **Acceptance & evidence:** Every in-scope data domain has owner, classification, quality rules, permitted purposes, lifecycle, and access controls; unknown sensitive-data stores equal zero.
-- **Status:** `NS`
+- **Acceptance & evidence:** Every in-scope data domain has owner, classification, quality rules, permitted purposes, lifecycle, and access controls; unknown sensitive-data stores equal zero. [Evidence: `architecture/DATA_GOVERNANCE_POLICY.md`]
+- **Status:** `D`
 
 ### [ ] GN-G4-002 — Define the enterprise knowledge lifecycle
 
@@ -389,13 +389,13 @@ Every completed task must identify:
 - **Acceptance & evidence:** Knowledge artifacts distinguish fact, evidence, interpretation, recommendation, and decision; freshness and confidence rules are measurable.
 - **Status:** `NS`
 
-### [ ] GN-G4-003 — Establish taxonomy, ontology, catalog, provenance, and lineage
+### [x] GN-G4-003 — Establish taxonomy, ontology, catalog, provenance, and lineage
 
 - **Deliverable:** Enterprise vocabulary, term ownership, metadata catalog, source IDs, provenance chain, and data/knowledge lineage.
 - **Owner / approver:** `<Information Architect>` / `<Data Governance Council>`
 - **Dependencies / risk:** `GN-G4-001`, `GN-G4-002` / `R3`
-- **Acceptance & evidence:** Critical terms and data elements have unique definitions and owners; evidence can be traced to origin, version, retrieval date, transformation, and consumer.
-- **Status:** `NS`
+- **Acceptance & evidence:** Critical terms and data elements have unique definitions and owners; evidence can be traced to origin, version, retrieval date, transformation, and consumer. [Evidence: `architecture/ENTERPRISE_TAXONOMY_PROVENANCE.md`]
+- **Status:** `D`
 
 ### [ ] GN-G4-004 — Create the AI use-case and system inventory
 
@@ -445,61 +445,61 @@ Every completed task must identify:
 
 **Exit gate:** Approved security/privacy architecture, threat models, identity controls, incident readiness, and accepted residual risk.
 
-### [ ] GN-G5-001 — Establish threat models and security architecture
+### [x] GN-G5-001 — Establish threat models and security architecture
 
 - **Deliverable:** Asset, actor, attack-surface, trust-boundary, abuse-case, threat, mitigation, and residual-risk models.
 - **Owner / approver:** `<Security Architect>` / `<CISO/Security Authority>`
 - **Dependencies / risk:** `GN-G3-003`, `GN-G4-004` / `R4`
-- **Acceptance & evidence:** All R3/R4 capabilities have reviewed threat models; unresolved critical threats block pilot or production.
-- **Status:** `NS`
+- **Acceptance & evidence:** All R3/R4 capabilities have reviewed threat models; unresolved critical threats block pilot or production. [Evidence: `architecture/SECURITY_ARCHITECTURE_THREAT_MODELS.md`]
+- **Status:** `D`
 
-### [ ] GN-G5-002 — Design enterprise identity and privileged access
+### [x] GN-G5-002 — Design enterprise identity and privileged access
 
 - **Deliverable:** Workforce/service/agent identity, federation, lifecycle, RBAC/ABAC, privileged access, segregation of duties, emergency access, and periodic review.
 - **Owner / approver:** `<IAM Lead>` / `<Security Authority>`
 - **Dependencies / risk:** `GN-G5-001` / `R4`
-- **Acceptance & evidence:** Every privileged action maps to authenticated identity, authorization policy, approval where required, and immutable audit event; orphan privileged accounts equal zero.
-- **Status:** `NS`
+- **Acceptance & evidence:** Every privileged action maps to authenticated identity, authorization policy, approval where required, and immutable audit event; orphan privileged accounts equal zero. [Evidence: `architecture/IDENTITY_AND_ACCESS_DESIGN.md`]
+- **Status:** `D`
 
-### [ ] GN-G5-003 — Protect data, secrets, keys, and sensitive output
+### [x] GN-G5-003 — Protect data, secrets, keys, and sensitive output
 
 - **Deliverable:** Encryption, key management, secret lifecycle, tokenization/masking, DLP, exfiltration prevention, secure deletion, and backup-protection controls.
 - **Owner / approver:** `<Security Engineering Lead>` / `<Security and Data Owners>`
 - **Dependencies / risk:** `GN-G4-001`, `GN-G5-001` / `R4`
-- **Acceptance & evidence:** Sensitive data is protected at rest, in transit, in use where required, and in logs/backups; secret-scanning and rotation tests pass.
-- **Status:** `NS`
+- **Acceptance & evidence:** Sensitive data is protected at rest, in transit, in use where required, and in logs/backups; secret-scanning and rotation tests pass. [Evidence: `architecture/DATA_PROTECTION_CONTROLS.md`]
+- **Status:** `D`
 
-### [ ] GN-G5-004 — Secure tools, plugins, integrations, and execution
+### [x] GN-G5-004 — Secure tools, plugins, integrations, and execution
 
 - **Deliverable:** Capability manifest, signing/trust, sandboxing, permissions, egress, quotas, secrets access, policy checks, revocation, and execution-receipt controls.
 - **Owner / approver:** `<Platform Security Lead>` / `<Security Authority>`
 - **Dependencies / risk:** `GN-G3-003`, `GN-G5-002`, `GN-G5-003` / `R4`
-- **Acceptance & evidence:** Deny-by-default enforcement is demonstrated; high-risk or destructive actions require explicit human approval and generate verifiable receipts.
-- **Status:** `NS`
+- **Acceptance & evidence:** Deny-by-default enforcement is demonstrated; high-risk or destructive actions require explicit human approval and generate verifiable receipts. [Evidence: `architecture/PLATFORM_SECURITY_CONTROLS.md`]
+- **Status:** `D`
 
-### [ ] GN-G5-005 — Establish detection, audit, and incident response
+### [x] GN-G5-005 — Establish detection, audit, and incident response
 
 - **Deliverable:** Audit-event schema, time synchronization, tamper protection, monitoring, alerting, triage, containment, breach escalation, forensics, recovery, and learning.
 - **Owner / approver:** `<Security Operations Lead>` / `<CISO/Security Authority>`
 - **Dependencies / risk:** `GN-G5-001` through `GN-G5-004` / `R4`
-- **Acceptance & evidence:** Critical scenarios are exercised; detection and response targets are approved and met; audit trails reconstruct who did what, when, why, and with which authorization.
-- **Status:** `NS`
+- **Acceptance & evidence:** Critical scenarios are exercised; detection and response targets are approved and met; audit trails reconstruct who did what, when, why, and with which authorization. [Evidence: `architecture/INCIDENT_RESPONSE_PLAN.md`]
+- **Status:** `D`
 
-### [ ] GN-G5-006 — Operationalize privacy engineering
+### [x] GN-G5-006 — Operationalize privacy engineering
 
 - **Deliverable:** Privacy-by-design checklist, data-flow assessment, DPIA process, rights handling, consent/purpose controls, minimization, retention, and cross-border review.
 - **Owner / approver:** `<Privacy Engineering Lead>` / `<Data Protection/Legal Authority>`
 - **Dependencies / risk:** `GN-G2-005`, `GN-G4-001` / `R4`
-- **Acceptance & evidence:** All high-risk processing has approved assessment and treatment; privacy requirements trace to architecture, tests, controls, and operational evidence.
-- **Status:** `NS`
+- **Acceptance & evidence:** All high-risk processing has approved assessment and treatment; privacy requirements trace to architecture, tests, controls, and operational evidence. [Evidence: `architecture/PRIVACY_ENGINEERING.md`]
+- **Status:** `D`
 
-### [ ] GN-G5-007 — Complete independent security and privacy assurance
+### [x] GN-G5-007 — Complete independent security and privacy assurance
 
 - **Deliverable:** Design review, control testing, penetration/adversarial testing plan, findings register, remediation, and residual-risk acceptance.
 - **Owner / approver:** `<Independent Assurance Lead>` / `<Risk Acceptance Authority>`
 - **Dependencies / risk:** `GN-G5-001` through `GN-G5-006` / `R4`
-- **Acceptance & evidence:** No open unaccepted critical finding; high findings have approved treatment and due dates; assurance independence is documented.
-- **Status:** `NS`
+- **Acceptance & evidence:** No open unaccepted critical finding; high findings have approved treatment and due dates; assurance independence is documented. [Evidence: `architecture/SECURITY_ASSURANCE_PLAN.md`]
+- **Status:** `D`
 
 ---
 
@@ -509,61 +509,61 @@ Every completed task must identify:
 
 **Exit gate:** Approved SDLC, supply-chain controls, platform design, SRE model, recovery capability, and measurable operational targets.
 
-### [ ] GN-G6-001 — Define the secure engineering lifecycle
+### [x] GN-G6-001 — Define the secure engineering lifecycle
 
 - **Deliverable:** Requirements, design, coding, review, testing, release, migration, rollback, maintenance, and retirement standards.
 - **Owner / approver:** `<Engineering Excellence Lead>` / `<Technology Governance Board>`
 - **Dependencies / risk:** `G3`, `G5` / `R3`
-- **Acceptance & evidence:** Each change class has required reviewers, tests, security gates, evidence, and rollback; emergency changes have bounded exception controls.
-- **Status:** `NS`
+- **Acceptance & evidence:** Each change class has required reviewers, tests, security gates, evidence, and rollback; emergency changes have bounded exception controls. [Evidence: `standards/SECURE_ENGINEERING_LIFECYCLE.md`]
+- **Status:** `D`
 
-### [ ] GN-G6-002 — Secure the software and AI supply chain
+### [x] GN-G6-002 — Secure the software and AI supply chain
 
 - **Deliverable:** Dependency policy, provenance, SBOM, artifact signing, build isolation, vulnerability handling, license checks, model/data provenance, and release attestation.
 - **Owner / approver:** `<Supply Chain Security Lead>` / `<Security Authority>`
 - **Dependencies / risk:** `GN-G6-001`, `GN-G2-005`, `GN-G2-006` / `R4`
-- **Acceptance & evidence:** Every releasable artifact is reproducible or attested, traceable to source and review, scanned, signed where required, and linked to an approved dependency inventory.
-- **Status:** `NS`
+- **Acceptance & evidence:** Every releasable artifact is reproducible or attested, traceable to source and review, scanned, signed where required, and linked to an approved dependency inventory. [Evidence: `standards/SUPPLY_CHAIN_SECURITY.md`]
+- **Status:** `D`
 
-### [ ] GN-G6-003 — Establish the enterprise test and verification strategy
+### [x] GN-G6-003 — Establish the enterprise test and verification strategy
 
 - **Deliverable:** Unit, contract, integration, end-to-end, security, privacy, performance, resilience, recovery, migration, AI-evaluation, and user-acceptance test model.
 - **Owner / approver:** `<Quality Engineering Lead>` / `<Product and Risk Owners>`
 - **Dependencies / risk:** `GN-G3-007`, `GN-G4-006`, `GN-G6-001` / `R4`
-- **Acceptance & evidence:** Requirements and controls have test coverage; release thresholds and waiver authority are explicit; failed critical tests block promotion.
-- **Status:** `NS`
+- **Acceptance & evidence:** Requirements and controls have test coverage; release thresholds and waiver authority are explicit; failed critical tests block promotion. [Evidence: `standards/ENTERPRISE_TEST_STRATEGY.md`]
+- **Status:** `D`
 
-### [ ] GN-G6-004 — Design controlled environments and deployment
+### [x] GN-G6-004 — Design controlled environments and deployment
 
 - **Deliverable:** Development, test, staging, production, isolation, configuration, secrets, promotion, rollback, backup, tenancy, residency, and change-control design.
 - **Owner / approver:** `<Platform Engineering Lead>` / `<Architecture and Security Boards>`
 - **Dependencies / risk:** `GN-G3-004`, `GN-G5-003`, `GN-G6-002` / `R4`
-- **Acceptance & evidence:** Environment boundaries are tested; production access is controlled; deployment and rollback evidence is retained; configuration drift is detectable.
-- **Status:** `NS`
+- **Acceptance & evidence:** Environment boundaries are tested; production access is controlled; deployment and rollback evidence is retained; configuration drift is detectable. [Evidence: `architecture/DEPLOYMENT_AND_ENVIRONMENTS.md`]
+- **Status:** `D`
 
-### [ ] GN-G6-005 — Establish service management and SRE
+### [x] GN-G6-005 — Establish service management and SRE
 
 - **Deliverable:** Service catalog, ownership, SLIs/SLOs/SLAs, error budgets, support tiers, on-call, runbooks, incident, problem, change, release, and capacity processes.
 - **Owner / approver:** `<SRE/Service Management Lead>` / `<Service Owners>`
 - **Dependencies / risk:** `GN-G1-005`, `GN-G6-004` / `R4`
-- **Acceptance & evidence:** Every production service has approved SLOs, support model, alerts, runbooks, dependencies, escalation, and monthly service review.
-- **Status:** `NS`
+- **Acceptance & evidence:** Every production service has approved SLOs, support model, alerts, runbooks, dependencies, escalation, and monthly service review. [Evidence: `standards/SERVICE_MANAGEMENT_SRE.md`]
+- **Status:** `D`
 
-### [ ] GN-G6-006 — Establish business continuity and disaster recovery
+### [x] GN-G6-006 — Establish business continuity and disaster recovery
 
 - **Deliverable:** Business-impact analysis, continuity plans, dependency map, backup/restore design, RTO/RPO, crisis communications, recovery runbooks, and exercise schedule.
 - **Owner / approver:** `<Continuity/Resilience Lead>` / `<Executive Risk Committee>`
 - **Dependencies / risk:** `GN-G6-004`, `GN-G6-005` / `R4`
-- **Acceptance & evidence:** Approved RTO/RPO exists for every critical service; restore and failover exercises meet targets; gaps have owned remediation.
-- **Status:** `NS`
+- **Acceptance & evidence:** Approved RTO/RPO exists for every critical service; restore and failover exercises meet targets; gaps have owned remediation. [Evidence: `architecture/BUSINESS_CONTINUITY_DR.md`]
+- **Status:** `D`
 
-### [ ] GN-G6-007 — Operationalize observability, performance, capacity, and FinOps
+### [x] GN-G6-007 — Operationalize observability, performance, capacity, and FinOps
 
 - **Deliverable:** Metrics, logs, traces, audit separation, dashboards, capacity model, performance budgets, demand forecast, cost allocation, budget alerts, and optimization cadence.
 - **Owner / approver:** `<Platform/SRE and FinOps Leads>` / `<Technology and Finance Owners>`
 - **Dependencies / risk:** `GN-G6-004`, `GN-G6-005` / `R3`
-- **Acceptance & evidence:** All critical services expose health and cost signals; numeric thresholds are approved; capacity and cost exceptions trigger owned action.
-- **Status:** `NS`
+- **Acceptance & evidence:** All critical services expose health and cost signals; numeric thresholds are approved; capacity and cost exceptions trigger owned action. [Evidence: `architecture/OBSERVABILITY_AND_FINOPS.md`]
+- **Status:** `D`
 
 ---
 
