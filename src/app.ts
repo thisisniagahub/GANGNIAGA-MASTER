@@ -59,10 +59,10 @@ app.post('/api/seed', async (req, res) => {
       "Bounded Pilot pertama memfokuskan kepada Knowledge Retrieval dengan latency P95 di bawah 1.5 saat.",
       "Sistem ini menggunakan Llama-3 70B dari Groq dan pgvector untuk menyimpan memori."
     ];
-    for (const doc of dummyData) {
+    await Promise.all(dummyData.map(async (doc) => {
       const emb = await ai.generateEmbedding(doc);
       await vectorStore.insert(doc, emb, { source: "dummy_seed" });
-    }
+    }));
     res.json({ message: "Data dummy berjaya dimasukkan!" });
   } catch(e) {
     console.error(e);
