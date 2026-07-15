@@ -11,3 +11,8 @@ This file tracks all major development tracks for the project. Each track has it
   - *Link:* [./tracks/master_modularization/](./tracks/master_modularization/)
   - *Objective:* MASTER.md < 3000 lines (Part II & III extracted)
   - *Status:* Completed ✅
+
+---
+
+- [ ] **Track: Bounded Pilot (Knowledge Engine Scaffolding)**
+  *Link: [./tracks/bounded_pilot/](./tracks/bounded_pilot/)*
