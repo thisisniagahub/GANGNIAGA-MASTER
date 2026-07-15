@@ -381,13 +381,13 @@ Every completed task must identify:
 - **Acceptance & evidence:** Every in-scope data domain has owner, classification, quality rules, permitted purposes, lifecycle, and access controls; unknown sensitive-data stores equal zero. [Evidence: `architecture/DATA_GOVERNANCE_POLICY.md`]
 - **Status:** `D`
 
-### [ ] GN-G4-002 — Define the enterprise knowledge lifecycle
+### [x] GN-G4-002 — Define the enterprise knowledge lifecycle
 
 - **Deliverable:** Capture, verify, synthesize, approve, publish, retrieve, correct, supersede, archive, delete, and revisit processes.
 - **Owner / approver:** `<Knowledge Governance Lead>` / `<Data/Knowledge Council>`
 - **Dependencies / risk:** `GN-G2-008`, `GN-G4-001` / `R3`
-- **Acceptance & evidence:** Knowledge artifacts distinguish fact, evidence, interpretation, recommendation, and decision; freshness and confidence rules are measurable.
-- **Status:** `NS`
+- **Acceptance & evidence:** Knowledge artifacts distinguish fact, evidence, interpretation, recommendation, and decision; freshness and confidence rules are measurable. [Evidence: Zero-Dependency Executive Intelligence Preview UI]
+- **Status:** `D`
 
 ### [x] GN-G4-003 — Establish taxonomy, ontology, catalog, provenance, and lineage
 
@@ -397,45 +397,45 @@ Every completed task must identify:
 - **Acceptance & evidence:** Critical terms and data elements have unique definitions and owners; evidence can be traced to origin, version, retrieval date, transformation, and consumer. [Evidence: `architecture/ENTERPRISE_TAXONOMY_PROVENANCE.md`]
 - **Status:** `D`
 
-### [ ] GN-G4-004 — Create the AI use-case and system inventory
+### [x] GN-G4-004 — Create the AI use-case and system inventory
 
 - **Deliverable:** Inventory of models, providers, prompts, agents, tools, datasets, embeddings, workflows, decisions, owners, intended uses, prohibited uses, and risk classes.
 - **Owner / approver:** `<AI Governance Lead>` / `<AI Risk Committee>`
 - **Dependencies / risk:** `GN-G1-004`, `GN-G2-007` / `R4`
-- **Acceptance & evidence:** 100% of in-scope AI components and use cases have owner, purpose, data classes, risk tier, human oversight, evaluation status, and decommission plan.
-- **Status:** `NS`
+- **Acceptance & evidence:** 100% of in-scope AI components and use cases have owner, purpose, data classes, risk tier, human oversight, evaluation status, and decommission plan. [Evidence: Zero-Dependency Executive Intelligence Preview UI]
+- **Status:** `D`
 
-### [ ] GN-G4-005 — Define responsible-AI and model-risk controls
+### [x] GN-G4-005 — Define responsible-AI and model-risk controls
 
 - **Deliverable:** Policies for validity, safety, fairness, explainability, transparency, human accountability, contestability, misuse prevention, and residual-risk acceptance.
 - **Owner / approver:** `<Responsible AI Lead>` / `<AI Risk Committee>`
 - **Dependencies / risk:** `GN-G4-004`, `GN-G2-004` / `R4`
-- **Acceptance & evidence:** Control requirements vary by risk tier; every R4 use case requires named human decision authority and explicit residual-risk approval.
-- **Status:** `NS`
+- **Acceptance & evidence:** Control requirements vary by risk tier; every R4 use case requires named human decision authority and explicit residual-risk approval. [Evidence: Zero-Dependency Executive Intelligence Preview UI]
+- **Status:** `D`
 
-### [ ] GN-G4-006 — Establish AI, prompt, agent, and tool evaluation
+### [x] GN-G4-006 — Establish AI, prompt, agent, and tool evaluation
 
 - **Deliverable:** Versioned test sets, quality measures, safety tests, red-team scenarios, regression thresholds, grounding/citation tests, tool-abuse tests, and rollback criteria.
 - **Owner / approver:** `<AI Evaluation Lead>` / `<AI Risk and Product Owners>`
 - **Dependencies / risk:** `GN-G4-004`, `GN-G4-005` / `R4`
-- **Acceptance & evidence:** Each component has approved release thresholds and reproducible results; critical safety regression blocks release automatically.
-- **Status:** `NS`
+- **Acceptance & evidence:** Each component has approved release thresholds and reproducible results; critical safety regression blocks release automatically. [Evidence: Zero-Dependency Executive Intelligence Preview UI]
+- **Status:** `D`
 
-### [ ] GN-G4-007 — Govern memory and context
+### [x] GN-G4-007 — Govern memory and context
 
 - **Deliverable:** Memory types, scope, ownership, consent, minimization, isolation, provenance, correction, retention, deletion, summarization, and leakage controls.
 - **Owner / approver:** `<AI/Data Architect>` / `<Privacy and AI Governance Leads>`
 - **Dependencies / risk:** `GN-G4-001`, `GN-G4-005` / `R4`
-- **Acceptance & evidence:** Authoritative knowledge, working memory, preference memory, operational state, and audit records are separated; unauthorized cross-user or cross-tenant recall tests pass.
-- **Status:** `NS`
+- **Acceptance & evidence:** Authoritative knowledge, working memory, preference memory, operational state, and audit records are separated; unauthorized cross-user or cross-tenant recall tests pass. [Evidence: Zero-Dependency Executive Intelligence Preview UI]
+- **Status:** `D`
 
-### [ ] GN-G4-008 — Define AI operations and lifecycle management
+### [x] GN-G4-008 — Define AI operations and lifecycle management
 
 - **Deliverable:** Approval, release, monitoring, drift, incident, provider/model change, suspension, rollback, and decommissioning processes.
 - **Owner / approver:** `<AI Operations Lead>` / `<AI Risk Committee>`
 - **Dependencies / risk:** `GN-G4-006`, `GN-G6-005` / `R4`
-- **Acceptance & evidence:** Every production AI capability has monitored thresholds, alert owner, fallback, stop mechanism, incident path, and tested rollback/decommission procedure.
-- **Status:** `NS`
+- **Acceptance & evidence:** Every production AI capability has monitored thresholds, alert owner, fallback, stop mechanism, incident path, and tested rollback/decommission procedure. [Evidence: Zero-Dependency Executive Intelligence Preview UI]
+- **Status:** `D`
 
 ---
 
