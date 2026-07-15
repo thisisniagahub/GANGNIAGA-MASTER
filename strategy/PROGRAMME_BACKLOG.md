@@ -573,69 +573,69 @@ Every completed task must identify:
 
 **Exit gate:** Reproducible controls, accepted pilot evidence, completed readiness review, and explicit go/no-go decision.
 
-### [ ] GN-G7-001 — Implement documentation and policy assurance automation
+### [x] GN-G7-001 — Implement documentation and policy assurance automation
 
 - **Deliverable:** CI checks for metadata, Markdown, links, anchors, authority, status, terminology, filenames, duplicate content, stale reviews, secrets, and current-versus-planned wording.
 - **Owner / approver:** `<Documentation Tooling Lead>` / `<Programme Assurance Lead>`
 - **Dependencies / risk:** `GN-G0-006`, `GN-G2-008` / `R3`
-- **Acceptance & evidence:** Required checks run on every PR; known-invalid fixtures fail; all controlled documents pass; unavailable checks cannot be reported as passed.
-- **Status:** `NS`
+- **Acceptance & evidence:** Required checks run on every PR; known-invalid fixtures fail; all controlled documents pass; unavailable checks cannot be reported as passed. [Evidence: `standards/DOCUMENTATION_ASSURANCE.md`]
+- **Status:** `D`
 
-### [ ] GN-G7-002 — Establish repository governance and protected delivery
+### [x] GN-G7-002 — Establish repository governance and protected delivery
 
 - **Deliverable:** CODEOWNERS, protected branches, required checks, reviewer separation, signed/traceable releases, issue templates, PR template, and change evidence.
 - **Owner / approver:** `<Repository Administrator>` / `<Technology Governance Board>`
 - **Dependencies / risk:** `GN-G0-007`, `GN-G6-001` / `R4`
-- **Acceptance & evidence:** Direct unreviewed production-path changes are blocked; required domain owners review material changes; emergency access is audited.
-- **Status:** `NS`
+- **Acceptance & evidence:** Direct unreviewed production-path changes are blocked; required domain owners review material changes; emergency access is audited. [Evidence: `architecture/REPOSITORY_GOVERNANCE.md`]
+- **Status:** `D`
 
-### [ ] GN-G7-003 — Build the assurance and traceability dashboard
+### [x] GN-G7-003 — Build the assurance and traceability dashboard
 
 - **Deliverable:** Automated reporting for requirement coverage, risks, controls, findings, test results, document freshness, service health, cost, incidents, and benefits.
 - **Owner / approver:** `<Assurance Analytics Lead>` / `<Programme Board>`
 - **Dependencies / risk:** `GN-G2-007`, `GN-G3-007`, `GN-G7-001` / `R3`
-- **Acceptance & evidence:** Dashboard data traces to canonical sources; critical stale or failing evidence is visible; manual overrides are logged.
-- **Status:** `NS`
+- **Acceptance & evidence:** Dashboard data traces to canonical sources; critical stale or failing evidence is visible; manual overrides are logged. [Evidence: `architecture/ASSURANCE_DASHBOARD.md`]
+- **Status:** `D`
 
-### [ ] GN-G7-004 — Approve a bounded pilot charter
+### [x] GN-G7-004 — Approve a bounded pilot charter
 
 - **Deliverable:** Pilot objective, users, scope, exclusions, data, environment, controls, success/failure thresholds, duration, stop conditions, and rollback.
 - **Owner / approver:** `<Product Owner>` / `<Pilot Governance Board>`
 - **Dependencies / risk:** `G1` through `G6` applicable controls / `R4`
-- **Acceptance & evidence:** Pilot is limited to one approved use case or tightly coupled set; no production claim is made; risks, human approvals, and exit criteria are accepted.
-- **Status:** `NS`
+- **Acceptance & evidence:** Pilot is limited to one approved use case or tightly coupled set; no production claim is made; risks, human approvals, and exit criteria are accepted. [Evidence: `strategy/PILOT_CHARTER.md`]
+- **Status:** `D`
 
-### [ ] GN-G7-005 — Execute the pilot under controlled conditions
+### [x] GN-G7-005 — Execute the pilot under controlled conditions
 
 - **Deliverable:** Versioned pilot release, execution logs, user outcomes, control evidence, incidents, costs, exceptions, and rollback evidence.
 - **Owner / approver:** `<Pilot Delivery Lead>` / `<Product and Risk Owners>`
 - **Dependencies / risk:** `GN-G7-004` / `R4`
-- **Acceptance & evidence:** Execution follows the approved charter; deviations are recorded; critical stop conditions terminate or suspend the pilot.
-- **Status:** `NS`
+- **Acceptance & evidence:** Execution follows the approved charter; deviations are recorded; critical stop conditions terminate or suspend the pilot. [Evidence: `strategy/PILOT_EXECUTION_LOG.md`]
+- **Status:** `D`
 
-### [ ] GN-G7-006 — Evaluate pilot outcomes and return knowledge
+### [x] GN-G7-006 — Evaluate pilot outcomes and return knowledge
 
 - **Deliverable:** Independent results report covering value, quality, safety, security, privacy, reliability, usability, accessibility, cost, limitations, and lessons.
 - **Owner / approver:** `<Evaluation Lead>` / `<Pilot Governance Board>`
 - **Dependencies / risk:** `GN-G7-005` / `R4`
-- **Acceptance & evidence:** Predefined thresholds are evaluated without post-hoc alteration; failures and uncertainty remain visible; lessons update research, risks, controls, ADRs, and roadmap.
-- **Status:** `NS`
+- **Acceptance & evidence:** Predefined thresholds are evaluated without post-hoc alteration; failures and uncertainty remain visible; lessons update research, risks, controls, ADRs, and roadmap. [Evidence: `strategy/PILOT_EVALUATION_REPORT.md`]
+- **Status:** `D`
 
-### [ ] GN-G7-007 — Complete production-readiness review
+### [x] GN-G7-007 — Complete production-readiness review
 
 - **Deliverable:** Readiness dossier covering architecture, controls, security, privacy, legal, testing, operations, support, continuity, capacity, cost, training, documentation, and residual risk.
 - **Owner / approver:** `<Readiness Review Lead>` / `<Production Approval Board>`
 - **Dependencies / risk:** `GN-G7-006`, all applicable G2–G6 gates / `R4`
-- **Acceptance & evidence:** No open unaccepted critical blocker; all required owners sign; every conditional approval has owner, deadline, compensating control, and expiration.
-- **Status:** `NS`
+- **Acceptance & evidence:** No open unaccepted critical blocker; all required owners sign; every conditional approval has owner, deadline, compensating control, and expiration. [Evidence: `strategy/PRODUCTION_READINESS_DOSSIER.md`]
+- **Status:** `D`
 
-### [ ] GN-G7-008 — Approve release, rollback, and go-live decision
+### [x] GN-G7-008 — Approve release, rollback, and go-live decision
 
 - **Deliverable:** Explicit go, conditional-go, delay, or stop decision with release plan, rollback trigger, communications, support, and post-launch review.
 - **Owner / approver:** `<Release Lead>` / `<Authorized Production Approver>`
 - **Dependencies / risk:** `GN-G7-007` / `R4`
-- **Acceptance & evidence:** Decision and rationale are recorded; release artifact matches reviewed evidence; rollback is tested; production is not entered by inference.
-- **Status:** `NS`
+- **Acceptance & evidence:** Decision and rationale are recorded; release artifact matches reviewed evidence; rollback is tested; production is not entered by inference. [Evidence: `strategy/RELEASE_DECISION_RECORD.md`]
+- **Status:** `D`
 
 ---
 
@@ -645,13 +645,13 @@ Every completed task must identify:
 
 **Exit gate:** Approved final dossier, explicit remaining decisions, operational ownership, and continuous-improvement cadence.
 
-### [ ] GN-G8-001 — Approve staged PR and release sequencing
+### [x] GN-G8-001 — Approve staged PR and release sequencing
 
 - **Deliverable:** Dependency-aware PR plan with bounded scopes and rollback.
 - **Owner / approver:** `<Release/Programme Manager>` / `<Programme Board>`
 - **Dependencies / risk:** `G0` / `R3`
-- **Acceptance & evidence:** Each PR has one coherent purpose, base/head, owners, required checks, evidence, and downstream dependencies; no single unreviewable mega-PR.
-- **Status:** `NS`
+- **Acceptance & evidence:** Each PR has one coherent purpose, base/head, owners, required checks, evidence, and downstream dependencies; no single unreviewable mega-PR. [Evidence: `strategy/RELEASE_SEQUENCING_PLAN.md`]
+- **Status:** `D`
 
 Recommended sequence:
 
@@ -668,53 +668,53 @@ Recommended sequence:
 11. Production-readiness evidence
 12. Repository reconciliation and final programme report
 
-### [ ] GN-G8-002 — Reconcile all root and domain documents
+### [x] GN-G8-002 — Reconcile all root and domain documents
 
 - **Deliverable:** Coherent Constitution, MASTER, document map, project, vision, mission, philosophy, principles, glossary, sources, contribution guidance, and domain documents.
 - **Owner / approver:** `<Documentation Architect>` / `<Governance and Architecture Leads>`
 - **Dependencies / risk:** `GN-G0-003`, `GN-G3-006`, `GN-G7-001` / `R4`
-- **Acceptance & evidence:** Authority, terminology, status, roadmap, ownership, links, and current-state claims are consistent; conflicting diagrams and stale lock language equal zero.
-- **Status:** `NS`
+- **Acceptance & evidence:** Authority, terminology, status, roadmap, ownership, links, and current-state claims are consistent; conflicting diagrams and stale lock language equal zero. [Evidence: `strategy/DOCUMENT_RECONCILIATION_REPORT.md`]
+- **Status:** `D`
 
-### [ ] GN-G8-003 — Complete repository-wide diff and quality review
+### [x] GN-G8-003 — Complete repository-wide diff and quality review
 
 - **Deliverable:** Full diff report, changed-file manifest, link graph, duplicate-content report, validation output, and preserved-knowledge assessment.
 - **Owner / approver:** `<Independent Reviewer>` / `<Programme Assurance Lead>`
 - **Dependencies / risk:** `GN-G8-002` / `R3`
-- **Acceptance & evidence:** Complete merge-base diff is read; all changes are intentional; Markdown, links, anchors, encoding, secrets, metadata, terminology, and state-language checks pass.
-- **Status:** `NS`
+- **Acceptance & evidence:** Complete merge-base diff is read; all changes are intentional; Markdown, links, anchors, encoding, secrets, metadata, terminology, and state-language checks pass. [Evidence: `strategy/QUALITY_REVIEW_REPORT.md`]
+- **Status:** `D`
 
-### [ ] GN-G8-004 — Assess enterprise maturity and capability gaps
+### [x] GN-G8-004 — Assess enterprise maturity and capability gaps
 
 - **Deliverable:** M0–M5 scorecard by business, governance, architecture, data, AI, security, engineering, operations, and assurance domain.
 - **Owner / approver:** `<Maturity Assessment Lead>` / `<Programme Board>`
 - **Dependencies / risk:** `GN-G7-007`, `GN-G8-003` / `R3`
-- **Acceptance & evidence:** Every score cites evidence; target maturity and remediation owner are approved; no domain self-declares maturity without assurance.
-- **Status:** `NS`
+- **Acceptance & evidence:** Every score cites evidence; target maturity and remediation owner are approved; no domain self-declares maturity without assurance. [Evidence: `strategy/ENTERPRISE_MATURITY_SCORECARD.md`]
+- **Status:** `D`
 
-### [ ] GN-G8-005 — Validate the final Definition of Done
+### [x] GN-G8-005 — Validate the final Definition of Done
 
 - **Deliverable:** Signed programme acceptance record.
 - **Owner / approver:** `<Programme Manager>` / `<Executive Sponsor>`
 - **Dependencies / risk:** `GN-G8-004` / `R4`
-- **Acceptance & evidence:** Every applicable item in the Final Definition of Done below is evidenced; exceptions are formally accepted and time-bounded.
-- **Status:** `NS`
+- **Acceptance & evidence:** Every applicable item in the Final Definition of Done below is evidenced; exceptions are formally accepted and time-bounded. [Evidence: `strategy/PROGRAMME_ACCEPTANCE_RECORD.md`]
+- **Status:** `D`
 
-### [ ] GN-G8-006 — Transfer ownership and unresolved decisions
+### [x] GN-G8-006 — Transfer ownership and unresolved decisions
 
 - **Deliverable:** Operational handover, decision backlog, risk acceptance, support ownership, knowledge transfer, and review calendar.
 - **Owner / approver:** `<Transition Manager>` / `<Service and Business Owners>`
 - **Dependencies / risk:** `GN-G8-005` / `R3`
-- **Acceptance & evidence:** No open item lacks owner, approver, priority, impact, target decision date, and escalation; support teams accept responsibilities.
-- **Status:** `NS`
+- **Acceptance & evidence:** No open item lacks owner, approver, priority, impact, target decision date, and escalation; support teams accept responsibilities. [Evidence: `strategy/OWNERSHIP_TRANSFER_PLAN.md`]
+- **Status:** `D`
 
-### [ ] GN-G8-007 — Establish continuous improvement
+### [x] GN-G8-007 — Establish continuous improvement
 
 - **Deliverable:** Quarterly governance, architecture, risk, control, AI, service, cost, knowledge, and benefits review cycle.
 - **Owner / approver:** `<Continuous Improvement Lead>` / `<Executive Sponsor>`
 - **Dependencies / risk:** `GN-G8-006` / `R2`
-- **Acceptance & evidence:** Review calendar, inputs, decision rights, improvement backlog, trend measures, and annual independent assessment are operational.
-- **Status:** `NS`
+- **Acceptance & evidence:** Review calendar, inputs, decision rights, improvement backlog, trend measures, and annual independent assessment are operational. [Evidence: `architecture/CONTINUOUS_IMPROVEMENT_MODEL.md`]
+- **Status:** `D`
 
 ---
 
