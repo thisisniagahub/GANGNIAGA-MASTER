@@ -309,21 +309,21 @@ Every completed task must identify:
 
 **Exit gate:** Approved architecture baseline, decision portfolio, traceability, and reconciled Blueprint-v1 knowledge.
 
-### [ ] GN-G3-001 — Define the enterprise-architecture metamodel
+### [x] GN-G3-001 — Define the enterprise-architecture metamodel
 
 - **Deliverable:** Required business, information, data, application, integration, technology, security, operating, and deployment views.
 - **Owner / approver:** `<Chief/Lead Architect>` / `<Architecture Review Board>`
 - **Dependencies / risk:** `G1`, `G2` / `R3`
-- **Acceptance & evidence:** Viewpoints, artifacts, owners, relationships, review rules, and ADR triggers are approved; each architecture claim has state and evidence classification.
-- **Status:** `NS`
+- **Acceptance & evidence:** Viewpoints, artifacts, owners, relationships, review rules, and ADR triggers are approved; each architecture claim has state and evidence classification. [Evidence: `architecture/ARCHITECTURE_METAMODEL.md`]
+- **Status:** `D`
 
-### [ ] GN-G3-002 — Document verified current-state architecture
+### [x] GN-G3-002 — Document verified current-state architecture
 
 - **Deliverable:** Evidence-backed system context, repositories, tools, data stores, actors, interfaces, processes, controls, and known gaps.
 - **Owner / approver:** `<Enterprise Architect>` / `<Architecture Review Board>`
 - **Dependencies / risk:** `GN-G0-005`, `GN-G3-001` / `R3`
-- **Acceptance & evidence:** Every current-state component is supported by repository, configuration, telemetry, contract, or owner evidence; unsupported runtime claims equal zero.
-- **Status:** `NS`
+- **Acceptance & evidence:** Every current-state component is supported by repository, configuration, telemetry, contract, or owner evidence; unsupported runtime claims equal zero. [Evidence: `architecture/CURRENT_STATE_ARCHITECTURE.md`]
+- **Status:** `D`
 
 ### [ ] GN-G3-003 — Design target-state enterprise architecture
 
