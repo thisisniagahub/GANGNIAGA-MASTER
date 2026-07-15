@@ -161,9 +161,27 @@ Implementation
 
 ## Development Status
 
-**Current phase:** Foundation consistency and Executive Intelligence documentation.
+Currently in **Phase 1: Architecture Foundation (Hybrid Model)**. 
 
-Current priorities:
+### Development Track: Bounded Pilot (Knowledge Engine)
+The repository has been bootstrapped with a Node.js, Express, and PostgreSQL (pgvector) stack to fulfill the Bounded Pilot (`GN-STR-PIL-001`). 
+
+**Getting Started:**
+```bash
+# 1. Install Dependencies
+npm install
+
+# 2. Start PostgreSQL Container
+docker compose up -d db
+
+# 3. Start Development Server
+npm run dev
+
+# 4. Run Tests
+npm test
+```
+
+## Repository Priorities
 
 - Align foundation documents with the locked structure
 - Remove authority and terminology conflicts
