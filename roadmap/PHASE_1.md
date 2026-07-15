@@ -8,9 +8,9 @@
 - Establish CI/CD enforcement for standards.
 
 ## 2. Key Deliverables
-- [ ] Base Architecture Design (ADRs)
-- [ ] Core Environment Setup (`docker-compose`, etc.)
-- [ ] Initial Service Scaffolding
+- [x] Base Architecture Design (ADRs)
+- [x] Core Environment Setup (`docker-compose`, etc.)
+- [x] Initial Service Scaffolding
 - [ ] Automation Hooks
 
 ## 3. Track Management
