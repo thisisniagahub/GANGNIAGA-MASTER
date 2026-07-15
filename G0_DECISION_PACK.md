@@ -4,9 +4,9 @@
 > **Repository:** `thisisniagahub/GANGNIAGA-MASTER`
 > **Program relationship:** Governance Gate G0; subordinate to the locked roadmap
 > **Current repository phase:** Phase 0 — Company Knowledge & Executive Intelligence Foundation
-> **Status:** Draft for executive and governance review
+> **Status:** Approved
 > **Decision status:** Approved
-> **Implementation status:** Not implemented
+> **Implementation status:** Approved
 > **Target next gate:** G1 — Constitutional Amendment and Controlled-Change Model
 > **Owner:** `Megat`
 > **Executive approver:** `Megat`

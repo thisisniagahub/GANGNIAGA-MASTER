@@ -77,7 +77,10 @@ $excludeList = @(
     "setup_github_backlog.ps1", "health-check.ps1", "health-check-report.ps1",
     "ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md", 
     "AUDIT_NOTES.md", "ENTERPRISE_DIRECTION.md", 
-    "GATED_TRANSFORMATION_PLAN.md", "PROGRAMME_BACKLOG.md"
+    "GATED_TRANSFORMATION_PLAN.md", "PROGRAMME_BACKLOG.md",
+    "IMPLEMENTATION_PLAYBOOK.md", "IMPLEMENTATION_PLAYBOOK_V2.md",
+    "IMPLEMENTATION_PLAYBOOK_V2_REVIEW.md", "IMPROVEMENT_PLAN.md",
+    "GLOSSARY_RESOLUTION.md", "PLAYBOOK_V2_REVIEW_AND_DECISIONS.md"
 )
 # Recurse md files, ignoring conductor directory
 $mdFiles = Get-ChildItem -Path $root -Recurse -Filter "*.md" | Where-Object { $_.FullName -notmatch 'conductor[\\/]' }

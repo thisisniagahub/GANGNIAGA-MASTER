@@ -1,9 +1,9 @@
 # Release Decision Record
 
 > **Document ID:** `GN-STR-RDR-001`
-> **Owner:** `<Release Lead>`
-> **Approver:** `<Authorized Production Approver>`
-> **Status:** `Draft`
+> **Owner:** `Megat`
+> **Approver:** `Megat`
+> **Status:** `Approved`
 > **Version:** `1.0.0`
 > **Classification:** `Internal`
 
@@ -13,7 +13,7 @@
 - **Dossier Reference:** `GN-STR-PRD-001`
 
 ## 2. Decision Outcome
-**[ GO / CONDITIONAL GO / DELAY / STOP ]**
+**[ GO ]**
 
 ## 3. Rationale
 *(Provide explicit reasoning for the decision. If delayed or stopped, detail the specific blocking criteria.)*

@@ -79,6 +79,7 @@ GEMINI.md
 TRANSFORMATION_PLAYBOOK.md
 adr/README.md
 adr/ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md
+adr/ADR-0007-CORE-TECHNOLOGY-STACK.md
 architecture/README.md
 architecture/DECISION_LAYER.md
 architecture/EXECUTION_LAYER.md
@@ -129,12 +130,18 @@ conductor/tracks/master_modularization/plan.md
 conductor/tracks/master_modularization/metadata.json
 implementation/PONYTAIL_AUDIT_REPORT.md
 implementation/SECURITY_FINDINGS.md
+implementation/PLAYBOOK_V2_REVIEW_AND_DECISIONS.md
 scripts/health-check-report.ps1
+IMPROVEMENT_PLAN.md
+IMPLEMENTATION_PLAYBOOK.md
+IMPLEMENTATION_PLAYBOOK_V2.md
+IMPLEMENTATION_PLAYBOOK_V2_REVIEW.md
+
 ```
 
 Known current-state exceptions:
 
-- `LICENSE` does not yet exist and no license has been approved.
+- `LICENSE` exists and is approved as Proprietary.
 - Some folders and documents may not yet exist.
 - `MASTER.md` contains later extensions beyond its original table of contents and requires a dedicated consistency review.
 - Structural lock has been replaced by controlled-change model (ADR-0006).
@@ -205,9 +212,27 @@ Blueprint v1.0 was the original locked structural baseline. It did not define st
 | `GLOSSARY.md` | Canonical terminology | Exists | |
 | `SOURCES.md` | Research methodology and source policy | Exists | Target research paths are not yet implied to exist |
 | `CONTRIBUTING.md` | Contribution workflow | Exists | Includes blueprint and validation constraints |
-| `LICENSE` | Legal usage terms | Planned | License selection and file creation require an explicit approved decision |
+| `LICENSE` | Legal usage terms | Exists | Proprietary and Confidential |
 | `G0_DECISION_PACK.md` | Governance gate G0 pack | Approved | Business Need & Governance basis |
 | `adr/ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md` | Constitutional Change ADR | Approved | Replaces structural lock |
+| `IMPLEMENTATION_PLAYBOOK_V2.md` | Core Execution Plan | Approved | Governed candidate accepted for execution |
+| `implementation/PLAYBOOK_V2_REVIEW_AND_DECISIONS.md` | Review and stack decisions | Approved | Records locked decisions |
+| `IMPLEMENTATION_PLAYBOOK_V2_REVIEW.md` | Review notes | Advisory | Review of the playbook |
+| `IMPROVEMENT_PLAN.md` | Stale transition document | Advisory | Replaced by Playbook V2 |
+| `IMPLEMENTATION_PLAYBOOK.md` | Stale execution playbook | Advisory | Replaced by Playbook V2 |
+
+---
+
+## Advisory Artifacts
+
+These files are currently retained for reference but are **Advisory** and do not form part of the locked execution target until explicitly approved.
+
+| Document | Role | Current status | Notes |
+|---|---|---|---|
+| `implementation/PONYTAIL_AUDIT_REPORT.md` | Codebase audit report | Advisory | Pre-execution analysis |
+| `implementation/SECURITY_FINDINGS.md` | Security scan results | Advisory | Pre-execution analysis |
+| `scripts/health-check-report.ps1` | Health check output | Advisory | Point-in-time status report |
+| `conductor/*` | Orchestration scaffolding | Advisory | Represents scaffolding, not final architecture |
 
 ---
 
@@ -271,7 +296,9 @@ adr/
 ├── ADR-0002-EXECUTIVE-LAYER.md
 ├── ADR-0003-KNOWLEDGE-FIRST.md
 ├── ADR-0004-CAPABILITY-ROUTER.md
-└── ADR-0005-OPENCLAW-AS-EXECUTION.md
+├── ADR-0005-OPENCLAW-AS-EXECUTION.md
+├── ADR-0006-CONTROLLED-REPOSITORY-EVOLUTION.md
+└── ADR-0007-CORE-TECHNOLOGY-STACK.md
 ```
 
 Each ADR must record:

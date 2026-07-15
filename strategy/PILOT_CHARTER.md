@@ -1,9 +1,9 @@
 # Bounded Pilot Charter
 
 > **Document ID:** `GN-STR-PIL-001`
-> **Owner:** `<Product Owner>`
-> **Approver:** `<Pilot Governance Board>`
-> **Status:** `Draft`
+> **Owner:** `Megat`
+> **Approver:** `Megat`
+> **Status:** `Approved`
 > **Version:** `1.0.0`
 > **Classification:** `Internal`
 

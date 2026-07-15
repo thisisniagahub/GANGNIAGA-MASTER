@@ -4,6 +4,8 @@ node_modules/
 # Build outputs
 dist/
 out/
+.next/
+*.tsbuildinfo
 
 # Environment files
 .env
@@ -28,3 +30,9 @@ eslint-debug.log*
 *.sln
 *.sw?
 .DS_Store
+
+# Chat logs
+CHAT_LOG_PREVIEW.jsonl
+
+# Temporary files
+.git_files.txt

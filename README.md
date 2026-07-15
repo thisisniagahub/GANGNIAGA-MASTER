@@ -211,7 +211,7 @@ See `CONTRIBUTING.md` for the required workflow.
 
 ## License
 
-A repository license has not yet been selected. Until a `LICENSE` file is approved and added, no open-source license should be assumed.
+Proprietary and Confidential. See the [LICENSE](LICENSE) file for legal usage terms.
 
 ---
 
