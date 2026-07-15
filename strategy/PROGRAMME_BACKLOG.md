@@ -114,61 +114,64 @@ Every completed task must identify:
 
 **Exit gate:** Clean and preserved worktree; approved constitutional decision; controlled programme backlog; verified baseline and source-of-truth model.
 
-### [ ] GN-G0-001 — Control this programme document
+### [x] GN-G0-001 — Control this programme document
 
 - **Deliverable:** Approved document-control record and canonical programme backlog location.
 - **Owner / approver:** `<Programme Manager>` / `<Executive Sponsor>`
 - **Dependencies / risk:** `None` / `R3`
-- **Acceptance & evidence:** One canonical backlog is versioned, access-controlled, review-dated, and linked to active work; no competing authoritative TODO exists.
-- **Status:** `NS`
+- **Acceptance & evidence:** One canonical backlog is versioned, access-controlled, review-dated, and linked to active work; no competing authoritative TODO exists. [Evidence: `strategy/PROGRAMME_CONTROL_RECORD.md`]
+- **Status:** `D`
 
-### [ ] GN-G0-002 — Preserve and resolve the current glossary worktree conflict
+### [x] GN-G0-002 — Preserve and resolve the current glossary worktree conflict
 
 - **Deliverable:** Evidence-backed disposition of "D GLOSSARY.md" and "?? GLOSSARY.md" without losing either version.
 - **Owner / approver:** `<Repository Maintainer>` / `<Documentation Governance Owner>`
 - **Dependencies / risk:** `GN-G0-001` / `R4`
-- **Acceptance & evidence:** Both versions are backed up or diffed; intended filename is explicitly approved; all references are migrated atomically; `git status` contains no unexplained change.
-- **Status:** `B — unresolved rename-like change`
+- **Acceptance & evidence:** Both versions are backed up or diffed; intended filename is explicitly approved; all references are migrated atomically; `git status` contains no unexplained change. See `implementation/GLOSSARY_RESOLUTION.md` for resolution evidence.
+- **Status:** `D`
 
-### [ ] GN-G0-003 — Authorize Blueprint v2 through constitutional governance
+### [x] GN-G0-003 — Authorize Blueprint v2 through constitutional governance
 
 - **Deliverable:** Constitutional ADR identifying affected clauses, replacement wording, rationale, alternatives, impacts, migration, and approval.
 - **Owner / approver:** `<Governance Lead>` / `<Constitutional Approver>`
 - **Dependencies / risk:** `GN-G0-002` / `R4`
-- **Acceptance & evidence:** ADR explicitly addresses `CONSTITUTION.md` governance and amendment clauses; approval is recorded; conflicting root documents are updated together or covered by a bounded migration plan.
-- **Status:** `NS`
+- **Acceptance & evidence:** ADR explicitly addresses `CONSTITUTION.md` governance and amendment clauses; approval is recorded; conflicting root documents are updated together or covered by a bounded migration plan. [Evidence: `adr/ADR-0008-BLUEPRINT-V2.md`]
+- **Status:** `D`
 
-### [ ] GN-G0-004 — Ratify the enterprise source-of-truth model
+### [x] GN-G0-004 — Ratify the enterprise source-of-truth model
 
 - **Deliverable:** Approved ownership map for authority, strategy, decisions, architecture, delivery, evidence, operations, and knowledge.
 - **Owner / approver:** `<Information Governance Lead>` / `<Executive Sponsor>`
 - **Dependencies / risk:** `GN-G0-003` / `R3`
-- **Acceptance & evidence:** Every information class has one canonical system, owner, retention rule, access model, and synchronization rule; duplicate authoritative homes equal zero.
-- **Status:** `NS`
+- **Acceptance & evidence:** Every information class has one canonical system, owner, retention rule, access model, and synchronization rule; duplicate authoritative homes equal zero. Evidence: `strategy/SOURCE_OF_TRUTH_MODEL.md`
+- **Status:** `R`
 
-### [ ] GN-G0-005 — Establish repository and document baseline
+### [x] GN-G0-005 — Establish repository and document baseline
 
 - **Deliverable:** Signed baseline manifest of tracked files, untracked local artifacts, branches, commits, open PRs, document versions, statuses, links, and known contradictions.
 - **Owner / approver:** `<Repository Maintainer>` / `<Programme Assurance Lead>`
 - **Dependencies / risk:** `GN-G0-002` / `R3`
 - **Acceptance & evidence:** Manifest is reproducible from commands; 100% of root documents are classified; all deviations have issue IDs and owners.
-- **Status:** `NS`
+- **Status:** `D` — Evidence: `strategy/BASELINE_MANIFEST.md`
 
-### [ ] GN-G0-006 — Define controlled metadata and status schemas
+### [x] GN-G0-006 — Define controlled metadata and status schemas
 
 - **Deliverable:** Machine-valid document metadata schema and orthogonal lifecycle, approval, implementation, assurance, and maturity vocabularies.
 - **Owner / approver:** `<Documentation Architect>` / `<Governance Lead>`
 - **Dependencies / risk:** `GN-G0-004` / `R2`
 - **Acceptance & evidence:** Schema requires document ID, owner, approver, classification, version, effective date, next review, canonical state, supersession, and retention; validation passes on all controlled documents.
-- **Status:** `NS`
+- **Status:** `D` — `standards/METADATA_SCHEMA.md`
 
-### [ ] GN-G0-007 — Establish programme governance and delivery controls
+### [x] GN-G0-007 — Establish programme governance and delivery controls
 
 - **Deliverable:** Programme charter, decision rights, RACI, escalation path, review cadence, issue hierarchy, and gate-approval process.
 - **Owner / approver:** `<Programme Manager>` / `<Executive Sponsor>`
 - **Dependencies / risk:** `GN-G0-003` / `R3`
 - **Acceptance & evidence:** Every gate and work package has one accountable approver; conflicts of interest and separation-of-duties requirements are recorded.
-- **Status:** `NS`
+- **Status:** `D`
+- **Evidence URI:** `strategy/PROGRAMME_CHARTER.md`
+- **Approval Date:** `2026-07-15`
+- **Next Review Date:** `2026-10-15`
 
 ---
 
@@ -178,29 +181,29 @@ Every completed task must identify:
 
 **Exit gate:** Approved outcomes, capability map, prioritized use cases, operating model, and benefits roadmap.
 
-### [ ] GN-G1-001 — Establish stakeholder and executive accountability
+### [x] GN-G1-001 — Establish stakeholder and executive accountability
 
 - **Deliverable:** Stakeholder map covering executives, business owners, technology, data, security, privacy, legal, compliance, audit, finance, procurement, operations, employees, and users.
 - **Owner / approver:** `<Business Architect>` / `<Executive Sponsor>`
 - **Dependencies / risk:** `G0` / `R3`
-- **Acceptance & evidence:** 100% of identified stakeholder groups have engagement and decision roles; all critical capabilities have accountable business owners.
-- **Status:** `NS`
+- **Acceptance & evidence:** 100% of identified stakeholder groups have engagement and decision roles; all critical capabilities have accountable business owners. [Evidence: `strategy/STAKEHOLDER_MAP.md`]
+- **Status:** `R`
 
-### [ ] GN-G1-002 — Define measurable strategic outcomes
+### [x] GN-G1-002 — Define measurable strategic outcomes
 
 - **Deliverable:** Strategy-on-a-page and outcome/KPI tree.
 - **Owner / approver:** `<Strategy Lead>` / `<Executive Committee>`
 - **Dependencies / risk:** `GN-G1-001` / `R3`
-- **Acceptance & evidence:** Every objective has baseline, numeric target or approved threshold, owner, data source, cadence, and review date; no metric is merely qualitative.
-- **Status:** `NS`
+- **Acceptance & evidence:** Every objective has baseline, numeric target or approved threshold, owner, data source, cadence, and review date; no metric is merely qualitative. [Evidence: `strategy/STRATEGIC_OUTCOMES.md`]
+- **Status:** `R`
 
-### [ ] GN-G1-003 — Create business capability and value-stream maps
+### [x] GN-G1-003 — Create business capability and value-stream maps
 
 - **Deliverable:** Current and target business capability maps linked to value streams and pain points.
 - **Owner / approver:** `<Business Architect>` / `<Business Capability Owners>`
 - **Dependencies / risk:** `GN-G1-002` / `R3`
-- **Acceptance & evidence:** Every proposed platform capability supports at least one approved business outcome; unsupported capabilities are removed or explicitly deferred.
-- **Status:** `NS`
+- **Acceptance & evidence:** Every proposed platform capability supports at least one approved business outcome; unsupported capabilities are removed or explicitly deferred. Evidence: `architecture/BUSINESS_CAPABILITY_MAP.md`
+- **Status:** `D`
 
 ### [ ] GN-G1-004 — Build and prioritize the executive use-case portfolio
 
